@@ -1,0 +1,89 @@
+!!blah blah blah
+
+!! Global width settings
+border.Width: 1
+padding.width: 3
+window.handle.width: 5
+window.client.padding.width: 0
+border.color: #2e435e
+menu.overlap: 2
+*.justify: left
+
+!! font me!
+window.active.label.text.font: Bitstream Vera Sans:pixelsize=12:shadow=y:shadowtint=40
+window.inactive.label.text.font:Bitstream Vera Sans:pixelsize=12:shadow=y:shadowtint=-80
+menu.items.font: Bitstream Vera Sans:pixelsize=12
+menu.title.text.font: Bitstream Vera Sans:bold:pixelsize=12:shadow=y:shadowtint=60
+
+!! Menu settings
+
+menu.title.bg: flat gradient vertical border
+menu.title.bg.color: #505f89
+menu.title.bg.colorTo: #666f88
+menu.title.bg.border.color:#cacfdb
+menu.title.text.color: #ffffff
+
+menu.items.bg: raised solid bevel1
+menu.items.bg.color: #FFFFFF
+menu.items.text.color: #000000
+menu.items.disabled.text.color: #888a85
+
+menu.items.active.bg: flat vertical gradient border
+menu.items.active.bg.color: #3465a4
+menu.items.active.bg.colorTo: #32537c
+menu.items.active.text.color: #ffffff
+menu.items.active.bg.border.color: #32527a
+
+*.text.justify: left
+
+!! focused window settings
+window.active.client.color: #f7f7f7
+
+window.active.title.bg: flat gradient vertical border
+window.active.title.bg.color: #505f89
+window.active.title.bg.colorTo: #666f88
+window.active.title.bg.border.color:#cacfdb
+window.active.handle.bg:  raised solid
+window.active.handle.bg.color:  #e4e4e1
+
+
+window.active.grip.bg:  parentrelative
+
+window.active.label.bg: parentrelative
+window.active.label.text.color: #e5e5e5
+
+window.active.button.*.bg: parentrelative
+window.active.button.*.image.color: #ffffff
+
+window.active.button.pressed.bg: flat border solid
+window.active.button.pressed.bg.color: #729fcf
+window.active.button.pressed.image.color: #dddddd
+window.active.button.pressed.bg.border.color: #cacfdb
+
+!! unfocused window settings
+window.inactive.client.color: #f7f7f7
+
+window.inactive.title.bg: flat border solid
+window.inactive.title.bg.color: #e4e4e1
+window.inactive.title.bg.border.color: #ffffff
+
+window.inactive.handle.bg:  raised solid
+window.inactive.handle.bg.color:  #e4e4e1
+window.inactive.handle.bg.colorTo: #494d59
+
+window.inactive.grip.bg:  parentrelative
+
+window.inactive.label.bg: parentrelative
+window.inactive.label.text.color: #888a85
+
+window.inactive.button.*.bg: parentrelative
+window.inactive.button.*.image.color: #888a85
+
+
+window.inactive.button.pressed.bg: flat border solid
+window.inactive.button.pressed.bg.color: #ffffff
+window.inactive.button.pressed.image.color: #dddddd
+window.inactive.button.pressed.bg.border.color: #999999
+
+
+

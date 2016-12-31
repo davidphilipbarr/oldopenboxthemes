@@ -1,0 +1,39 @@
+window.client.padding.width: 0
+border.Width: 1
+padding.width: 3
+window.*.client.color: #EFEBE5
+
+border.color: #4f4f4f
+menu.border.color: #b8ab8f
+
+*.title.bg: raised solid
+*.bg.color: #5c9edc
+*.bg.colorTo: #458aca
+*.bg.border.color: #3f77ab
+*.label.bg: parentrelative
+window.inactive.title.bg.color: #EFEBE5
+
+*.button.*.bg: parentrelative
+window.active.button.hover.bg: flat solid
+window.active.button.*.image.color: #fefefe
+window.*.button.pressed.bg: flat solid
+window.active.button.hover.bg.color: #7cb6ec
+window.active.button.pressed.bg.color: #528ABF
+window.inactive.button.*.image.color:  #666564
+
+*.handle.bg: raised solid
+*.handle.bg.color: #EFEBE5
+*.grip.bg: parentrelative
+window.handle.width: 4
+
+menu.items.bg: flat solid
+menu.items.bg.color: #f9f7f3
+menu.items.active.bg: flat vertical gradient border
+menu.overlap: 2
+
+*.text.justify: left
+*.active.*text.color: #ffffff
+*text.color: #66656f
+*.disabled.*.color: #b5b3ac
+*.text.font:Bitstream Vera Sans:pixelsize=12:bold
+menu.items.font: Bitstream Vera Sans:pixelsize=12

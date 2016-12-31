@@ -1,0 +1,8 @@
+[X-GNOME-Metatheme]
+Name=Ecru3
+Type=X-GNOME-Metatheme
+Comment=A minimalistic appearance
+Encoding=UTF-8
+GtkTheme=Ecru3
+MetacityTheme=Ecru3
+IconTheme=Ecru

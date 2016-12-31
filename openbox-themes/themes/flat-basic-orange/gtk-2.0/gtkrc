@@ -1,0 +1,103 @@
+style "default"
+{
+   #GtkScrollbar::has_backward_stepper = 0
+   GtkScrollbar::has_secondary_backward_stepper = 1
+   GtkRange::slider_width = 14
+   GtkRange::stepper_size = 14 
+  xthickness = 1
+  ythickness = 1
+
+   fg[NORMAL]        = "#000000"
+  # fg[ACTIVE]        = "#00306b"
+  # fg[INSENSITIVE]   = "#acacac"
+  fg[PRELIGHT]      = "#000000"
+   fg[SELECTED]      = "#ffffff"
+ 
+  bg[NORMAL]       = "#d8d4d4"
+  bg[ACTIVE]       = "#bbbbbb"
+  bg[PRELIGHT]     = "#E0DCDC"
+  bg[SELECTED]     = "#d1940c"
+  bg[INSENSITIVE]  = "#d8d4d4"
+
+ 
+  base[ACTIVE]  = "#807d74"
+  base[SELECTED]  = "#d1940c"
+#  base[INSENSITIVE]  = "#888888"
+  text[SELECTED]  = "#ffffff"
+  text[ACTIVE]    = { 1.0, 1.0, 1.0 }
+  
+  text[INSENSITIVE]= "#d5d5d5"
+  text[ACTIVE]     = "#ffffff"
+ 
+engine "thinice"
+  {
+    rect_scrollbar = TRUE
+    mark_type1 = NOTHING
+    mark_type2 = ARROW
+    paned_dots = NONE
+  }
+}
+
+style "menu" 
+{
+  xthickness = 1
+  ythickness = 1
+
+ # bg[NORMAL]     = "#ffffff"
+  bg[PRELIGHT]    = "#d1940c"
+  bg[SELECTED]    = "#d1940c"
+  bg[ACTIVE]    = "#d1940c"
+  
+fg[PRELIGHT]  = "#ffffff"
+  fg[SELECTED]  = "#ffffff"
+
+#engine "mist" {}
+}
+
+
+style "range"
+{
+#bg[NORMAL]     = "#d8d4d4"
+#bg[PRELIGHT]     = "#e6e6e6"
+fg[PRELIGHT]     = "#000000"
+bg[ACTIVE]       = "#bbbbbb"
+}
+
+
+style "button"
+{
+#bg[NORMAL]     = "#d8d4d4"
+#bg[PRELIGHT]     = "#e6e6e6"
+bg[ACTIVE]       = "#bbbbbb"
+fg[PRELIGHT]     = "#000000"
+
+
+
+}
+
+class "GtkWidget" style "default"
+class "GtkButton" style "button"
+class "GtkFrame" style "button"
+#class "GtkStatusbar" style "button"
+class "GtkRange" style "range"
+class "GtkNotebook" style "button"
+
+
+widget_class "*Menu*" style "menu"
+class "GtkMenu" style "menu"
+widget_class "*.GtkMenuItem.*" style "menu"
+widget_class "*.GtkAccelMenuItem.*" style "menu"
+widget_class "*.GtkRadioMenuItem.*" style "menu"
+widget_class "*.GtkCheckMenuItem.*" style "menu"
+widget_class "*.GtkImageMenuItem.*" style "menu"
+
+#~sexy exciting, new
+
+style "rox"
+{
+    bg[NORMAL] = "#ffffff"
+bg[ACTIVE]       = "#d5d5d5"
+
+}
+class "Collection" style "rox"
+

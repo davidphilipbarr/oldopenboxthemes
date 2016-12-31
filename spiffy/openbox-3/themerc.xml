@@ -1,0 +1,171 @@
+<?xml version="1.0"?>
+<openbox_theme version="1" xmlns="http://openbox.org/themerc">
+  <dimensions>
+    <handle>2</handle>
+    <padding x="4" y="3"/>
+  </dimensions>
+  <window>
+    <border>
+      <width>1</width>
+      <primary r="0" g="0" b="0" a="255"/>
+    </border>
+    <clientpadding x="0" y="0"/>
+    <justify>left</justify>
+    <active>
+      <clientpadding r="144" g="148" b="152" a="255"/>
+      <label>
+        <text>
+          <primary r="255" g="255" b="255" a="255"/>
+  <shadow>
+            <offset x="1" y="0"/>
+            <primary r="20" g="20" b="20" a="255"/>
+          </shadow>
+        </text>
+        <style>parentrelative</style>
+      </label>
+      <buttons>
+        <unpressed>
+          <image r="0" g="0" b="0" a="255"/>
+          <style>raised gradient vertical bevel1</style>
+          <primary r="213" g="210" b="213" a="255"/>
+          <secondary r="131" g="133" b="131" a="255"/>
+          <border r="0" g="0" b="0" a="255"/>
+        </unpressed>
+        <disabled>
+          <image r="102" g="102" b="102" a="255"/>
+          <style>raised gradient vertical bevel1</style>
+          <primary r="213" g="210" b="213" a="255"/>
+          <secondary r="131" g="133" b="131" a="255"/>
+          <border r="0" g="0" b="0" a="255"/>
+        </disabled>
+        <toggled>
+          <image r="0" g="0" b="0" a="255"/>
+          <style>raised gradient vertical bevel1</style>
+          <primary r="213" g="210" b="213" a="255"/>
+          <secondary r="131" g="133" b="131" a="255"/>
+          <border r="0" g="0" b="0" a="255"/>
+        </toggled>
+        <pressed>
+          <style>sunken gradient diagonal bevel1</style>
+          <primary r="213" g="210" b="213" a="255"/>
+          <secondary r="131" g="133" b="131" a="255"/>
+          <border r="0" g="0" b="0" a="255"/>
+        </pressed>
+      </buttons>
+      <titlebar>
+        <style>focus: flat border gradient diagnal interlaced bevel1</style>
+        <primary r="41" g="68" b="74" a="255"/>
+        <secondary r="133" g="175" b="181" a="255"/>
+        <border r="255" g="255" b="255" a="255"/>
+        <interlace r="28" g="47" b="51" a="255"/>
+      </titlebar>
+      <handle>
+        <style>raised gradient vertical bevel1</style>
+        <primary r="160" g="164" b="168" a="255"/>
+        <secondary r="128" g="132" b="136" a="255"/>
+        <border r="0" g="0" b="0" a="255"/>
+      </handle>
+      <grip>
+        <style>raised gradient diagonal bevel1</style>
+        <primary r="41" g="68" b="74" a="255"/>
+        <secondary r="120" g="144" b="148" a="255"/>
+        <border r="0" g="0" b="0" a="255"/>
+      </grip>
+    </active>
+    <inactive>
+      <clientpadding r="64" g="72" b="80" a="255"/>
+      <label>
+        <text>
+          <primary r="160" g="164" b="168" a="255"/>
+        </text>
+        <style>parentrelative</style>
+      </label>
+      <buttons>
+        <unpressed>
+          <image r="64" g="68" b="72" a="255"/>
+          <style>rasied gradient vertical bevel1</style>
+          <primary r="178" g="181" b="178" a="255"/>
+          <secondary r="132" g="136" b="140" a="255"/>
+          <border r="0" g="0" b="0" a="255"/>
+        </unpressed>
+        <disabled>
+          <image r="102" g="102" b="102" a="255"/>
+          <style>rasied gradient vertical bevel1</style>
+          <primary r="178" g="181" b="178" a="255"/>
+          <secondary r="132" g="136" b="140" a="255"/>
+          <border r="0" g="0" b="0" a="255"/>
+        </disabled>
+        <toggled>
+          <image r="64" g="68" b="72" a="255"/>
+          <style>rasied gradient vertical bevel1</style>
+          <primary r="178" g="181" b="178" a="255"/>
+          <secondary r="132" g="136" b="140" a="255"/>
+          <border r="0" g="0" b="0" a="255"/>
+        </toggled>
+        <pressed>
+          <style>sunken gradient diagonal bevel1</style>
+          <primary r="96" g="100" b="104" a="255"/>
+          <secondary r="128" g="132" b="136" a="255"/>
+          <border r="0" g="0" b="0" a="255"/>
+        </pressed>
+      </buttons>
+      <titlebar>
+        <style>focus: flat border gradient diagnal interlaced bevel1</style>
+        <primary r="65" g="64" b="90" a="255"/>
+        <secondary r="139" g="137" b="164" a="255"/>
+        <border r="238" g="238" b="238" a="255"/>
+        <interlace r="51" g="51" b="51" a="255"/>
+      </titlebar>
+      <handle>
+        <style>raised gradient diagonal bevel1</style>
+        <primary r="160" g="164" b="168" a="255"/>
+        <secondary r="128" g="132" b="136" a="255"/>
+        <border r="0" g="0" b="0" a="255"/>
+      </handle>
+      <grip>
+        <style>raised gradient diagonal bevel1</style>
+        <primary r="62" g="57" b="57" a="255"/>
+        <secondary r="96" g="96" b="120" a="255"/>
+        <border r="0" g="0" b="0" a="255"/>
+      </grip>
+    </inactive>
+  </window>
+  <menu>
+    <border>
+      <width>1</width>
+      <primary r="0" g="0" b="0" a="255"/>
+    </border>
+    <justify>left</justify>
+    <title>
+      <text>
+        <primary r="255" g="255" b="255" a="255"/>
+      </text>
+      <style>flat border gradient horizontal interlaced bevel1</style>
+      <primary r="41" g="68" b="74" a="255"/>
+      <secondary r="133" g="175" b="181" a="255"/>
+      <border r="255" g="255" b="255" a="255"/>
+      <interlace r="28" g="47" b="51" a="255"/>
+    </title>
+    <inactive>
+      <primary r="0" g="0" b="0" a="255"/>
+    </inactive>
+    <disabled>
+      <primary r="160" g="164" b="168" a="255"/>
+    </disabled>
+    <active>
+      <text>
+        <primary r="255" g="255" b="255" a="255"/>
+      </text>
+      <style>flat border gradient horizontal interlaced bevel1</style>
+      <primary r="0" g="0" b="0" a="255"/>
+      <secondary r="112" g="112" b="136" a="255"/>
+      <border r="0" g="0" b="0" a="255"/>
+    </active>
+    <entries>
+      <style>flat gradient diagonal bevel1</style>
+      <primary r="218" g="218" b="218" a="255"/>
+      <secondary r="133" g="133" b="133" a="255"/>
+      <border r="26" g="26" b="26" a="255"/>
+    </entries>
+  </menu>
+</openbox_theme>

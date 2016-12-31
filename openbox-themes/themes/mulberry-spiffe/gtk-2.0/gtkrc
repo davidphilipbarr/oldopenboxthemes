@@ -1,0 +1,71 @@
+style "default"
+{
+
+   #GtkScrollbar::has_secondary_backward_stepper = 1
+   GtkRange::slider_width = 14
+   GtkRange::stepper_size = 14 
+xthickness = 1
+  ythickness = 1
+   fg[NORMAL]        = "#000000"
+   fg[PRELIGHT]      = "#000000"
+   fg[SELECTED]      = "#ffffff"
+ 
+  bg[NORMAL]       = "#d5d5d5"
+  bg[ACTIVE]       = "#bbbbbb"
+  bg[SELECTED]     = "#333333" 
+  bg[INSENSITIVE]  = "#dddddd"
+
+  base[SELECTED] = "#888888"
+  text[SELECTED]  = "#ffffff"
+  base[ACTIVE]    = "#888888"
+  text[ACTIVE]    =  "#dddddd"
+  
+  text[INSENSITIVE]= "#747474"
+  text[ACTIVE]     = "#000000"
+ 
+engine "thinice"
+  {
+    rect_scrollbar = TRUE
+    mark_type1 = NOTHING
+    mark_type2 = ARROW
+    paned_dots = NONE
+  }
+
+}
+
+style "menu" 
+{
+xthickness = 1
+  ythickness = 2
+  
+ 
+ bg[SELECTED]    = "#444444"
+  bg[PRELIGHT]    = "#444444"
+  fg[PRELIGHT]  = "#ffffff"
+  fg[SELECTED]  = "#ffffff"
+}
+
+style "range"
+{
+bg[PRELIGHT]     = "#dddddd"
+bg[ACTIVE]       = "#bbbbbb"
+}
+widget_class "*Menu*" style "menu"
+
+style "b-range"
+{
+bg[PRELIGHT]     = "#dddddd"
+bg[ACTIVE]       = "#bbbbbb"
+}
+
+class "GtkWidget" style "default"
+class "GtkButton" style "b-range"
+class "GtkRange" style "range"
+
+style "rox"
+{
+    bg[NORMAL] = "#ffffff"
+bg[ACTIVE]       = "#d5d5d5"
+##bg_pixmap[NORMAL] = "shadowed.png"
+}
+class "Collection" style "rox"

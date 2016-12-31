@@ -1,0 +1,125 @@
+# Theme for CrunchBang Linux 8.10.01
+# Author: Philip Newborough <mail@philipnewborough.co.uk>
+# Web: http://crunchbang.org/
+
+### Misc
+border.color: #2b2b2b
+border.width: 1
+padding.width: 3
+padding.height: 2
+window.handle.width: 2
+window.client.padding.width: 0
+window.label.text.justify: left
+
+# Reset Bevels
+*.bg.highlight: 0
+*.bg.shadow:    0
+
+window.*.bg.highlight: 70
+window.*.bg.shadow:    20
+
+window.active.title.bg.highlight: 70
+window.active.title.bg.shadow:    10
+
+window.inactive.title.bg.highlight: 60
+window.inactive.title.bg.shadow:    00
+
+window.*.grip.bg.highlight: 30
+window.*.grip.bg.shadow:    20
+
+window.*.handle.bg.highlight: 30
+window.*.handle.bg.shadow:    20
+
+window.inactive.grip.bg.highlight: 20
+window.inactive.grip.bg.shadow:    10
+
+window.inactive.handle.bg.highlight: 10
+window.inactive.handle.bg.shadow:    10
+
+###fonts
+
+*.text.font:shadow=n
+menu.items.font:shadow=y:shadowtint=0:shadowoffset=2
+window.active.label.text.font:shadow=y:shadowtint=15:shadowoffset=1
+window.inactive.label.text.font:shadow=y:shadowtint=0:shadowoffset=1
+osd.label.text.font:shadow=y:shadowtint=-20:shadowoffset=1
+
+
+### Menu settings
+menu.border.width:1
+menu.border.color: #a9a9a9
+menu.title.bg: flat
+menu.title.bg.color: #e0e0e0
+menu.title.text.color: #000000
+menu.title.text.justify: left
+
+menu.items.bg: flat solid
+menu.items.bg.color: #e5e5e5
+menu.items.bg.border.color: #2b2b2b
+menu.items.text.color: #222222
+menu.items.justify: left
+
+menu.items.disabled.text.color: #DDDDDD
+menu.bullet.image.color: #FFFFFF
+menu.bullet.selected.image.color: #FFFFFF
+
+menu.items.active.bg: raised gradient splitvertical
+menu.items.active.bg.color: #2b2b2b
+menu.items.active.bg.colorTo: #2b2b2b
+menu.items.active.bg.border.color: #2b2b2b
+menu.items.active.text.color: #FFFFFF
+menu.items.disabled.text.color: #a9a5a2
+menu.separator.width: 1
+menu.separator.padding.width: 6
+menu.separator.padding.height: 6
+menu.separator.color: #a9a9a9
+
+### Window settings
+window.active.title.bg: raised gradient splitvertical
+window.active.title.bg.color: #373737
+window.active.title.bg.color.splitTo: #484848
+window.active.title.bg.colorTo: #313131
+window.active.title.bg.colorTo.splitTo: #323232
+window.active.title.bg.border.color: #353535
+window.active.title.separator.color: #222222
+window.active.label.bg: Parentrelative
+window.active.label.text.color: #ffffff
+window.active.handle.bg: flat
+window.active.handle.bg.color: #2b2b2b
+window.active.grip.bg: flat
+window.active.grip.bg.color: #2b2b2b
+window.*.button.*.bg: parentrelative
+window.active.button.*.image.color: #d9d9d9
+window.active.button.hover.image.color: #ffffff
+window.active.button.disabled.image.color: #777777
+
+# Window settings (unfocused)
+window.inactive.title.bg: Raised Gradient splitvertical
+window.inactive.title.bg.color: #e1e1e1
+window.inactive.title.bg.color.splitTo: #e1e1e1
+window.inactive.title.bg.colorTo: #d9d9d9
+window.inactive.title.bg.colorTo.splitTo: #d8d8d8
+window.inactive.title.separator.color: #c9c9c9
+window.inactive.label.bg: Parentrelative
+window.inactive.label.text.color: #777777
+window.inactive.handle.bg: flat
+window.inactive.handle.bg.color: #2b2b2b
+window.inactive.grip.bg: flat
+window.inactive.grip.bg.color: #2b2b2b
+window.inactive.button.*.image.color: #777777
+
+
+#osd (on screen display)
+osd.border.width: 1
+osd.border.color:  #5c5e5c
+osd.bg: flat border gradient vertical
+osd.bg.color: #e1e1e1
+osd.bg.color.splitto: #e1e1e1
+osd.bg.colorTo: #d9d9d9
+osd.bg.colorTo.splitto: #d8d8d8
+osd.bg.border.color: #ffffff
+osd.label.bg: parentrelative
+osd.label.bg.color: #efefef
+osd.label.bg.border.color: #9c9e9c
+osd.label.text.color: #111111
+

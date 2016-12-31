@@ -1,0 +1,68 @@
+
+style "clearlooks-default"
+{
+
+
+
+ fg[NORMAL]        = "#101010" 
+  fg[PRELIGHT]      = "#101010" 
+  fg[ACTIVE]        = "#000000" 
+  fg[SELECTED]      = "#ffffff" 
+  fg[INSENSITIVE]   = "#b5b3ac" 
+
+  bg[NORMAL]        = "#efebe7" 
+  bg[PRELIGHT]      = "#f5f3f0" 
+  bg[ACTIVE]        = "#d4cfca" 
+  bg[SELECTED]      = "#7c99ad" 
+  bg[INSENSITIVE]   = "#efebe7" 
+	
+  base[NORMAL]      = "#ffffff" 
+  base[PRELIGHT]    = "#7c99ad" 
+  base[ACTIVE]      = "#a29e8e" 
+  base[SELECTED]    = "#7c99ad" 
+  base[INSENSITIVE] = "#efebe7" 
+	
+  text[NORMAL]      = "#000000" 
+  text[PRELIGHT]    = "#000000" 
+  text[ACTIVE]      = "#ffffff" 
+  text[SELECTED]    = "#ffffff" 
+  text[INSENSITIVE] = "#b5b3ac" 
+
+
+}
+style "clearlooks-menu"
+{
+  bg[NORMAL] = "#f8f5f2"
+  bg[PRELIGHT]      = "#7c99ad"
+  fg[PRELIGHT]    = "#ffffff" 
+}
+
+style "clearlooks-note"
+{
+  bg[NORMAL] = "#eae4df"
+  bg[INSENSITIVE] = "#eae4df"
+  base[INSENSITIVE] = "#eae4df"
+}
+
+style "clearlooks-button"
+{
+  bg[NORMAL] = "#f3f0ed"
+  bg[INSENSITIVE] = "#f3f0ed"
+  base[INSENSITIVE] = "#eae4df"
+  bg[PRELIGHT]      = "#f8f5f2"
+}
+
+
+class "GtkWidget" style "clearlooks-default"
+class "GtkMenu" style "clearlooks-menu"
+class "GtkMenuItem" style "clearlooks-menu"
+widget_class "*MenuItem.*" style "clearlooks-menu"
+class "GtkButton" style "clearlooks-button"
+class "GtkCombo"  style "clearlooks-button"
+class "GtkCheckButton" style "clearlooks-button"
+class "GtkRadioButton" style "clearlooks-button"
+class "GtkEntry"  style "clearlooks-note"
+class "GtkNotebook"    style "clearlooks-note"
+class "GtkRange"  style "clearlooks-button"
+widget_class "*.GtkNotebook.*.GtkEventBox" style "clearlooks-note"
+widget_class "*.GtkNotebook.*.GtkViewport" style "clearlooks-note"

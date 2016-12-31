@@ -1,0 +1,152 @@
+!# General
+padding.width: 0
+padding.height: 0
+window.handle.width:3
+border.Width: 1
+window.client.padding.width: 0
+window.client.padding.height: 0
+menu.overlap: 2
+window.frameColor: #D8D8D8
+window.*.client.color: #D8D8D8
+*.text.justify: center
+
+!# Set *all* fonts here
+
+menu.items.font:shadow=y:shadowtint=0:shadowoffset=2
+window.active.label.text.font:shadow=y:shadowtint=-200:shadowoffset=1
+window.inactive.label.text.font:shadow=y:shadowtint=00:shadowoffset=7
+
+osd.label.text.font:shadow=y:shadowtint=-20:shadowoffset=1
+
+!# just no bevel, right?
+*.bg.highlight: 0
+*.bg.shadow:    0
+
+window.*.bg.highlight: 0
+window.*.bg.shadow:    0
+
+window.active.title.bg.highlight: 90
+window.active.title.bg.shadow:    0
+
+window.inactive.title.bg.highlight: 10
+window.inactive.title.bg.shadow:    00
+
+window.*.grip.bg.highlight: 30
+window.*.grip.bg.shadow:    20
+
+window.*.handle.bg.highlight: 30
+window.*.handle.bg.shadow:    20
+
+window.inactive.grip.bg.highlight: 20
+window.inactive.grip.bg.shadow:    10
+
+window.inactive.handle.bg.highlight: 10
+window.inactive.handle.bg.shadow:    10
+
+!# The main theme stuff now we are ready
+*.title.bg: flat vertical gradient
+*.title.bg.color: #f7f7f7
+*.title.bg.colorTo: #ededed
+
+!# Menu
+menu.border.color: #aaaaaa
+menu.border.width: 1
+menu.title.text.color: #2e3436
+
+menu.items.bg: Flat Solid
+menu.items.bg.color: #ffffff
+menu.items.text.color: #2e3436
+menu.items.disabled.text.color: #a6a6a6
+
+menu.items.active.bg: Flat Gradient splitvertical border
+
+menu.items.active.bg.color: #569ae2
+menu.items.active.bg.color.splitTo: #60a2e7
+
+menu.items.active.bg.colorTo: #5296de
+menu.items.active.bg.colorTo.splitTo: #498fd9
+menu.items.active.bg.border.color: #365e87
+menu.items.active.text.color: #ffffff
+
+menu.separator.width: 1
+menu.separator.padding.width: 0
+menu.separator.padding.height: 3
+menu.separator.color: #aaaaaa
+
+
+!# Active Windows.
+
+window.*.border.color: #797979
+window.*.title.separator.color:#ededed
+
+!#
+window.*.title.bg: flat vertical gradient
+window.*.title.bg.color: #f7f7f7
+window.*.title.bg.colorTo: #ededed
+
+window.*.label.bg: parentrelative
+window.active.label.text.color: #2e3436
+
+window.active.button.*.bg: raised splitvertical gradient
+#window.active.button.*.bg:parentrelative
+window.*.button.*.bg.color: #C0C1C2
+window.*.button.*.bg.color.SplitTo: #D7D8D9
+window.*.button.*.bg.colorTo: #B6B7B8
+window.*.button.*.bg.colorTo.SplitTo: #C0C1C2
+window.*.button.*.border.color:#B8B8B8
+
+
+window.active.button.pressed.image.color: #506C7D
+window.active.button.*.image.color: #ffffff
+
+window.active.button.hover.image.color: #ffffff
+window.active.button.disabled.image.color: #dddddd
+
+
+
+window.*.handle.bg: flat vertical gradient
+window.*.handle.bg.color:  #ededed
+window.*.handle.bg.colorTo:  #a9a9a9
+window.*.grip.bg: parentrelative
+window.*.grip.bg.color:  #ededed
+
+!# Inactive
+window.inactive.border.color: #898989
+window.inactive.title.separator.color:#f2f2f2
+window.inactive.title.bg: flat solid
+window.inactive.title.bg.color: #fbfbfb
+window.inactive.title.bg.colorTo: #f8f8f8
+
+
+window.inactive.label.bg: parentrelative
+window.inactive.label.text.color: #999999
+
+window.inactive.button.*.bg: parentrelative
+window.inactive.button.*.image.color: #D9DADA
+window.inactive.button.hover.bg.color: #606060
+
+
+!#osd
+
+osd.border.width: 1
+osd.border.color:  #aaaaaa
+
+osd.bg: flat border solid
+osd.bg.color: #f2f2f2
+
+osd.bg.border.color: #ffffff
+
+osd.label.bg: parentrelative
+osd.label.bg.color: #efefef
+osd.label.bg.border.color: #9c9e9c
+
+osd.label.text.color: #444
+!# yeah whatever, this is fine anyhoo?
+osd.hilight.bg: flat vertical gradient 
+osd.hilight.bg.color: #9ebde5
+osd.hilight.bg.colorTo: #749dcf
+osd.unhilight.bg: flat vertical gradient
+osd.unhilight.bg.color: #BABDB6
+osd.unhilight.bg.colorTo: #efefef
+
+

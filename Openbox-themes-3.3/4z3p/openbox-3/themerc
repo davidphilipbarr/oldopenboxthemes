@@ -1,0 +1,79 @@
+!!Fonts
+
+window.active.label.text.font:DejaVu:pixelsize=11
+window.inactive.label.text.font:DejaVu:pixelsize=11
+#window.active.label.text.font:candara:pixelsize=15:bold:shadow=y:shadowoffset=1:shadowtint=40:bold
+#window.inactive.label.text.font:candara:pixelsize=15:bold:shadow=y:shadowoffset=1:shadowtint=0:bold
+menu.items.font: DejaVu:pixelsize=12
+menu.title.text.font:DejaVu:pixelsize=0
+
+!!General
+
+window.handle.width: 4
+window.client.padding.width: 0
+border.Width: 1
+padding.width: 4
+menu.overlap: 2
+border.color: #b2b2b2
+window.frameColor: #EFEBE7
+window.*.client.color: #EFEBE7
+*.text.justify: center
+
+!!Menu
+menu.border.color: #a5a59c
+menu.title.bg: raised vertical gradient bevel1
+menu.title.bg.color: #4489ca
+menu.title.bg.colorTo: #5b9ddb
+menu.title.text.color: #ffffff
+
+menu.items.bg: flat solid
+menu.items.bg.color: #f7f7f7
+
+menu.items.text.color: #424b55
+menu.items.disabled.text.color: #d4cfca
+
+menu.items.active.bg: flat solid
+menu.items.active.bg.color: #E0E5DA
+menu.items.active.text.color: #444444
+
+!!Active
+
+
+window.active.title.bg: flat vertical gradient
+window.active.title.bg.color: #e6e6e6
+window.active.title.bg.colorTo: #fafafa
+
+window.active.label.bg: parentrelative
+window.active.label.text.color: #8e8f8b
+
+window.active.button.*.bg: parentrelative
+
+window.active.button.*.image.color: #b5b5b5
+
+window.active.button.hover.image.color: #777777
+window.active.button.disabled.image.color: #888888
+
+window.active.handle.bg: raised solid
+window.active.handle.bg.color: #f6f6f6
+window.*.grip.bg: parentrelative
+
+
+!!Inactive
+
+window.inactive.title.bg: flat vertical gradient
+
+window.inactive.title.bg.color: #eeeeee
+window.inactive.title.bg.colorTo: #ffffff
+window.inactive.title.bg.border.color: #fafafa
+window.inactive.label.bg: parentrelative
+window.inactive.label.text.color: #cccccc
+
+window.inactive.button.*.bg: parentrelative
+window.inactive.button.*.image.color: #cccccc
+window.inactive.button.hover.bg.color: #999999
+
+window.inactive.handle.bg: raised solid
+window.inactive.handle.bg.color: #f6f6f6
+window.*.grip.bg: parentrelative
+
+

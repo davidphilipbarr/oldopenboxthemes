@@ -1,0 +1,89 @@
+!!Fonts
+
+!!no fonts!!!!
+!window.active.label.text.font:DejaVu:pixelsize=11:bold:shadow=y:shadowtint=30:shadowoffset=1
+!window.inactive.label.text.font:DejaVu:pixelsize=11:bold
+!menu.items.font: DejaVu:pixelsize=11
+!menu.title.text.font:DejaVu:pixelsize=0
+
+!!General
+
+window.handle.width: 3
+window.client.padding.width: 0
+border.Width: 1
+padding.width: 2
+menu.overlap: 2
+border.color: #333333
+window.frameColor: #EFEBE7
+window.*.client.color: #EFEBE7
+*.text.justify: left
+
+!!Menu
+menu.border.color: #9d9d9d
+menu.title.bg: flat border vertical gradient 
+menu.title.bg.color: #407CCA
+menu.title.bg.colorTo: #3465A4
+menu.title.bg.border.color: #729fcf
+menu.title.text.color: #ffffff
+
+menu.items.bg: flat solid
+menu.items.bg.color: #ececec
+menu.items.bg.border.color: #EFEBE7
+
+menu.items.text.color: #444444
+menu.items.disabled.text.color: #babdb6
+
+menu.items.active.bg: flat solid
+menu.items.active.bg.color: #4884c2
+menu.items.active.bg.colorTo: #4175aa
+menu.items.active.text.color: #f6f8fb
+menu.items.active.bg.border.color: #416c98
+
+!!Active
+
+
+window.active.title.bg: raised vertical gradient
+window.active.title.bg.color: #184c82
+window.active.title.bg.colorTo: #3f73a9
+window.active.title.bg.border.color: #7d9bc4
+
+window.active.label.bg: parentrelative
+window.active.label.text.color: #ffffff
+
+window.active.button.*.bg: parentrelative
+
+#window.active.button.pressed.bg: flat border vertical gradient
+#window.active.button.pressed.bg.color: #496891
+#window.active.button.pressed.bg.colorTo: #7997c0
+#window.active.button.pressed.bg.border.color: #6c8fbd
+window.active.button.pressed.image.color: #4884c2
+window.active.button.*.image.color: #Eeeeee
+
+window.active.button.hover.image.color: #ffffff
+window.active.button.disabled.image.color: #888888
+
+window.active.handle.bg: raised solid
+window.active.handle.bg.color: #dedede
+window.active.handle.bg.colorTo: #eeefee
+window.*.grip.bg: parentrelative
+
+
+!!Inactive
+
+window.inactive.title.bg: raised vertical gradient
+
+window.inactive.title.bg.color: #bcbcbc
+window.inactive.title.bg.colorTo: #ebebeb
+window.inactive.title.bg.border.color: #ffffff
+window.inactive.label.bg: parentrelative
+window.inactive.label.text.color: #555555
+
+window.inactive.button.*.bg: parentrelative
+window.inactive.button.*.image.color: #6f6e6c
+window.inactive.button.hover.bg.color: #999999
+
+window.inactive.handle.bg: raised solid
+window.inactive.handle.bg.color: #dedede
+window.*.grip.bg: parentrelative
+
+

@@ -1,0 +1,143 @@
+!! Menu settings
+!! #86ABD9 = accent colour, change to whatever if you like
+!! i be a mess
+
+!! Global width settings
+border.Width: 1
+padding.width: 3
+padding.height: 2
+window.handle.width: 3
+window.client.padding.width: 0
+menu.overlap: 2
+window.client.padding.width: 0
+window.client.padding.height: 0
+!! Miscellaneous settings
+
+*.bg.highlight: 30
+*.bg.shadow:    0
+
+#window.active.label.text.font:shadow=y:shadowtint=20:shadowoffset=1
+#window.inactive.label.text.font:shadow=y:shadowtint=00:shadowoffset=0
+menu.items.font:shadow=y:shadowtint=0:shadowoffset=1
+
+
+window.*.border.color:  #44484c
+#window.active.title.separator.color: #333333
+window.active.title.separator.color: #4e5865
+
+
+menu.border.width: 1
+menu.border.color: #aaaaaa
+menu.*.bg.highlight: 50
+menu.*.bg.shadow:    0
+
+menu.title.bg:  flat solid bevel1
+menu.title.bg.color: #86ABD9
+menu.title.text.color: #86ABD9
+
+menu.items.bg: flat solid bevel1
+#menu.items.bg.color: #ffffff
+menu.items.bg.color: #eeeeee
+menu.items.text.color: #111111
+menu.items.disabled.text.color: #737573
+
+menu.items.active.bg: Flat solid
+
+menu.items.active.bg.color: #9FBFE6
+
+menu.items.active.text.color: #ffffff
+
+menu.separator.width: 1
+menu.separator.padding.width: 3
+menu.separator.padding.height: 3
+menu.separator.color: #a9a9a9
+
+!! General window settings
+*.justify: left
+
+!! focused window settings
+
+window.active.client.color: #eeeeee
+
+#window.active.title.bg: raised solid
+#window.active.title.bg.color: #86ABD9
+
+!! fancy
+
+window.active.title.bg: Raised Gradient vertical
+window.active.title.bg.color: #9ebde5
+
+window.active.title.bg.colorTo: #86ABD9
+
+!!
+
+window.active.handle.bg: raised solid
+window.active.handle.bg.color: #eeeeee
+
+
+window.active.grip.bg: parentrelative
+window.*.handle.bg.highlight: 80
+window.*.handle.bg.shadow:    45
+
+window.active.label.bg: parentrelative
+window.active.label.text.color: #ffffff
+
+window.active.button.*.bg: parentrelative
+window.active.button.*.image.color: #ffffff
+
+window.active.button.pressed.bg: flat solid bevel1
+!window.active.button.pressed.bg.color: #888888
+window.active.button.pressed.bg.color: #7AA1D2
+window.active.button.pressed.image.color: #eeeeee
+
+!#hover
+window.active.button.hover.bg: flat solid
+window.active.button.hover.image.color: #ffffff
+window.active.button.hover.bg.color: #7AA1D2
+
+window.active.button.disabled.bg: flat solid
+window.active.button.disabled.bg.color: #7AA1D2
+window.active.button.disabled.image.color: #ffffff
+
+
+!! unfocused window settings
+window.inactive.client.color: #eeeeee
+
+window.inactive.title.separator.color: #eeeeee
+
+
+window.inactive.title.bg: flat solid
+window.inactive.title.bg.color: #eeeeee
+
+window.inactive.handle.bg: raised solid
+window.inactive.handle.bg.color: #eeeeee
+
+window.inactive.grip.bg: parentrelative
+
+window.inactive.label.bg: parentrelative
+window.inactive.label.text.color: #000000
+
+window.inactive.button.*.bg: parentrelative
+window.inactive.button.unpressed.image.color: #555555
+
+window.inactive.button.pressed.bg: flat border solid
+window.inactive.button.pressed.bg.color: #aaaaaa
+window.inactive.button.pressed.bg.border.color: #e5e5e5
+
+window.inactive.button.hover.bg: flat solid
+window.inactive.button.hover.bg.color: #e3e3e3
+
+window.inactive.button.disabled.bg:flat solid
+window.inactive.button.disabled.bg.color:  #e3e3e3
+
+
+
+osd.border.width: 1
+osd.border.color:  #eeeeee
+
+osd.bg: flat solid
+osd.bg.color: #eeeeee
+osd.label.text.color: #111111
+
+osd.bg.border.color: #ffffff
+

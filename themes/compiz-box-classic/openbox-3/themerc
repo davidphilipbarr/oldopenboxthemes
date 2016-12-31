@@ -1,0 +1,84 @@
+!!Fonts
+
+window.active.label.text.font:DejaVu:pixelsize=12
+window.inactive.label.text.font:DejaVu:pixelsize=12
+menu.items.font: DejaVu:pixelsize=12:shadow=y:shadowoffset=1:shadowtint=0
+menu.title.text.font:DejaVu:pixelsize=0
+
+
+!!Menu
+menu.border.color: #b8ab8f
+menu.title.bg: raised vertical gradient bevel1
+menu.title.bg.color: #4489ca
+menu.title.bg.colorTo: #5b9ddb
+menu.title.text.color: #ffffff
+
+menu.items.bg: flat solid
+menu.items.bg.color: #f9f7f3
+menu.items.bg.border.color: #EFEBE7
+
+menu.items.text.color: #424b55
+menu.items.disabled.text.color: #d4cfca
+
+menu.items.active.bg: flat vertical gradient border
+menu.items.active.bg.color: #5c9ddb
+menu.items.active.bg.colorTo: #4489c9
+menu.items.active.text.color: #ffffff
+menu.items.active.bg.border.color: #3f77ab
+
+!!Active
+
+
+window.active.title.bg: raised vertical gradient bevel1
+window.active.title.bg.color: #4489ca
+window.active.title.bg.colorTo: #5b9ddb
+
+window.active.label.bg: parentrelative
+window.active.label.text.color: #ffffff
+
+window.active.button.*.bg: parentrelative
+window.active.button.*.bg.color: #7ca3c6
+window.active.button.*.bg.colorTo: #547999
+window.active.button.*.image.color: #eeeeee
+window.active.button.*.bg.border.color: #3d4c5a
+
+
+window.active.button.hover.image.color: #ffffff
+window.active.button.disabled.image.color: #888888
+
+window.active.handle.bg: raised gradient vertical
+window.active.handle.bg.color: #F2EFEA
+window.active.handle.bg.colorTo: #E8E3DB
+window.*.grip.bg: parentrelative
+
+
+!!Inactive
+
+window.inactive.title.bg: raised gradient vertical
+
+window.inactive.title.bg.color: #e0ddd7
+window.inactive.title.bg.colorTo: #EFEBE5
+window.inactive.title.bg.border.color: #ffffff
+window.inactive.label.bg: parentrelative
+window.inactive.label.text.color: #444444
+
+window.inactive.button.*.bg: parentrelative
+window.inactive.button.*.image.color: #6f6e6c
+window.inactive.button.hover.bg.color: #999999
+
+window.inactive.handle.bg: raised gradient vertical
+window.inactive.handle.bg.color: #EFEBE5
+window.inactive.handle.bg.colorTo: #E6E0D7
+window.*.grip.bg: parentrelative
+
+!!General
+
+window.handle.width: 4
+window.client.padding.width: 0
+border.Width: 1
+padding.width: 3
+menu.overlap: 1
+border.color: #4f4f4f
+window.frameColor: #EFEBE7
+window.*.client.color: #EFEBE7
+*.text.justify: left

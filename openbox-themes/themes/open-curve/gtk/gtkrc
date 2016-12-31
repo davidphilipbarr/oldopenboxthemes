@@ -1,0 +1,41 @@
+
+
+style "bluecurve-default"
+{
+
+  bg[NORMAL]      = "#e6e6e6"
+  bg[PRELIGHT]    = "#f5f5f5"
+  bg[ACTIVE]      = "#cccccc"
+  bg[SELECTED]    = "#4464ac"
+  bg[INSENSITIVE] = "#eeeeee"
+
+  base[SELECTED]  = "#4464ac"
+  base[ACTIVE]    = "#5e7ab7"
+  base[INSENSITIVE] = "#f0f0f0"
+
+  text[SELECTED]  = "#ffffff"
+  text[ACTIVE]    = "#ffffff"
+
+  fg[NORMAL]      = "#000000"
+  fg[ACTIVE]      = "#000000"
+  fg[PRELIGHT]    = "#000000"
+  fg[SELECTED]    = "#ffffff"
+  fg[INSENSITIVE] = "#777777"
+
+  #engine "bluecurve" 
+  #{}
+}
+
+
+class "GtkWidget" style "bluecurve-default"
+
+style "menu"
+{
+  bg[PRELIGHT] = "#4464ac"
+  bg[SELECTED]  = "#4464ac"
+  fg[PRELIGHT]  = "#ffffff"
+}
+
+class "GtkMenu" style "menu"
+class "GtkMenuItem" style "menu"
+widget_class "*.GtkMenuItem.*" style "menu"

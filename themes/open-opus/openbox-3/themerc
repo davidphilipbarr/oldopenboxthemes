@@ -1,0 +1,107 @@
+! Menu settings
+
+menu.title.bg: flat solid bevel1
+menu.title.bg.color: #6A82A9
+menu.title.bg.colorTo: #61799f
+menu.title.text.color: #6A82A9
+
+menu.items.bg: flat solid
+menu.items.bg.color: #ffffff
+#menu.items.bg.color: #f7f5f2
+menu.items.text.color: #000000
+menu.items.disabled.text.color: #565248
+
+menu.items.active.bg: flat border solid
+menu.items.active.bg.color: #7590ae
+menu.items.active.bg.colorTo: #596f94
+menu.items.active.text.color: #ffffff
+menu.items.border.color: #5c738d
+!! window settings
+
+!! focused window settings
+
+window.*.title.bg: raised gradient vertical bevel1
+window.*.title.bg.color: #97a9c7
+window.*.title.bg.colorTo: #61799f
+
+window.*.handle.bg: raised gradient vertical
+window.*.handle.bg.color: #7c91b3
+window.*.handle.bg.colorTo: #61799f
+
+window.*.grip.bg: raised gradient vertical
+window.*.grip.bg.color: #e7e4df
+window.*.grip.bg.colorTo: #d6d2c7
+
+
+window.*.label.bg: parentrelative
+window.*.label.text.color: #ffffff
+
+!!buttons
+
+window.*.button.*.bg: flat gradient diagnal border
+window.*.button.*.image.color: #a3a09b
+window.*.button.*.bg.color: #ffffff
+window.*.button.*.bg.colorTo: #d6d2c7
+window.*.button.*.bg.border.color: #4c5e7c
+
+window.*.button.hover.bg: flat gradient diagnal border
+window.*.button.hover.image.color: #3d5f89
+window.*.button.hover.bg.color: #ffffff
+window.*.button.hover.bg.colorTo: #d6d2c7
+
+window.*.button.pressed.bg: flat solid border
+window.*.button.pressed.image.color: #5e6c8a
+window.*.button.pressed.bg.color: #ffffff
+
+window.*.button.disabled.bg: parentrelative
+
+!!ack ack
+
+window.inactive.title.bg: raised gradient vertical bevel1
+window.inactive.title.bg.color: #e2dfd8
+window.inactive.title.bg.colorTo: #c8c4bd
+
+window.inactive.button.*.bg: flat gradient diagnal border
+window.inactive.button.unpressed.image.color: #a3a09b
+window.inactive.button.*.bg.color: #ffffff
+window.inactive.button.*.bg.colorTo: #d6d2c7
+window.inactive.button.*.bg.border.color: #adaaa3
+
+window.inactive.button.disabled.bg: parentrelative
+
+window.inactive.handle.bg: raised solid 
+window.inactive.handle.bg.color: #d5d1ca
+
+!hmm....
+!window.inactive.grip.bg: raised solid
+!window.inactive.grip.bg.color: #f2f1ee
+
+window.inactive.label.bg: parentrelative
+window.inactive.label.text.color: #aaaaaa
+
+!! Global width settings
+
+*.justify: left
+window.*.client.color: #f7f5f2
+
+border.Width: 1
+padding.width: 3
+window.handle.width: 5
+window.client.padding.width: 0
+menu.overlap: 2
+
+!! Miscellaneous settings
+border.color: #000000
+!! font me!
+!! Size wise it's probbaly smarter to use 'pixelsize' here 
+!! but it's easier to match gnome with 'size' :)
+
+window.active.label.text.font: Bitstream Vera Sans:size=9:bold:shadow=y:shadowoffset=1:shadowtint=70
+window.inactive.label.text.font: Bitstream Vera Sans:size=9:bold
+menu.items.font: Bitstream Vera Sans:size=9
+menu.title.text.font: Bitstream Vera Sans:size=0
+
+
+
+
+

@@ -1,0 +1,112 @@
+!! Nyz Openbox theme by Sebastian Sareyko
+!! http://smoon.homelinux.org/
+
+
+!! Menu - Title
+menu.title.bg:			flat crossdiagonal gradient
+menu.title.bg.color:		rgb:c/6/6
+menu.title.bg.colorTo:		rgb:6/3/3
+menu.title.text.color:		white
+menu.title.text.justify:	right
+
+!! Menu - Items
+menu.items.bg:			flat crossdiagonal gradient
+menu.items.bg.color:		grey40
+menu.items.bg.colorTo:		grey20
+menu.items.text.color:		grey85
+menu.items.text.justify:	center
+
+menu.items.active.bg:			flat crossdiagonal gradient
+menu.items.active.bg.color:		rgb:c/6/6
+menu.items.active.bg.colorTo:		rgb:6/3/3
+menu.items.active.text.color:		white
+
+menu.items.disabled.text.color:		rgb:4/2/2
+
+menu.bullet:			bullet.xpm
+
+
+!! Window - Title
+window.active.title.bg:		flat diagonal gradient
+window.active.title.bg.color:	rgb:c/6/6
+window.active.title.bg.colorTo:	rgb:8/4/4
+window.inactive.title.bg:	flat solid
+window.inactive.title.bg.color:	grey30
+
+!! Window - Label
+window.active.label.bg:			flat crossdiagonal gradient
+window.active.label.bg.color:		grey40
+window.active.label.bg.colorTo:		grey20
+window.active.label.text.color:		white
+window.inactive.label.bg:		flat crossdiagonal gradient
+window.inactive.label.bg.color:		grey30
+window.inactive.label.bg.colorTo:	grey20
+window.inactive.label.text.color:	grey60
+window.label.text.justify:		right
+
+!! Window - Client
+window.active.client.color:	rgb:c/6/6
+window.inactive.client.color:	grey30
+
+!! Window - Handle (Unten aussen)
+window.active.handle.bg:		flat crossdiagonal gradient
+window.active.handle.bg.color:		rgb:c/6/6
+window.active.handle.bg.colorTo:	rgb:6/3/3
+
+window.inactive.handle.bg:		flat solid
+window.inactive.handle.bg.color:	grey30
+
+!! Window - Grip (Unten Mitte)
+window.active.grip.bg:		flat crossdiagonal gradient
+window.active.grip.bg.color:	grey40
+window.active.grip.bg.colorTo:	grey20
+
+window.inactive.grip.bg:		flat crossdiagonal gradient
+window.inactive.grip.bg.color:		grey30
+window.inactive.grip.bg.colorTo:	grey20
+
+!! Window - Buttons
+window.active.button.unpressed.bg:		flat diagonal gradient
+window.active.button.unpressed.bg.color:	rgb:8/4/4
+window.active.button.unpressed.bg.colorTo:	rgb:a/5/5
+window.active.button.unpressed.image.color:	rgb:4/2/2
+
+window.inactive.button.unpressed.bg:		flat solid
+window.inactive.button.unpressed.bg.color:	grey30
+window.inactive.button.unpressed.image.color:	grey20
+
+window.active.button.pressed.bg:		flat gradient crossdiagonal
+window.active.button.pressed.bg.color:		grey40
+window.active.button.pressed.bg.colorTo:	grey20
+
+window.inactive.button.pressed.bg:		flat gradient crossdiagonal
+window.inactive.button.pressed.bg.color:	grey40
+window.inactive.button.pressed.bg.colorTo:	grey20
+
+window.active.button.toggled.bg:		flat gradient crossdiagonal
+window.active.button.toggled.bg.color:		grey40
+window.active.button.toggled.bg.colorTo:	grey20
+
+window.inactive.button.toggled.bg:		flat gradient crossdiagonal
+window.inactive.button.toggled.bg.color:	grey40
+window.inactive.button.toggled.bg.colorTo:	grey20
+
+window.active.button.disabled.bg:		flat
+window.active.button.disabled.bg.color:		#788488
+window.active.button.disabled.image.color:	#181818
+
+window.inactive.button.disabled.bg:		flat
+window.inactive.button.disabled.bg.color:	#485050
+window.inactive.button.disabled.image.color:	black
+
+border.color:			grey10
+padding.width:			1
+border.width:			2
+window.handle.width:		4
+window.client.padding.width:	1
+
+
+!! Fonts
+window.active.label.text.font: Bitstream Vera Sans:pixelsize=10
+menu.title.text.font: Bitstream Very Sans:pixelsize=10
+menu.items.font: Bitstream Vera Sans:pixelsize=10

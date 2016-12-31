@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+	<name>Ecru</name>
+	<creator>David Barr</creator>
+	<colors>
+		<background>FFFFFF</background>
+		<navigationBackground>E0E0E0</navigationBackground>
+		<navigationBorder>FFFFFF</navigationBorder>
+		<tabText>212121</tabText>
+		<tabTextOver>232323</tabTextOver>
+		<tabTextHighlighted>262626</tabTextHighlighted>
+		<tabTextSelected>232323</tabTextSelected>
+		<tabBackground>D3D3D3</tabBackground>
+		<tabBackgroundOver>D9E0E3</tabBackgroundOver>
+		<tabBackgroundSelected>D1E1E8</tabBackgroundSelected>
+		<tabBackgroundSelectedOver>E8E8E8</tabBackgroundSelectedOver>
+		<header>232323</header>
+		<loader>DED1E8</loader>
+		<error>CC0000</error>
+		<text>141414</text>
+		<textDisabled>555555</textDisabled>
+		<textSelected>CFD4D8</textSelected>
+		<link>606060</link>
+		<usernameLink>000000</usernameLink>
+		<hashtagLink>727272</hashtagLink>
+		<linkOver>CA000E</linkOver>
+		<date>555555</date>
+		<tweetBorder>D1D1D1</tweetBorder>
+		<tweetBorderSelected>B1CAD5</tweetBorderSelected>
+		<tweetBorderSelectedOver>D1E1E8</tweetBorderSelectedOver>
+		<tweetBackground>FFFFFF</tweetBackground>
+		<tweetBackgroundOver>B1CAD5</tweetBackgroundOver>
+		<tweetReplyBackground>D1E1E8</tweetReplyBackground>
+		<tweetReplyBackgroundOver>B1CAD5</tweetReplyBackgroundOver>
+		<tweetBackgroundSelected>B1CAD5</tweetBackgroundSelected>
+		<scrollbar>D3D3D3</scrollbar>
+		<scrollbarOver>D1E1E8</scrollbarOver>
+		<scrollbarDisabled>E0E0E0</scrollbarDisabled>
+		<scrollbarArrows>222222</scrollbarArrows>
+		<scrollbarBackground>BDBDBD</scrollbarBackground>
+		<inputText>353535</inputText>
+		<inputBorder>6D6D6D</inputBorder>
+		<inputBorderFocused>B1CAD5</inputBorderFocused>
+		<inputBackground>FFFFFF</inputBackground>
+		<overlayBackground>959595</overlayBackground>
+		<checkboxCheck>CFD4D8</checkboxCheck>
+		<checkboxBackground>B1CAD5</checkboxBackground>
+		<checkboxBackgroundOver>424242</checkboxBackgroundOver>
+		<slider>9C9C9C</slider>
+		<sliderOver>D1E1E8</sliderOver>
+		<sliderDisabled>E0E0E0</sliderDisabled>
+		<sliderBackground>BBBBBB</sliderBackground>
+		<alertText>000000</alertText>
+		<alertBackground>D1E1E8</alertBackground>
+	</colors>
+</theme>

@@ -1,0 +1,12 @@
+[Icon Theme]
+Name=blue-milk-mini
+Comment=based on icons from rephorm (rephorm.com)
+Inherits=gnome
+Directories=48x48/filesystems
+
+[48x48/filesystems]
+Size=48
+Context=FileSystems
+Type=Scalable
+
+

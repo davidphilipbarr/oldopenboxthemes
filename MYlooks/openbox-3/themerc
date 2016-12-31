@@ -1,0 +1,64 @@
+!#MENU
+
+menu.border.color: GTK_FG_INSENSITIVE
+menu.items.bg: flat solid
+menu.items.bg.color: GTK_BG_PRELIGHT
+menu.items.text.color: GTK_FG_NORMAL
+menu.items.justify: left
+
+menu.items.disabled.text.color: GTK_TEXT_INSENSITIVE
+menu.items.active.bg: flat solid
+menu.items.active.bg.color: GTK_BG_SELECTED
+menu.items.active.bg.border.color: GTK_BG_NORMAL
+menu.items.active.text.color: GTK_TEXT_SELECTED
+
+window.active.client.color: GTK_BG_PRELIGHT
+window.inactive.client.color: GTK_BG_NORMAL
+
+!#TITLE
+
+window.active.title.bg: raised vertical gradient bevel1
+window.active.title.bg.color: GTK_BG_SELECTED
+window.active.title.bg.colorTo: GTK_BASE_PRELIGHT
+
+window.inactive.title.bg: flat border solid
+window.inactive.title.bg.color: GTK_BG_NORMAL
+window.inactive.title.bg.colorTo: GTK_BG_NORMAL
+window.inactive.title.bg.border.color:GTK_BG_PRELIGHT
+
+window.*.label.bg: parentrelative
+window.active.label.text.color:  GTK_TEXT_SELECTED
+window.inactive.label.text.color: GTK_TEXT_INSENSITIVE
+window.label.text.justify: left
+
+!#BUTTONS
+
+window.*.button.*.bg: parentrelative
+window.active.button.*.image.color: GTK_TEXT_SELECTED
+window.inactive.button.*.image.color: GTK_TEXT_INSENSITIVE
+
+window.*.button.pressed.image.color: GTK_BASE_INSENSITIVE
+
+window.active.button.disabled.image.color: GTK_BG_SELECTED
+window.inactive.button.disabled.image.color: GTK_BG_NORMAL
+
+!#HANDLE/GRIPS
+
+window.*.handle.bg: raised solid
+window.*.handle.bg.color: GTK_BG_NORMAL
+window.*.grip.bg: parentrelative
+
+!#GENERAL
+
+border.width: 1
+padding.width: 3
+window.handle.width: 0
+window.client.padding.width: 0
+border.color: GTK_FG_NORMAL
+menu.overlap: 0
+window.handle.width: 4
+
+window.active.label.text.font:DejaVu:pixelsize=12:shadow=n:shadowoffset=1:shadowtint=40:bold
+window.inactive.label.text.font:DejaVu:pixelsize=12:shadow=n:shadowoffset=1:shadowtint=4:bold
+menu.items.font: DejaVu:pixelsize=12
+menu.title.text.font:DejaVu:pixelsize=0

@@ -1,0 +1,4 @@
+#define gbullet_width 4
+#define gbullet_height 7
+static unsigned char gbullet_bits[] = {
+   0x01, 0x03, 0x07, 0x0f, 0x07, 0x03, 0x01 };

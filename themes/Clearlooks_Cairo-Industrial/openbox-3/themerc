@@ -1,0 +1,101 @@
+!!General
+
+window.handle.width: 0
+window.client.padding.width: 0
+border.Width: 1
+padding.width: 3
+menu.overlap: 1
+#border.color: #888888
+border.color: #4A4A4A
+window.frameColor: #EFEBE7
+window.*.client.color: #EFEBE7
+*.text.justify: left
+!!Fonts
+
+window.active.label.text.font:Bitstream Vera Sans:pixelsize=12:shadow=y:shadowoffset=1:shadowtint=0:bold
+window.inactive.label.text.font:Bitstream Vera Sans:pixelsize=12:shadow=y:shadowoffset=1:shadowtint=1:bold
+menu.items.font: Bitstream Vera Sans:pixelsize=12:shadow=y:shadowoffset=2:shadowtint=0
+menu.title.text.font: Bitstream Vera Sans:size=0
+
+!!Menu
+menu.border.color: #a4a4a4
+menu.title.bg: flat gradient split
+menu.title.bg.color: #658EB4
+menu.title.bg.colorTo: #658EB4
+menu.title.text.color: #658EB4
+
+menu.items.bg: flat solid
+menu.items.bg.color: #f6f6f6
+menu.items.bg.border.color: #EFEBE7
+
+menu.items.text.color: #333333
+menu.items.disabled.text.color: #d4cfca
+
+menu.items.active.bg: flat gradient vertical border
+menu.items.active.bg.color: #6988a8
+menu.items.active.bg.colorTo: #5b7793
+menu.items.active.text.color: #f6f8fb
+menu.items.active.bg.border.color: #576e84
+
+!!Active
+
+
+window.active.title.bg: flat border gradient split 
+window.active.title.bg.color: #6786A6
+window.active.title.bg.colorTo: #5E7D9D
+window.active.title.bg.border.color: #8FACC8
+!!pipe
+!#window.active.title.bg: raised gradient split 
+!#window.active.title.bg.color: #658EB4
+!#window.active.title.bg.colorTo: #658EB4
+!#window.active.title.bg.border.color: #93B6D6
+
+window.active.label.bg: parentrelative
+window.active.label.text.color: #ffffff
+
+window.active.button.*.bg: parentrelative
+window.active.button.*.bg.color: #7ca3c6
+window.active.button.*.bg.colorTo: #547999
+window.active.button.*.image.color: #ffffff
+window.active.button.*.bg.border.color: #3d4c5a
+
+#window.active.button.hover.bg: parentrelative
+window.active.button.hover.bg.color: #7AABDA
+window.active.button.hover.bg.colorTo: #688ba8
+#window.active.button.pressed.bg: flat solid 
+window.active.button.pressed.bg.color: #537797
+window.active.button.pressed.bg.colorTo: #50708d
+window.active.button.disabled.image.color: #888888
+
+window.active.handle.bg: raised gradient vertical
+window.active.handle.bg.color: #f7f7f7
+window.active.handle.bg.colorTo: #e5e3ec
+window.*.grip.bg: parentrelative
+
+
+!!Inactive
+
+window.inactive.title.bg: flat border gradient split
+window.inactive.title.bg.color: #F7F7F7
+window.inactive.title.bg.colorTo: #EFEFEF
+window.inactive.title.bg.border.color: #ffffff
+window.inactive.label.bg: parentrelative
+window.inactive.label.text.color: #39424A
+
+window.inactive.button.*.bg: parentrelative
+window.inactive.button.*.bg.color: #f1eeea
+window.inactive.button.*.bg.colorTo: #d8cfc7
+window.inactive.button.*.image.color: #39424A
+window.inactive.button.*.bg.border.color: #8f8173
+#window.inactive.button.disabled.bg: parentrelative
+
+#window.inactive.button.pressed.bg.color: #4f5051
+window.inactive.button.hover.bg: parentrelative
+window.inactive.button.hover.bg.color: #ffffff
+window.inactive.button.disabled.image.color: #ffffff
+
+window.inactive.handle.bg: raised gradient vertical
+window.inactive.handle.bg.color: #f7f7f7
+window.inactive.handle.bg.colorTo: #e5e3ec
+window.*.grip.bg: parentrelative
+

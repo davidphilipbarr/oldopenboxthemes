@@ -1,0 +1,44 @@
+window.client.padding.width: 0
+border.Width: 1
+padding.width: 3
+window.*.client.color: #fbf8f1
+
+border.color: #4f4f4f
+menu.border.color: #b8ab8f
+*.title.bg: raised solid
+*.bg.color: #6798cb
+*.bg.border.color: #204a87
+*.label.bg: parentrelative
+window.inactive.title.bg: flat border solid
+window.inactive.title.bg.color: #fbf8f1
+window.inactive.titlebg.border.color: #ffffff
+*.button.*.bg: parentrelative
+window.active.button.hover.bg: flat solid
+window.active.button.*.image.color: #fefefe
+window.active.button.hover.image.color: #ffffff
+window.*.button.pressed.bg: flat solid
+window.active.button.hover.bg.color: #79A8DA
+window.active.button.pressed.bg.color: #5279A4
+window.inactive.button.*.image.color:  #666564
+
+*.handle.bg: raised solid
+*.handle.bg.color: #FBF8F1
+*.grip.bg: parentrelative
+window.handle.width: 4
+
+menu.items.bg: flat solid
+menu.items.bg.color: #fdfbf7
+menu.items.active.bg: flat vertical gradient border
+menu.items.active.bg.color: #5c9ddb
+menu.items.active.bg.colorTo: #4489c9
+menu.items.active.text.color: #ffffff
+menu.items.active.bg.border.color: #3f77ab
+menu.overlap: 2
+menu.items.text.color: #444444
+*.text.justify: left
+*.active.*text.color: #ffffff
+
+*text.color: #777674
+*.disabled.*.color: #b5b3ac
+*.text.font:Bitstream Vera Sans:pixelsize=12:bold
+menu.items.font: Bitstream Vera Sans:pixelsize=12

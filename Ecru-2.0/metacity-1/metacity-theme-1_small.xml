@@ -1,0 +1,406 @@
+<?xml version="1.0"?>
+<metacity_theme>
+<info>
+  <name>Ecru</name>
+  <author>David Barr</author>
+  <copyright>GPL</copyright>
+  <date>July, 2008</date>
+  <description>Ecru metacity theme</description>
+</info>
+
+<frame_geometry name="normal">
+  <distance name="left_width" value="1"/>
+  <distance name="right_width" value="1"/>
+  <distance name="bottom_height" value="1"/>
+  <distance name="left_titlebar_edge" value="3"/>
+  <distance name="right_titlebar_edge" value="3"/>
+  <distance name="title_vertical_pad" value="3"/>
+  <border name="title_border" left="0" right="0" top="1" bottom="1"/>
+  <border name="button_border" left="0" right="0" top="1" bottom="1"/>
+  <aspect_ratio name="button" value="1.3"/>
+</frame_geometry>
+
+<frame_geometry name="no_borders" parent="normal">
+  <distance name="left_width" value="0"/>
+  <distance name="right_width" value="0"/>
+  <distance name="bottom_height" value="0"/>
+  <distance name="left_titlebar_edge" value="3"/>
+  <distance name="right_titlebar_edge" value="3"/>
+  <border name="title_border" left="0" right="0" top="0" bottom="1"/>
+  <border name="button_border" left="0" right="0" top="0" bottom="1"/>
+</frame_geometry>
+
+<frame_geometry name="utility" parent="normal" title_scale="small">
+  <distance name="left_width" value="1"/>
+  <distance name="right_width" value="1"/>
+  <distance name="bottom_height" value="1"/>
+  <distance name="left_titlebar_edge" value="3"/>
+  <distance name="right_titlebar_edge" value="3"/>
+  <distance name="title_vertical_pad" value="3"/>
+</frame_geometry>
+
+<frame_geometry name="border" has_title="false">
+  <distance name="left_width" value="1"/>
+  <distance name="right_width" value="1"/>
+  <distance name="bottom_height" value="1"/>
+  <distance name="left_titlebar_edge" value="0"/>
+  <distance name="right_titlebar_edge" value="0"/>
+  <distance name="button_width" value="0"/>
+  <distance name="button_height" value="0"/>
+  <distance name="title_vertical_pad" value="4"/>
+  <border name="title_border" left="0" right="0" top="0" bottom="0"/>
+  <border name="button_border" left="0" right="0" top="0" bottom="0"/>
+</frame_geometry>
+
+<draw_ops name="bg_blank">
+</draw_ops>
+
+<!-- need to split this sucker? -->
+
+<draw_ops name="bg_topbar">
+  <gradient type="vertical" x="0" y="0" width="width" height="height">
+    <color value="gtk:bg[SELECTED]"/>
+    <color value="shade/gtk:bg[SELECTED]/1.2"/>
+  </gradient>
+  <line color="shade/gtk:bg[SELECTED]/1.1" width="1" x1="0" y1="0" x2="width" y2="0"/>
+</draw_ops>
+
+<draw_ops name="bg_topbar_inactive">
+  <gradient type="vertical" x="0" y="0" width="width" height="height">
+    <color value="gtk:bg[SELECTED]"/>
+    <color value="shade/gtk:bg[SELECTED]/1.1"/>
+  </gradient>
+  <line color="shade/gtk:bg[SELECTED]/1.1" width="1" x1="0" y1="0" x2="width" y2="0"/>
+</draw_ops>
+
+<draw_ops name="bg_left_title">
+  <include name="bg_topbar"/>
+  <line color="shade/gtk:bg[SELECTED]/0.8" width="1" x1="0" y1="0" x2="0" y2="height"/>
+</draw_ops>
+
+<draw_ops name="bg_right_title">
+  <include name="bg_topbar"/>
+  <line color="shade/gtk:bg[SELECTED]/0.8" width="1" x1="width-1" y1="0" x2="width-1" y2="height"/>
+</draw_ops>
+
+<draw_ops name="bg_bottom_title">
+  <line color="shade/gtk:bg[SELECTED]/0.8" width="1" x1="1" y1="0" x2="width-1" y2="0"/>
+</draw_ops>
+
+
+
+<draw_ops name="outline">
+
+  <rectangle color="shade/gtk:bg[SELECTED]/0.6" x="0" y="0" width="width-1" height="height-1"/>
+
+</draw_ops>
+
+<draw_ops name="bg_window">
+
+<include name="outline"/>
+
+</draw_ops>
+
+<draw_ops name="menu_button_icon">
+  <include name="bg_topbar"/>
+<icon  x="(width-mini_icon_width)/2" y="(height-mini_icon_height)/2" width="mini_icon_width" height="mini_icon_height"/>
+</draw_ops>
+
+<draw_ops name="menu_button_icon_unfocused">
+  <include name="bg_topbar"/>
+<icon  x="(width-mini_icon_width)/2" y="(height-mini_icon_height)/2" width="mini_icon_width" height="mini_icon_height"/>
+</draw_ops>
+
+<draw_ops name="menu_button">
+  <include name="bg_topbar"/>
+	<include name="menu_button_icon"/>
+</draw_ops>
+<draw_ops name="menu_button_pressed">
+  <include name="bg_topbar"/>
+	<include name="menu_button_icon"/>
+</draw_ops>
+<draw_ops name="menu_button_unfocused">
+  <include name="bg_topbar_inactive"/>
+	<include name="menu_button_icon_unfocused"/>
+</draw_ops>
+
+
+<draw_ops name="minimize_button">
+  <include name="bg_topbar"/>
+  <rectangle color="shade/gtk:fg[SELECTED]/.98" x="width/2-3" y="height/2-3+4" width="6" height="2"/>
+</draw_ops>
+
+<draw_ops name="minimize_button_pressed">
+  <include name="bg_topbar"/>
+  <rectangle color="gtk:fg[SELECTED]" x="width/2-3" y="height/2-3+4" width="6" height="2"/>
+</draw_ops>
+
+
+<draw_ops name="minimize_button_unfocused">
+  <include name="bg_topbar_inactive"/>
+  <rectangle color="shade/gtk:fg[SELECTED]/.6" x="width/2-3" y="height/2-3+4" width="6" height="2"/>
+</draw_ops>
+
+
+
+<!-- MAX ///////////////////////////////////////////////////////////////-->
+
+<draw_ops name="maximize_button">
+  <include name="bg_topbar"/>
+<rectangle color="shade/gtk:fg[SELECTED]/.98" x="width/2-4" y="height/2-3" width="6" height="6"/>
+  <line color="shade/gtk:fg[SELECTED]/.98" width="1" x1="width/2-4" y1="height/2-2" x2="width/2+3" y2="height/2-2"/>
+</draw_ops>
+
+<draw_ops name="maximize_button_pressed">
+  <include name="bg_topbar"/>
+<rectangle color="gtk:fg[SELECTED]" x="width/2-4" y="height/2-3" width="6" height="6"/>
+  <line color="gtk:fg[SELECTED]" width="1" x1="width/2-4" y1="height/2-2" x2="width/2+3" y2="height/2-2"/>
+</draw_ops>
+
+
+<draw_ops name="maximize_button_unfocused">
+  <include name="bg_topbar_inactive"/>
+<rectangle color="shade/gtk:fg[SELECTED]/.6" x="width/2-4" y="height/2-3" width="6" height="6"/>
+  <line color="shade/gtk:fg[SELECTED]/.6" width="1" x1="width/2-4" y1="height/2-2" x2="width/2+3" y2="height/2-2"/>
+</draw_ops>
+
+
+
+<!-- max_toggle ///////////////////////////////////////////////////////////////-->
+
+<draw_ops name="restore_button">
+  <include name="bg_topbar"/>
+<rectangle color="gtk:fg[SELECTED]" x="width/2-4" y="height/2-3" width="6" height="6"/>
+</draw_ops>
+
+<draw_ops name="restore_button_pressed">
+  <include name="bg_topbar"/>
+<rectangle color="gtk:fg[SELECTED]" x="width/2-4" y="height/2-3" width="6" height="6"/>
+</draw_ops>
+
+
+<draw_ops name="restore_button_unfocused">
+  <include name="bg_topbar_inactive"/>
+<rectangle color="shade/gtk:fg[SELECTED]/.6" x="width/2-4" y="height/2-3" width="6" height="6"/>
+</draw_ops>
+
+<!-- CLOSE ///////////////////////////////////////////////////////////////-->
+
+<draw_ops name="close_button">
+  <include name="bg_topbar"/>
+  <line color="shade/gtk:fg[SELECTED]/.98" width="1" x1="width/2-3" y1="height/2-3" x2="width/2+4" y2="height/2+4"/>
+
+  <line color="shade/gtk:fg[SELECTED]/.98" width="1" x1="width/2-3" y1="height/2+3" x2="width/2+4" y2="height/2-4"/>
+
+
+</draw_ops>
+
+<draw_ops name="close_button_pressed">
+  <include name="bg_topbar"/>
+  <line color="gtk:fg[SELECTED]" width="1" x1="width/2-3" y1="height/2-3" x2="width/2+4" y2="height/2+4"/>
+
+  <line color="gtk:fg[SELECTED]" width="1" x1="width/2-3" y1="height/2+3" x2="width/2+4" y2="height/2-4"/>
+</draw_ops>
+
+
+<draw_ops name="close_button_unfocused">
+  <include name="bg_topbar_inactive"/>
+  <line color="shade/gtk:fg[SELECTED]/.6" width="1" x1="width/2-3" y1="height/2-3" x2="width/2+4" y2="height/2+4"/>
+
+  <line color="shade/gtk:fg[SELECTED]/.6" width="1" x1="width/2-3" y1="height/2+3" x2="width/2+4" y2="height/2-4"/>
+
+</draw_ops>
+
+
+<!-- HSADE ///o rly?>/////////////////////////////////////////////////-->
+
+<draw_ops name="shade_button">
+  <include name="bg_topbar"/>
+  <rectangle color="gtk:fg[SELECTED]" x="width/2-4" y="height/2-3" width="8" height="2"/>
+</draw_ops>
+
+<draw_ops name="shade_button_pressed">
+  <include name="bg_topbar"/>
+  <rectangle color="gtk:fg[SELECTED]" x="width/2-4" y="height/2-3" width="8" height="2"/>
+</draw_ops>
+
+
+<draw_ops name="shade_button_unfocused">
+  <include name="bg_topbar_inactive"/>
+  <rectangle color="shade/gtk:fg[SELECTED]/.6" x="width/2-4" y="height/2-3" width="8" height="2"/>
+</draw_ops>
+
+
+<!-- FOCUS TITLE -->
+
+<draw_ops name="title_focused">
+  <include name="bg_topbar"/>
+  <title color="gtk:fg[SELECTED]" x="4" y="((height-title_height)/2) `max` 0"/>
+</draw_ops>
+
+
+<!-- UNFOCUS TITLE -->
+<draw_ops name="title_unfocused">
+  <include name="bg_topbar_inactive"/>
+  <title color="shade/gtk:fg[SELECTED]/.6" x="4" y="((height-title_height)/2) `max` 0"/>
+</draw_ops>
+
+
+<!-- build Focus window frame -->
+<frame_style name="normal_focused" geometry="normal">
+  <piece position="entire_background" draw_ops="bg_window"/>
+  <piece position="title" draw_ops="title_focused"/>
+  <piece position="left_titlebar_edge" draw_ops="bg_left_title"/>
+  <piece position="right_titlebar_edge" draw_ops="bg_right_title"/>
+  <piece position="bottom_titlebar_edge" draw_ops="bg_bottom_title"/>
+  <button function="close" state="normal" draw_ops="close_button"/>
+  <button function="close" state="pressed" draw_ops="close_button_pressed"/>
+
+  <button function="minimize" state="normal" draw_ops="minimize_button"/>
+  <button function="minimize" state="pressed" draw_ops="minimize_button_pressed"/>
+
+  <button function="maximize" state="normal" draw_ops="maximize_button"/>
+  <button function="maximize" state="pressed" draw_ops="maximize_button_pressed"/>
+<!--  
+<button function="shaded" state="normal" draw_ops="shade_button"/>
+  <button function="shaded" state="pressed" draw_ops="shade_button_pressed"/>
+-->
+  <button function="menu" state="normal" draw_ops="menu_button"/>
+  <button function="menu" state="pressed" draw_ops="menu_button"/>
+
+</frame_style>
+<!-- Shaded focus -->
+<frame_style name="normal_shaded_focused" geometry="normal" parent="normal_focused">
+  <piece position="entire_background" draw_ops="outline"/>
+  <piece position="bottom_titlebar_edge" draw_ops="bg_blank"/>
+</frame_style>
+
+
+<!-- build UNFocus window frame -->
+<frame_style name="normal_unfocused" geometry="normal">
+  <piece position="entire_background" draw_ops="bg_window"/>
+  <piece position="title" draw_ops="title_unfocused"/>
+  <piece position="left_titlebar_edge" draw_ops="bg_left_title"/>
+  <piece position="right_titlebar_edge" draw_ops="bg_right_title"/>
+  <piece position="bottom_titlebar_edge" draw_ops="bg_bottom_title"/>
+  <button function="close" state="normal" draw_ops="close_button_unfocused"/>
+  <button function="close" state="pressed" draw_ops="close_button_pressed"/>
+  <button function="minimize" state="normal" draw_ops="minimize_button_unfocused"/>
+  <button function="minimize" state="pressed" draw_ops="minimize_button_pressed"/>
+<!-- 
+<button function="shaded" state="normal" draw_ops="shade_button_unfocused"/>
+  <button function="shaded" state="pressed" draw_ops="shade_button_pressed"/>
+-->  
+<button function="maximize" state="normal" draw_ops="maximize_button_unfocused"/>
+  <button function="maximize" state="pressed" draw_ops="maximize_button_pressed"/>
+  <button function="menu" state="normal" draw_ops="menu_button"/>
+  <button function="menu" state="pressed" draw_ops="menu_button"/>
+</frame_style>
+
+
+<!-- Shaded UN-focus -->
+<frame_style name="normal_shaded_unfocused" geometry="normal" parent="normal_unfocused">
+  <piece position="entire_background" draw_ops="outline"/>
+  <piece position="bottom_titlebar_edge" draw_ops="bg_blank"/>
+</frame_style>
+
+
+<!-- MAX FOCUS -->
+<frame_style name="maximized_focused" geometry="no_borders" parent="normal_focused">
+  <piece position="entire_background" draw_ops="outline"/>
+  <piece position="left_titlebar_edge" draw_ops="bg_topbar"/>
+  <piece position="right_titlebar_edge" draw_ops="bg_topbar"/>
+  <button function="maximize" state="normal" draw_ops="restore_button"/>
+  <button function="maximize" state="pressed" draw_ops="restore_button_pressed"/>
+
+</frame_style>
+<!-- MAX FOCUS toggle, wtf??-->
+<frame_style name="maximized_shaded_focused" geometry="no_borders" parent="maximized_focused">
+  <piece position="bottom_titlebar_edge" draw_ops="bg_blank"/>
+</frame_style>
+
+
+<!-- MAX UNFOCUS -->
+<frame_style name="maximized_unfocused" geometry="no_borders" parent="normal_unfocused">
+  <piece position="entire_background" draw_ops="outline"/>
+  <piece position="left_titlebar_edge" draw_ops="bg_topbar"/>
+  <piece position="right_titlebar_edge" draw_ops="bg_topbar"/>
+  <button function="maximize" state="normal" draw_ops="restore_button_unfocused"/>
+  <button function="maximize" state="pressed" draw_ops="restore_button_pressed"/>
+
+</frame_style>
+
+<!-- MAX UNFOCUS toggle, wtf??-->
+<frame_style name="maximized_shaded_unfocused" geometry="no_borders" parent="maximized_unfocused">
+  <piece position="bottom_titlebar_edge" draw_ops="bg_blank"/>
+</frame_style>
+
+
+<!-- Transient windows? -->
+<frame_style name="utility_focused" geometry="utility" parent="normal_focused">
+  <piece position="entire_background" draw_ops="outline"/>
+</frame_style>
+
+<frame_style name="utility_shaded_focused" geometry="utility" parent="utility_focused">
+  <piece position="bottom_titlebar_edge" draw_ops="bg_blank"/>
+</frame_style>
+
+<frame_style name="utility_unfocused" geometry="utility" parent="normal_unfocused">
+  <piece position="entire_background" draw_ops="outline"/>
+</frame_style>
+
+<frame_style name="utility_shaded_unfocused" geometry="utility" parent="utility_unfocused">
+  <piece position="bottom_titlebar_edge" draw_ops="bg_blank"/>
+</frame_style>
+
+<frame_style name="border" geometry="border" parent="normal_unfocused">
+  <piece position="entire_background" draw_ops="outline"/>
+  <piece position="title" draw_ops="bg_blank"/>
+</frame_style>
+
+<frame_style_set name="normal">
+  <frame focus="yes" state="normal" resize="both" style="normal_focused"/>
+  <frame focus="no" state="normal" resize="both" style="normal_unfocused"/>
+  <frame focus="yes" state="maximized" style="maximized_focused"/>
+  <frame focus="no" state="maximized" style="maximized_unfocused"/>
+  <frame focus="yes" state="shaded" style="normal_shaded_focused"/>
+  <frame focus="no" state="shaded" style="normal_shaded_unfocused"/>
+  <frame focus="yes" state="maximized_and_shaded" style="maximized_shaded_focused"/>
+  <frame focus="no" state="maximized_and_shaded" style="maximized_shaded_unfocused"/>
+</frame_style_set>
+
+<frame_style_set name="utility" parent="normal">
+  <frame focus="yes" state="normal" resize="both" style="utility_focused"/>
+  <frame focus="no" state="normal" resize="both" style="utility_unfocused"/>
+  <frame focus="yes" state="maximized" style="utility_focused"/>
+  <frame focus="no" state="maximized" style="utility_unfocused"/>
+  <frame focus="yes" state="shaded" style="utility_shaded_focused"/>
+  <frame focus="no" state="shaded" style="utility_shaded_unfocused"/>
+  <frame focus="yes" state="maximized_and_shaded" style="utility_shaded_focused"/>
+  <frame focus="no" state="maximized_and_shaded" style="utility_shaded_unfocused"/>
+</frame_style_set>
+
+<frame_style_set name="border">
+  <frame focus="yes" state="normal" resize="both" style="border"/>
+  <frame focus="no" state="normal" resize="both" style="border"/>
+  <frame focus="yes" state="maximized" style="border"/>
+  <frame focus="no" state="maximized" style="border"/>
+  <frame focus="yes" state="shaded" style="border"/>
+  <frame focus="no" state="shaded" style="border"/>
+  <frame focus="yes" state="maximized_and_shaded" style="border"/>
+  <frame focus="no" state="maximized_and_shaded" style="border"/>
+</frame_style_set>
+
+<window type="normal" style_set="normal"/>
+<window type="dialog" style_set="normal"/>
+<window type="modal_dialog" style_set="normal"/>
+<window type="menu" style_set="normal"/>
+<window type="utility" style_set="utility"/>
+<window type="border" style_set="border"/>
+
+<menu_icon function="close" state="normal" draw_ops="close_button"/>
+<menu_icon function="maximize" state="normal" draw_ops="maximize_button"/>
+<menu_icon function="unmaximize" state="normal" draw_ops="restore_button"/>
+<menu_icon function="minimize" state="normal" draw_ops="minimize_button"/>
+
+</metacity_theme>

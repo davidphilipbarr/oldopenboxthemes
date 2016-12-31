@@ -1,0 +1,129 @@
+? openbox_dock_bevel_grip.patch
+Index: openbox/dock.c
+===================================================================
+RCS file: /cvs/cvsroot/openbox/openbox/dock.c,v
+retrieving revision 1.40
+diff -p -u -r1.40 dock.c
+--- openbox/dock.c	25 Sep 2005 14:45:24 -0000	1.40
++++ openbox/dock.c	31 Oct 2005 13:49:24 -0000
+@@ -60,7 +60,7 @@ void dock_startup(gboolean reconfig)
+         XSetWindowBorderWidth(ob_display, dock->frame, ob_rr_theme->bwidth);
+ 
+         RrAppearanceFree(dock->a_frame);
+-        dock->a_frame = RrAppearanceCopy(ob_rr_theme->a_unfocused_title);
++        dock->a_frame = RrAppearanceCopy(ob_rr_theme->a_menu);
+ 
+         stacking_add(DOCK_AS_WINDOW(dock));
+ 
+@@ -88,7 +88,7 @@ void dock_startup(gboolean reconfig)
+                                 RrVisual(ob_rr_inst),
+                                 CWOverrideRedirect | CWEventMask,
+                                 &attrib);
+-    dock->a_frame = RrAppearanceCopy(ob_rr_theme->a_unfocused_title);
++    dock->a_frame = RrAppearanceCopy(ob_rr_theme->a_menu);
+     XSetWindowBorder(ob_display, dock->frame,
+                      RrColorPixel(ob_rr_theme->b_color));
+     XSetWindowBorderWidth(ob_display, dock->frame, ob_rr_theme->bwidth);
+Index: render/gradient.c
+===================================================================
+RCS file: /cvs/cvsroot/openbox/render/gradient.c,v
+retrieving revision 1.45
+diff -p -u -r1.45 gradient.c
+--- render/gradient.c	15 Oct 2003 03:59:35 -0000	1.45
++++ render/gradient.c	31 Oct 2005 13:49:24 -0000
+@@ -132,11 +132,11 @@ static void highlight(RrPixel32 *x, RrPi
+         down = x;
+     }
+     r = (*up >> RrDefaultRedOffset) & 0xFF;
+-    r += r >> 1;
++    r += r >> 3;
+     g = (*up >> RrDefaultGreenOffset) & 0xFF;
+-    g += g >> 1;
++    g += g >> 3;
+     b = (*up >> RrDefaultBlueOffset) & 0xFF;
+-    b += b >> 1;
++    b += b >> 3;
+     if (r > 0xFF) r = 0xFF;
+     if (g > 0xFF) g = 0xFF;
+     if (b > 0xFF) b = 0xFF;
+@@ -144,12 +144,15 @@ static void highlight(RrPixel32 *x, RrPi
+         + (b << RrDefaultBlueOffset);
+   
+     r = (*down >> RrDefaultRedOffset) & 0xFF;
+-    r = (r >> 1) + (r >> 2);
++    r = (r >> 1) + (r >> 2) + (b >> 3);
+     g = (*down >> RrDefaultGreenOffset) & 0xFF;
+-    g = (g >> 1) + (g >> 2);
++    g = (g >> 1) + (g >> 2) + (b >> 3);
+     b = (*down >> RrDefaultBlueOffset) & 0xFF;
+-    b = (b >> 1) + (b >> 2);
+-    *down = (r << RrDefaultRedOffset) + (g << RrDefaultGreenOffset)
++    b = (b >> 1) + (b >> 2) + (b >> 3);
++    if (r > 0xFF) r = 0xFF;
++    if (g > 0xFF) g = 0xFF;
++    if (b > 0xFF) b = 0xFF;
++  *down = (r << RrDefaultRedOffset) + (g << RrDefaultGreenOffset)
+         + (b << RrDefaultBlueOffset);
+ }
+ 
+@@ -159,11 +162,11 @@ static void create_bevel_colors(RrAppear
+ 
+     /* light color */
+     r = l->surface.primary->r;
+-    r += r >> 1;
++    r += r >> 3;
+     g = l->surface.primary->g;
+-    g += g >> 1;
++    g += g >> 3;
+     b = l->surface.primary->b;
+-    b += b >> 1;
++    b += b >> 3;
+     if (r > 0xFF) r = 0xFF;
+     if (g > 0xFF) g = 0xFF;
+     if (b > 0xFF) b = 0xFF;
+@@ -172,11 +175,11 @@ static void create_bevel_colors(RrAppear
+ 
+     /* dark color */
+     r = l->surface.primary->r;
+-    r = (r >> 1) + (r >> 2);
++    r = (r >> 1) + (r >> 2) + (b >> 3);
+     g = l->surface.primary->g;
+-    g = (g >> 1) + (g >> 2);
++    g = (g >> 1) + (g >> 2) + (b >> 3);
+     b = l->surface.primary->b;
+-    b = (b >> 1) + (b >> 2);
++    b = (b >> 1) + (b >> 2) + (b >> 3);
+     g_assert(!l->surface.bevel_dark);
+     l->surface.bevel_dark = RrColorNew(l->inst, r, g, b);
+ }
+Index: render/image.c
+===================================================================
+RCS file: /cvs/cvsroot/openbox/render/image.c,v
+retrieving revision 1.16
+diff -p -u -r1.16 image.c
+--- render/image.c	11 Nov 2003 12:04:47 -0000	1.16
++++ render/image.c	31 Oct 2005 13:49:25 -0000
+@@ -162,6 +162,7 @@ void RrImageDraw(RrPixel32 *target, RrTe
+         guchar alpha, r, g, b, bgr, bgg, bgb;
+ 
+         alpha = *source >> RrDefaultAlphaOffset;
++	alpha /= 1.5;
+         r = *source >> RrDefaultRedOffset;
+         g = *source >> RrDefaultGreenOffset;
+         b = *source >> RrDefaultBlueOffset;
+Index: render/theme.c
+===================================================================
+RCS file: /cvs/cvsroot/openbox/render/theme.c,v
+retrieving revision 1.76
+diff -p -u -r1.76 theme.c
+--- render/theme.c	14 Jul 2005 20:41:24 -0000	1.76
++++ render/theme.c	31 Oct 2005 13:49:27 -0000
+@@ -904,7 +904,7 @@ RrTheme* RrThemeNew(const RrInstance *in
+             theme->padding * 2;
+     }
+     theme->button_size = theme->label_height - 2;
+-    theme->grip_width = theme->title_height * 1.5;
++    theme->grip_width = 23;
+ 
+     return theme;
+ }

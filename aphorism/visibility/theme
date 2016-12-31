@@ -1,0 +1,56 @@
+
+
+orientation bottom_right        # if set to 'right', the pager window will resize to
+                            # the left (just change it to 'right' if it is on
+                            # the right side of your desktop, otherwise you will
+                            # be angry.
+
+gap_x 10                    # the amount of space to leave between the pager and
+                            # the side of the desktop.
+                            
+gap_y 10    
+
+image_size 22          # the pixel size of an icon; icons are square.
+
+spacing 3                   # the amount of space to leave between icons as well
+                            # as between the edge of the window and the icons.
+
+border_width 1              # the width of the border around the window. can be 
+                            # set to 0 if your window manager (like openbox!) 
+                            # can provide its own borders for borderless
+                            # windows.
+
+desktop_separation 8        # the amount of space to leave between desktops.
+
+show_desktop_names false   # whether or not to show desktop names. these names
+                            # are specified by your window manager. valid
+                            # options are 'true' and 'false'.
+
+single_desktop_mode true   # whether or not to show only windows from the
+                            # current desktop.
+
+bg_colour 0xeeeeec           # the background colour
+
+border_colour CFCFCA     # the border colour
+active_bg_colour F2F2F0
+active_text_colour 0x444444   # the colour of the name of the active desktop.
+
+inactive_text_colour 0xbbbbbb  # the colour of the name an inactive desktop.
+inactive_bg_colour eeeeec
+separator_colour 0xBEBAB6     #seperator between desktops
+
+tooltip_padding 4           # the amount of padding to have inside tooltips.
+
+tooltip_time 0.5            # the number of seconds before a tooltip shows up.
+
+tooltip_bg_colour ffffbf    # the tooltip background colour.
+
+tooltip_border_colour 000000 # the tooltip border colour.
+
+tooltip_text_colour 444444 # the colour of text in tooltips
+
+tooltip_font sans-9            # the font to use in tooltips
+
+font sans-9                    # the name of the font to use. this is an xft name,
+                            # so one could use 'verdana:pixelsize=10' or
+                            # 'verdana-10'.

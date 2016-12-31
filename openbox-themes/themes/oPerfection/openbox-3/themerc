@@ -1,0 +1,75 @@
+!! oPerfection, a Clearlooks-gPerfection like Openbox theme by Sebastian Sareyko
+!! http://nooms.de/
+
+
+!! Menu - Title
+menu.title.bg: flat gradient vertical 
+menu.title.bg.color: #9a9d7a
+menu.title.bg.colorTo: #75785f
+menu.title.text.color: #9a9d7a
+menu.title.text.justify: center
+
+!! Menu - Items
+menu.items.bg: flat solid
+menu.items.bg.color: #dbd8c6
+menu.items.text.color: #000000
+menu.items.justify: left
+menu.items.disabled.text.color: #b4ad96
+menu.items.active.bg: flat solid border
+menu.items.active.bg.color: #a9aa97
+menu.items.active.text.color: #4e4c40
+menu.items.active.bg.border.color: #8a8b76
+
+!! Window - Title
+window.active.title.bg: flat gradient vertical 
+window.active.title.bg.color: #9a9d7a
+window.active.title.bg.colorTo: #75785f
+window.inactive.title.bg: flat
+window.inactive.title.bg.color: #e4e2d4
+
+window.active.handle.bg: flat gradient vertical
+window.active.handle.bg.color: #ecebe0
+window.active.handle.bg.colorTo: #d8d5c2
+
+
+window.inactive.handle.bg: flat gradient vertical
+window.inactive.handle.bg.color: #ecebe0
+window.inactive.handle.bg.colorTo: #d8d5c2
+
+window.*.grip.bg: parentrelative
+
+!! Window - Label
+window.label.text.justify: center
+window.active.label.bg: parentrelative
+window.active.label.text.color: #ffffff
+window.inactive.label.bg: parentrelative
+window.inactive.label.text.color: #a8a699
+
+
+!! Window - Buttons
+window.active.button.*.bg: parentrelative
+window.active.button.*.image.color: #ffffff
+window.active.button.hover.bg: flat gradient vertical border
+window.active.button.hover.bg.color: #676853
+window.active.button.hover.bg.colorTo: #555555
+window.active.button.hover.bg.border.color: #acae97
+window.active.button.pressed.bg: flat gradient vertical border
+window.active.button.pressed.bg.color: #37372e
+window.active.button.pressed.bg.colorTo: #2f3029
+window.active.button.pressed.bg.border.color: #acae97
+window.active.button.pressed.image.color: #b7b5a8
+window.inactive.button.*.bg: parentrelative
+window.inactive.button.*.image.color: #b7b5a8
+
+border.color: #2b2b2b
+border.width: 1
+padding.width: 1
+window.handle.width: 5
+window.client.padding.width: 0
+menu.overlap: 2
+window.*.client.color: #e4e2d5
+!! Fonts
+window.active.label.text.font:sans:bold:size=10:shadow=y:shadowoffset=1:shadowtint=100
+window.inactive.label.text.font:sans:bold:size=10:shadow=n
+menu.items.font:sans:size=10
+menu.title.text.font:sans:bold:size=0

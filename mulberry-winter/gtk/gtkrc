@@ -1,0 +1,51 @@
+#show me someone without a gtk1 app, someone has watch their back...
+
+
+style "default"
+{
+ 
+   fg[NORMAL]        = "#000000"
+   fg[PRELIGHT]      = "#000000"
+   fg[SELECTED]      = "#000000"
+ 
+  bg[NORMAL]       = "#f4f3f2"
+  bg[ACTIVE]       = "#d5d5d5"
+  bg[SELECTED]     = "#c7c7c7" 
+  bg[INSENSITIVE]  = "#dddddd"
+   bg[PRELIGHT]     = "#d7dadd"
+  
+  base[SELECTED] = "#979797"
+  text[SELECTED]  = "#000000"
+  base[ACTIVE]    = "#979797"
+  text[ACTIVE]    =  "#dddddd"
+  
+  text[INSENSITIVE]= "#747474"
+  text[ACTIVE]     = "#000000"
+ 
+}
+
+style "menu" 
+{
+
+  bg[SELECTED]    = "#c7c7c7"
+  bg[PRELIGHT]    = "#c7c7c7"
+  fg[PRELIGHT]  = "#000000"
+  fg[SELECTED]  = "#000000"
+}
+
+style "range"
+{
+bg[PRELIGHT]     = "#eff1f4"
+bg[ACTIVE]       = "#d2cfcb"
+}
+widget_class "*Menu*" style "menu"
+
+style "b-range"
+{
+bg[PRELIGHT]     = "#eff1f4"
+bg[ACTIVE]       = "#dddddd"
+}
+
+class "GtkWidget" style "default"
+class "GtkButton" style "b-range"
+class "GtkRange" style "range"

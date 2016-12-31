@@ -1,0 +1,103 @@
+! Title:	cthulhain
+! By:		cthulhain (http://lordzork.com/blackbox/
+! Email:	cthulhain@lordzork.com
+! let's go back...
+! So I was going to 'update' this but I though I'd stick with the classic ;)
+
+
+# Fonts
+window.active.label.text.font:shadow=y:shadowtint=20:shadowoffset=1
+window.inactive.label.text.font:shadow=y:shadowtint=20:shadowoffset=1
+menu.items.font:shadow=y:shadowtint=0:shadowoffset=2
+
+
+border.width: 1
+padding.width: 1
+padding.height: 1
+window.handle.width: 2
+window.client.padding.width: 0
+menu.overlap: 0
+*.justify: right
+*.border.color: #202020
+#*.bg.highlight: 50
+#*.bg.shadow:    01
+
+# Menu settings
+
+
+menu.border.width: 1
+
+menu.title.bg: raised Gradient diagonal
+menu.title.bg.color: gray40
+menu.title.bg.colorTo: #0f1319
+menu.title.text.color: #cccccc
+
+menu.items.bg: sunken gradient crossdiagonal
+menu.items.bg.color: #0f1319
+menu.items.bg.colorTo: gray40
+menu.items.text.color: #cccccc
+menu.items.disabled.text.color: #aaaaaa
+
+menu.items.active.bg: sunken gradient crossdiagonal
+menu.items.active.bg.color: #151a22
+menu.items.active.bg.colorTo: #7a8290
+menu.items.active.text.color: #ffffff
+
+# start with the active
+
+
+window.*.title.separator.color: #202020
+!!!
+
+window.*.title.bg: raised Gradient diagonal
+window.*.title.bg.color: gray40
+window.*.title.bg.color.splitTo: gray40
+window.*.title.bg.colorTo: #0f1319
+window.*.title.bg.colorTo.splitTo: #0f1319
+
+window.*.label.bg: sunken crossdiagnal gradient
+window.*.label.bg.color: #151a22
+window.*.label.bg.colorTo: #7a8290
+
+window.*.label.text.color: #ffffff
+
+window.inactive.label.bg: parentrelative
+
+window.*.button.*.bg: parentrelative
+window.*.button.*.image.color: #ffffff
+window.*.button.pressed.bg: flat gradient vertical
+window.*.button.pressed.bg.color: #0f1319
+window.*.button.pressed.bg.colorTo: #7a8290
+
+
+window.*.handle.bg:			raised gradient diagonal
+window.*.handle.bg.color:		gray50
+window.*.handle.bg.colorTo:	#0f1319
+
+window.*.grip.bg:			raised gradient diagonal
+window.*.grip.bg.color:		#7a8290
+window.active.grip.bg.colorTo:		#151a22
+
+!#osd
+
+osd.border.width: 1
+osd.border.color:  #5c5e5c
+
+osd.bg: raised gradient vertical
+osd.bg.color: #585858
+osd.bg.color.splitto: #EEEFF0
+osd.bg.colorTo: #0f1319
+osd.bg.colorTo.splitto: #EAEBEC
+
+osd.label.bg: sunken gradient crossdiagonal
+osd.label.bg.color: #151a22
+osd.label.bg.colorTo: #7a8290
+osd.label.text.color: #cccccc
+!# yeah whatever, this is fine anyhoo?
+#osd.hilight.bg: flat vertical gradient 
+#osd.hilight.bg.color: #9ebde5
+#osd.hilight.bg.colorTo: #749dcf
+#osd.unhilight.bg: flat vertical gradient
+#osd.unhilight.bg.color: #BABDB6
+#osd.unhilight.bg.colorTo: #efefef
+

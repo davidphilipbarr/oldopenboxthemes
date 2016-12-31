@@ -1,0 +1,104 @@
+
+# Fonts
+
+
+window.*.label.text.font:shadow=y:shadowtint=20:shadowoffset=1
+window.inactive.label.text.font:shadow=y:shadowtint=00:shadowoffset=0
+menu.items.font:shadow=y:shadowtint=0:shadowoffset=2
+# lettuce set some stuff
+
+border.width: 1
+padding.width: 1
+padding.height: 1
+window.handle.width: 2
+window.client.padding.width: 0
+menu.overlap: 0
+*.justify: left
+*.bg.highlight: 90
+*.bg.shadow:    01
+
+# Menu settings
+
+menu.border.color: #83786A
+menu.border.width: 1
+
+menu.title.bg: solid flat
+menu.title.bg.color: #Eeeeee
+menu.title.text.color: #444444
+
+menu.items.bg: Flat Solid
+menu.items.bg.color: #f5f5f5
+menu.items.text.color: #444444
+menu.items.disabled.text.color: #aaaaaa
+
+menu.items.active.bg: Flat solid border
+
+menu.items.active.bg.color: #D6DD8B
+menu.items.active.bg.border.color: #A4AD41
+menu.items.active.text.color: #333
+
+# start with the active
+!# no handles 
+#window.*.border.color: #455d7c
+!# handles
+window.*.border.color: #222222
+window.*.title.separator.color: #373535
+!!!
+
+window.*.title.bg: raised Gradient splitvertical
+window.*.title.bg.color: #827b7a
+window.*.title.bg.color.splitTo: #9a9292
+window.*.title.bg.colorTo: #6c6463
+window.*.title.bg.colorTo.splitTo: #6c6463
+
+
+#window.*.title.bg: Raised Gradient vertical
+#window.*.title.bg.color: #9ebde5
+#window.*.title.bg.colorTo: #749dcf
+
+window.*.title.bg.highlight: 50
+window.*.title.bg.shadow:    00
+
+window.*.label.bg: Parentrelative
+window.*.label.text.color: #ffffff
+
+
+window.*.button.*.bg: parentrelative
+window.*.button.*.image.color: #ffffff
+window.*.button.pressed.bg: Flat solid 
+window.*.button.pressed.bg.color: #222
+
+window.*.handle.bg: flat solid
+window.*.handle.bg.color: #373535
+window.*.handle.bg.colorTo: #C1C2C1
+
+window.*.grip.bg: flat solid
+window.*.grip.bg.color: #373535
+window.*.grip.bg.colorTo: #C1C2C1
+
+!#osd
+
+osd.border.width: 1
+osd.border.color:  #5c5e5c
+
+osd.bg: flat border gradient splitvertical
+osd.bg.color: #EEEFF0
+osd.bg.color.splitto: #EEEFF0
+osd.bg.colorTo: #EAEBEC
+osd.bg.colorTo.splitto: #EAEBEC
+
+osd.bg.border.color: #ffffff
+
+osd.label.bg: parentrelative
+osd.label.bg.color: #efefef
+osd.label.bg.border.color: #9c9e9c
+
+osd.label.text.color: #444
+!# yeah whatever, this is fine anyhoo?
+osd.hilight.bg: flat vertical gradient 
+osd.hilight.bg.color: #9ebde5
+osd.hilight.bg.colorTo: #749dcf
+osd.unhilight.bg: flat vertical gradient
+osd.unhilight.bg.color: #BABDB6
+osd.unhilight.bg.colorTo: #efefef
+

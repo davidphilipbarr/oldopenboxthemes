@@ -1,0 +1,48 @@
+
+
+*background: #2e3436
+*foreground: #eeeeee
+
+*color0:  #2e3436
+*color1:  #a40000
+*color2:  #4e9a06
+*color3:  #c4a000
+*color4:  #204a87
+*color5:  #5c3566
+*color6:  #ce5c00
+*color7:  #fefefe
+*color8:  #111111
+*color9:  #cc0000
+*color10: #73d216
+*color11: #edd400
+*color12: #3465a4
+*color13: #75507b
+*color14: #f57900
+*color15: #ffffff
+
+
+rxvt*reverseVideo: false
+rxvt*scrollBar: false
+rxvt*internalBorder: 0
+!rxvt*background: #2e3436
+!rxvt*foreground: #eeeeee
+urxvt*reverseVideo: false
+urxvt*scrollBar: false
+urxvt*internalBorder: 0
+
+!urxvt*background: #2e3436
+!urxvt*foreground: #eeeeee
+
+lal*font: Bitstream Vera Sans
+lal*fontsize: 11.0
+lal*color: #111111
+lal*format:%H:%M %S
+
+lalcal*width: 130
+lalcal*font: Bitstream Vera Sans
+lalcal*calfontname: Bitstream Vera Sans
+lalcal*calfontsize: 10.0
+lalcal*fontsize: 11.0
+lalcal*color: #111111
+lalcal*hlcolor: #97b8e2
+lalcal*format:%H:%M %S, %a %e %b

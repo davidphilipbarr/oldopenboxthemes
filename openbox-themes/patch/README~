@@ -1,0 +1,1 @@
+This patch basically changes the way bevels are drawn so they are less harsh, the before and after picture shows this. it also makes the grips a set size, like windowmaker, so they never get too silly big ot too silly small.

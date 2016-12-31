@@ -1,0 +1,14 @@
+/* Icon Renderings */
+
+div.icons {
+	display: block;
+	float: left;
+	width: 300px;
+	position: relative;
+}
+
+div.icons h4 {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+}

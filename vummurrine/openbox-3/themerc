@@ -1,0 +1,57 @@
+*border.Width: 1
+padding.height: 2
+window.handle.width: 0
+*.padding.width: 0
+padding.width: 3
+menu.overlap: 2
+*.bg.highlight: 50
+*.bg.shadow:    0
+*.justify: left
+*.bg: flat solid
+*.text.color: #fff
+#*.*.color: #F3F4F4
+*.*.color:#E5E4E2
+*.border.color:  #777
+*.handle.bg: raised solid
+*.grip.bg: parentrelative
+*.title.bg: Raised solid
+*.title.bg.color: #86ABD9
+*.label.bg: parentrelative
+window.*.title.separator.color: #eeeeec
+window.*.button.*.bg: parentrelative
+
+menu.border.color: #aaa
+menu.items.text.color: #111
+menu.items.disabled.text.color: #737573
+menu.items.active.bg.color: #86ABD9
+window.inactive.title.bg: flat vertical gradient border
+window.inactive.title.bg.color: #dddddd
+window.inactive.title.bg.colorTo: #eeeeec
+window.inactive.title.bg.border.color: #eeeeec
+window.inactive.label.text.color: #777
+window.inactive.button.unpressed.image.color: #999
+osd.label.text.color: #111
+
+########
+*.bg.highlight: 15
+*.bg.shadow:    0
+window.active.title.bg: raised splitvertical gradient
+window.active.title.separator.color: #7a8da7
+window.active.title.bg.color: #C5D8F2
+window.active.title.bg.color.splitTo: #C5D8F2
+window.active.title.bg.colorTo: #C1D3ED
+window.active.title.bg.colorTo.splitTo: #BBCDE6
+window.active.label.text.color: #506069
+
+#################
+#window.active.button.*.bg: flat border splitvertical gradient
+#window.active.button.*.bg.color: #BBCDE6
+#window.active.button.*.bg.color.splitTo: #C5D8F2
+#window.active.button.*.bg.colorTo: #C1D3ED
+#window.active.button.*.bg.colorTo.splitTo: #BBCDE6
+#window.active.button.*.border.color: #999
+################
+window.active.button.*.image.color: #7a8da7
+menu.items.font:shadow=y:shadowtint=0:shadowoffset=2
+window.*.label.text.font:shadow=y:shadowtint=-65:shadowoffset=1
+window.active.label.text.font:shadow=y:shadowtint=-30:shadowoffset=1

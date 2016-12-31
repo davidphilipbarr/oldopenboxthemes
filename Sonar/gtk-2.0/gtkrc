@@ -1,0 +1,510 @@
+# Sonar
+# default openSUSE 11.2 theme
+# (c) 2009 Jakub Steiner, Aaron Bockover, Novell Inc.
+# based on Shiki-Wise by perfectska04 (Victor C.)
+
+gtk_color_scheme = "fg_color:#202020\nbg_color:#D5DAD5\nbase_color:#fff\ntext_color:#3A3A3A\nselected_bg_color:#5E7F3E\nselected_fg_color:#fff\ntooltip_bg_color:#F5F5B5\ntooltip_fg_color:#000"
+
+gtk-icon-sizes = "gtk-button = 16,16"
+
+#
+# Base Style
+#
+
+style "sonar-default" {
+	xthickness = 1
+	ythickness = 1
+
+	GtkButton::child-displacement-x = 0
+	GtkButton::child-displacement-y = 1
+
+	GtkButton::default-border = { 0, 0, 0, 0 }
+	GtkCheckButton::indicator-size = 14
+	GtkRadioButton::indicator-size = 14
+	GtkPaned::handle-size = 6
+
+	GtkRange::trough-border = 0
+	GtkRange::slider-width = 15
+	GtkRange::stepper-size = 15
+
+	GtkScale::slider-length = 24
+	GtkScale::trough-side-details = 1
+	GtkScrollbar::min-slider-length = 35
+
+	GtkMenuBar::internal-padding = 0
+	GtkExpander::expander-size = 16
+	GtkToolbar::internal-padding = 1
+	GtkTreeView::expander-size = 14
+	GtkTreeView::vertical-separator = 0
+
+	GtkMenu::horizontal-padding = 0
+	GtkMenu::vertical-padding = 2
+
+	WnckTasklist::fade-overlay-rect = 0
+	GtkEntry::honors-transparent-bg-hint = 1
+
+	# GtkWidget::focus-padding = 0
+  	GtkScrolledWindow::scrollbar-spacing = 1
+	GtkTreeView::odd_row_color = mix (0.98, shade (0.93, @base_color), @selected_bg_color)
+
+	# GtkToolbar::shadow-type = GTK_SHADOW_NONE
+	GtkMenuBar::shadow-type = GTK_SHADOW_NONE
+
+	fg[NORMAL] = @fg_color
+	fg[PRELIGHT] = @fg_color
+	fg[SELECTED] = @selected_fg_color
+	fg[ACTIVE] = @fg_color
+	fg[INSENSITIVE] = darker (@bg_color)
+
+	bg[NORMAL] = @bg_color
+	bg[PRELIGHT] = shade (1.02, @bg_color)
+	bg[SELECTED] = @selected_bg_color
+	bg[INSENSITIVE] = @bg_color
+	bg[ACTIVE] = shade (0.85, @bg_color)
+
+	base[NORMAL] = @base_color
+	base[PRELIGHT] = shade (0.95, @bg_color)
+	base[ACTIVE] = shade (0.75, @bg_color)
+	base[SELECTED] = @selected_bg_color
+	base[INSENSITIVE] = @bg_color
+
+	text[NORMAL] = @text_color
+	text[PRELIGHT] = @text_color
+	text[ACTIVE] = @selected_fg_color
+	text[SELECTED] = @selected_fg_color
+	text[INSENSITIVE] = darker (@bg_color)
+
+	engine "murrine" {
+		contrast = 1.0
+		glazestyle = 0
+		menubarstyle = 2
+		menubaritemstyle = 1
+		menuitemstyle = 1
+		listviewheaderstyle = 1
+		listviewstyle = 0
+		scrollbarstyle = 2
+		stepperstyle = 1
+		roundness = 2
+		progressbarstyle = 1
+		animation = TRUE
+		gradients = TRUE
+		reliefstyle = 2
+		sliderstyle = 1
+		menustyle = 0
+		rgba = FALSE
+		lightborder_shade = 1.20
+		lightborderstyle = 1
+		highlight_shade = 1.04
+		gradient_shades = { 1.09, 1.01, 1.01, 0.91 }
+   }
+}
+
+style "sonar-wide" {
+	xthickness = 2
+	ythickness = 2
+}
+
+style "sonar-wider" {
+	xthickness = 3
+	ythickness = 3
+}
+
+#
+# Notebook
+#
+
+style "sonar-notebook-bg" {
+	bg[NORMAL] = shade (1.1, @bg_color)
+	bg[ACTIVE] = @bg_color
+}
+
+style "sonar-notebook" = "sonar-notebook-bg" {
+	xthickness = 2
+	ythickness = 2
+
+	engine "murrine" {
+		roundness = 2
+	}
+}
+
+#
+# Various Standard Widgets
+#
+
+style "sonar-button" = "sonar-wider" {
+	bg[NORMAL] = shade (1.14, @bg_color)
+	bg[PRELIGHT] = shade (1.18, @bg_color)
+	bg[ACTIVE] = shade (0.85, @bg_color)
+
+  	engine "murrine" {
+		reliefstyle = 2
+		roundness = 3
+		contrast = 0.9
+		glazestyle = 0
+		gradient_shades = { 1.05, 1.0, 1.0, 0.9 }
+		gradients = TRUE
+		highlight_shade = 1.0
+		lightborder_shade = 1.4
+		lightborderstyle = 1
+	}
+}
+
+style "sonar-scrollbar" {
+	bg[NORMAL] = shade (.9, @bg_color)
+	bg[INSENSITIVE] = @bg_color
+	bg[PRELIGHT] = shade (1.18, @bg_color)
+	bg[ACTIVE] = shade (0.85, @bg_color)
+	bg[SELECTED] = shade (.4, @bg_color)
+	
+	engine "murrine" {
+		colorize_scrollbar = TRUE
+		roundness = 6
+		gradients = TRUE
+		contrast = 0.3
+		glazestyle = 0
+		gradient_shades = { 1.1, 1.0, 1.0, 0.9 }
+		gradients = TRUE
+		highlight_shade = 1.0
+		lightborder_shade = 1.2
+		lightborderstyle = 1
+		scrollbarstyle = 0
+		roundness = 0
+	}
+}
+
+style "sonar-scale" = "sonar-button" {
+	GtkRange::slider-width = 15
+
+	bg[NORMAL] = shade (1.14, @bg_color)
+	bg[PRELIGHT] = shade (1.18, @bg_color)
+	bg[ACTIVE] = shade (0.85, @bg_color)
+
+  	engine "murrine" {
+		contrast = 1.20
+	}
+}
+
+style "sonar-progressbar" = "sonar-wide" {
+	fg[PRELIGHT] = @selected_fg_color
+
+	engine "murrine" {
+		glow_shade = 1.20
+		glowstyle = 3
+		roundness = 0
+	}
+}
+
+style "sonar-treeview-header" = "sonar-button" {
+	xthickness = 2
+	ythickness = 1
+
+	bg[NORMAL] = shade (1.14, @bg_color)
+	bg[PRELIGHT] = shade (1.18, @bg_color)
+	bg[ACTIVE] = shade (0.85, @bg_color)
+
+  	engine "murrine" {
+		roundness = 0
+	}
+}
+
+style "sonar-treeview" {
+  	engine "murrine" {
+		roundness = 0
+	}
+}
+
+style "sonar-frame-title" {
+	fg[NORMAL] = lighter (@fg_color)
+}
+
+style "sonar-tooltips" = "sonar-wider" {
+	bg[NORMAL] = @tooltip_bg_color
+	fg[NORMAL] = @tooltip_fg_color
+}
+
+style "sonar-spinbutton" {
+	bg[ACTIVE] = shade (0.85, @bg_color)
+}
+
+style "sonar-radiocheck" = "sonar-default" {
+	text[NORMAL] = @selected_fg_color
+	text[PRELIGHT] = @selected_fg_color
+}
+
+style "metacity-frame" = "sonar-default" {
+	bg[SELECTED] = shade (0.85, @selected_bg_color)
+}
+
+style "sonar-statusbar" { }
+style "sonar-comboboxentry" { }
+style "sonar-hscale" = "sonar-scale" { }
+style "sonar-vscale" = "sonar-scale" { }
+style "sonar-hscrollbar" = "sonar-scrollbar" { }
+style "sonar-vscrollbar" = "sonar-scrollbar" { }
+
+#
+# Dark Menus
+#
+
+style "sonar-menu" {
+	ythickness = 0
+	xthickness = 0
+	
+	bg[SELECTED] = shade (0.85, @selected_bg_color)
+	bg[NORMAL] = "#303030"
+	bg[PRELIGHT] = shade (0.85, @selected_bg_color)
+	bg[ACTIVE] = "#333333"
+	bg[INSENSITIVE] = "#303030"
+	fg[NORMAL] = "#E6E6E6"
+	fg[PRELIGHT] = @selected_fg_color
+	fg[SELECTED] = @selected_fg_color
+	fg[ACTIVE] = @selected_fg_color
+	fg[INSENSITIVE] = "#666666"
+	text[NORMAL] = @base_color
+	base[NORMAL] = "#666666"
+	text[PRELIGHT] = @selected_fg_color
+	text[SELECTED] = @selected_fg_color
+	text[ACTIVE] = @selected_fg_color
+	text[INSENSITIVE] = "#666666"
+
+	engine "murrine" {
+		roundness = 0
+	}
+}
+
+style "sonar-menu-item" = "sonar-wider" {
+	bg[SELECTED] = shade (0.85, @selected_bg_color)
+	bg[PRELIGHT] = shade (0.85, @selected_bg_color)
+	fg[NORMAL] = "#E6E6E6"
+	fg[PRELIGHT] = @selected_fg_color
+	fg[SELECTED] = @selected_fg_color
+}
+
+style "sonar-separator-menu-item" {
+	xthickness = 1
+	ythickness = 0
+
+	GtkSeparatorMenuItem::horizontal-padding = 4
+
+	GtkWidget::wide-separators = 1
+	GtkWidget::separator-width = 1
+	GtkWidget::separator-height = 7
+}
+
+style "sonar-menubar" {
+	ythickness = 0
+
+	bg[SELECTED] = shade (0.85, @selected_bg_color)
+	bg[NORMAL] = "#303030"
+	bg[PRELIGHT] = shade (0.85, @selected_bg_color)
+	bg[ACTIVE] = "#333333"
+	bg[INSENSITIVE] = "#303030"
+	fg[NORMAL] = "#E6E6E6"
+	fg[PRELIGHT] = @selected_fg_color
+	fg[SELECTED] = @selected_fg_color
+	fg[ACTIVE] = @selected_fg_color
+	fg[INSENSITIVE] = "#666666"
+	text[NORMAL] = "#E6E6E6"
+	text[PRELIGHT] = @selected_fg_color
+	text[SELECTED] = @selected_fg_color
+	text[ACTIVE] = @selected_fg_color
+	text[INSENSITIVE] = "#666666"
+}
+
+#
+# Toolbars
+#
+
+style "sonar-toolbar" = "sonar-default" {
+	engine "murrine" {
+	  contrast = 0.0
+    glazestyle          = 0
+		toolbarstyle	    = 1    # 0 = flat, 1 = glassy, 2 = gradient
+		gradient_shades     = {0.80,0.86,0.89,1.0} # default: {1.1,1.0,1.0,1.1}
+	}
+}
+
+style "sonar-evo-new-button-workaround"
+{
+	engine "murrine" {
+		toolbarstyle = 0
+	}
+}
+
+widget_class "EShellWindow.GtkVBox.BonoboDock.BonoboDockBand.BonoboDockItem*" style "sonar-evo-new-button-workaround"
+class "GtkToolbar" style "sonar-toolbar"
+class "GtkHandleBox" style "sonar-toolbar"
+
+#
+# Panels
+#
+
+style "theme-panel" {
+	bg_pixmap[NORMAL] = "panel-bg-dark.png" # Disable for normal panel backgrounds.
+
+	bg[SELECTED] = shade (0.85, @selected_bg_color) # Makes selected items dark.
+	bg[NORMAL] = "#3c3c3c" # Makes panel background dark.
+	bg[PRELIGHT] = shade (0.85, @selected_bg_color) # Makes panel button prelight dark.
+	bg[ACTIVE] = shade (0.60, @bg_color) # Makes active buttons dark.
+	bg[INSENSITIVE] = "#3C3C3C"
+	fg[NORMAL] = "#E6E6E6" # Makes panel text light.
+	fg[PRELIGHT] = @selected_fg_color  # Makes prelighted text colored.
+	fg[SELECTED] = @selected_fg_color  # Makes prelighted text colored.
+	fg[ACTIVE] = @selected_fg_color  # Makes active text colored.
+	fg[INSENSITIVE] = "#666666" # Color for insensitive text.
+	text[NORMAL] = "#E6E6E6"
+	text[PRELIGHT] = @selected_fg_color  # Makes prelighted text colored.
+	text[SELECTED] = @selected_fg_color  # Makes prelighted text colored.
+	text[ACTIVE] = @selected_fg_color  # Makes active text colored.
+	text[INSENSITIVE] = "#666666"
+
+	engine "murrine" {
+		roundness = 0
+	}
+}
+
+widget "*PanelWidget*" style "theme-panel"
+widget "*PanelApplet*" style "theme-panel"
+widget "*fast-user-switch*" style "theme-panel"
+widget "*CPUFreq*Applet*" style "theme-panel"
+class "PanelApp*" style "theme-panel"
+class "PanelToplevel*" style "theme-panel"
+widget_class "*PanelToplevel*" style "theme-panel"
+widget_class "*notif*" style "theme-panel"
+widget_class "*Notif*" style "theme-panel"
+widget_class "*Tray*" style "theme-panel" 
+widget_class "*tray*" style "theme-panel"
+widget_class "*Applet*Tomboy*" style "theme-panel"
+widget_class "*Applet*Netstatus*" style "theme-panel"
+
+# widget_class "*Mail*" style "theme-panel" # Disabled to fix Evolution bug.
+# class "*Panel*" style "theme-panel" # Disabled to fix bug.
+
+# XFCE panel theming.
+widget "*Xfce*Panel*" style "theme-panel"
+class "*Xfce*Panel*" style "theme-panel"
+
+style "bold-panel-item" {
+	font_name = "Bold"
+
+	engine "murrine" {
+		roundness = 2
+	}
+}
+
+widget "*Panel*MenuBar*" style "bold-panel-item"
+widget "*gimmie*" style "bold-panel-item"
+widget "*clock-applet-button*" style "bold-panel-item"
+
+#
+# General Style Application
+#
+
+class "GtkWidget" style "sonar-default"
+
+class "GtkFrame" style "sonar-wide"
+class "GtkEntry" style "sonar-wider"
+class "MetaFrames" style "metacity-frame"
+class "GtkSeparator" style "sonar-wide"
+class "GtkWindow" style "metacity-frame"
+class "GtkCalendar" style "sonar-wide"
+
+class "GtkSpinButton" style "sonar-spinbutton"
+class "GtkScale" style "sonar-scale"
+class "GtkVScale" style "sonar-vscale"
+class "GtkHScale" style "sonar-hscale"
+class "GtkScrollbar" style "sonar-scrollbar"
+class "GtkVScrollbar" style "sonar-vscrollbar"
+class "GtkHScrollbar" style "sonar-hscrollbar"
+
+class "GtkRadio*" style "sonar-radiocheck"
+class "GtkCheck*" style "sonar-radiocheck"
+
+widget_class "*<GtkNotebook>" style "sonar-notebook"
+widget_class "*<GtkNotebook>*<GtkEventBox>" style "sonar-notebook-bg"
+widget_class "*<GtkNotebook>*<GtkDrawingArea>" style "sonar-notebook-bg"
+widget_class "*<GtkNotebook>*<GtkLayout>" style "sonar-notebook-bg"
+widget_class "*.GtkNotebook.*.GtkViewport" style "sonar-notebook"
+
+widget_class "*<GtkButton>" style "sonar-button"
+widget_class "*<GtkStatusbar>*" style "sonar-statusbar"
+widget_class "*<GtkProgressBar>" style "sonar-progressbar"
+
+widget_class "*<GtkComboBoxEntry>*" style "sonar-comboboxentry"
+widget_class "*<GtkCombo>*" style "sonar-comboboxentry"
+
+widget_class "*<GtkMenuBar>*" style "sonar-menubar"
+widget_class "*<GtkMenu>*" style "sonar-menu"
+widget_class "*<GtkMenuItem>*" style "sonar-menu-item"
+widget_class "*<GtkSeparatorMenuItem>*" style "sonar-separator-menu-item"
+
+widget_class "*.<GtkFrame>.<GtkLabel>" style "sonar-frame-title"
+
+widget_class "*.<GtkTreeView>*" style "sonar-treeview"
+widget_class "*.<GtkTreeView>.<GtkButton>" style "sonar-treeview-header"
+widget_class "*.<GtkCTree>.<GtkButton>" style "sonar-treeview-header"
+widget_class "*.<GtkList>.<GtkButton>" style "sonar-treeview-header"
+widget_class "*.<GtkCList>.<GtkButton>" style "sonar-treeview-header"
+
+widget "gtk-tooltip*" style "sonar-tooltips"
+
+#
+# Workarounds and Non-Standard Styling
+#
+
+style "evolution-hack" = "sonar-default" {
+	bg[NORMAL] = shade (1.14, @bg_color)
+	bg[PRELIGHT] = shade (1.18, @bg_color)
+	bg[ACTIVE] = shade (0.75, @bg_color)
+	bg[SELECTED] = @selected_bg_color
+	fg[ACTIVE] = @selected_fg_color
+	fg[SELECTED] = @selected_fg_color
+}
+
+widget_class "*.ETable.ECanvas" style "sonar-treeview-header"
+widget_class "*.ETree.ECanvas" style "sonar-treeview-header"
+widget_class "*GtkCTree*" style "evolution-hack"
+widget_class "*GtkList*" style "evolution-hack"
+widget_class "*GtkCList*" style "evolution-hack"
+widget_class "*.ETree.*" style "evolution-hack"
+widget_class "*EInfoLabel*" style "evolution-hack"
+
+style "sonar-nautilus-location"
+{
+	bg[NORMAL] = shade (1.25, @selected_bg_color)
+}
+
+widget "*.nautilus-extra-view-widget" style : highest "sonar-nautilus-location"
+
+style "sonar-text-is-fg-color-workaround" {
+	text[NORMAL] = @fg_color
+	text[PRELIGHT] = @fg_color
+	text[SELECTED] = @selected_fg_color
+	text[ACTIVE] = @fg_color
+	text[INSENSITIVE] = darker (@bg_color)
+}
+
+widget_class "*.<GtkComboBox>.<GtkCellView>" style "sonar-text-is-fg-color-workaround"
+
+style "sonar-menuitem-text-is-fg-color-workaround" {
+	text[NORMAL] = "#E6E6E6"
+	text[PRELIGHT] = @selected_fg_color
+	text[SELECTED] = @selected_fg_color
+	text[ACTIVE] = @fg_color
+	text[INSENSITIVE] = darker (@bg_color)
+}
+
+widget "*.gtk-combobox-popup-menu.*" style "sonar-menuitem-text-is-fg-color-workaround"
+
+style "sonar-fg-is-text-color-workaround" {
+	fg[NORMAL] = @text_color
+	fg[PRELIGHT] = @text_color
+	fg[ACTIVE] = @selected_fg_color
+	fg[SELECTED] = @selected_fg_color
+	fg[INSENSITIVE] = darker (@bg_color)
+}
+
+widget_class "*<GtkListItem>*" style "sonar-fg-is-text-color-workaround"
+widget_class "*<GtkCList>" style "sonar-fg-is-text-color-workaround"
+widget_class "*<EelEditableLabel>" style "sonar-fg-is-text-color-workaround"
+

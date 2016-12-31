@@ -1,0 +1,93 @@
+!!General
+
+window.handle.width: 5
+window.client.padding.width: 0
+border.Width: 1
+padding.width: 3
+menu.overlap: 2
+border.color: #48494b
+window.frameColor: #ecedee
+window.*.client.color: #ecedee
+*.text.justify: left
+
+!!Fonts
+
+window.active.label.text.font:Bitstream Vera Sans:pixelsize=12:shadow=y:shadowoffset=1:shadowtint=10:bold
+window.inactive.label.text.font:Bitstream Vera Sans:pixelsize=12:shadow=y:shadowoffset=1:shadowtint=1:bold
+menu.items.font: Bitstream Vera Sans:pixelsize=12:shadow=y:shadowoffset=1:shadowtint=0
+menu.title.text.font: Bitstream Vera Sans:size=0
+
+!!Menu
+
+menu.title.bg: flat gradient split 
+menu.title.bg.color: #5d5c58
+menu.title.bg.colorTo: #5d5c58
+menu.title.text.color: #5d5c58
+
+menu.items.bg: flat solid
+menu.items.bg.color: #ecedee
+menu.items.bg.border.color: #EFEBE7
+
+menu.items.text.color: #505050
+menu.items.disabled.text.color: #d4cfca
+
+menu.items.active.bg: flat solid
+menu.items.active.bg.color: #68696b
+menu.items.active.bg.colorTo: #50708d
+menu.items.active.text.color: #ffffff
+menu.items.active.bg.border.color: #50708d
+
+!!Active
+
+window.active.title.bg: raised gradient split 
+window.active.title.bg.color: #5d5c58
+window.active.title.bg.colorTo: #5d5c58
+window.active.title.bg.border.color: #435565
+
+window.active.label.bg: parentrelative
+window.active.label.text.color: #ffffff
+
+window.active.button.*.bg: parentrelative
+window.active.button.*.bg.color: #9C9C9C
+window.active.button.*.bg.colorTo: #547999
+window.active.button.*.image.color: #ffffff
+window.active.button.*.bg.border.color: #555555
+
+window.active.button.hover.bg: flat solid border 
+window.active.button.hover.bg.color: #706F6A
+
+window.active.button.pressed.bg: flat solid border 
+window.active.button.pressed.bg.color: #505050
+window.active.button.disabled.image.color: #888888
+
+window.active.handle.bg: raised solid
+window.active.handle.bg.color: #ECEDEE
+window.active.handle.bg.colorTo: #D3D5D7
+window.*.grip.bg: parentrelative
+
+
+!!Inactive
+
+window.inactive.title.bg: raised gradient split
+window.inactive.title.bg.color: #676662
+window.inactive.title.bg.colorTo: #676662
+
+window.inactive.label.bg: parentrelative
+window.inactive.label.text.color: #aaaaaa
+window.inactive.button.*.bg: parentrelative
+window.inactive.button.*.bg.color: #f1eeea
+window.inactive.button.*.bg.colorTo: #d8cfc7
+window.inactive.button.*.image.color:  #bbbbbb
+window.inactive.button.*.bg.border.color: #505050
+#window.inactive.button.disabled.bg: parentrelative
+
+window.inactive.button.pressed.bg.color: #4f5051
+window.inactive.button.hover.bg: flat solid border 
+window.inactive.button.hover.bg.color: #f8f5f2
+window.inactive.button.disabled.image.color: #ffffff
+
+window.inactive.handle.bg: raised gradient vertical
+window.inactive.handle.bg.color: #eff0f0
+window.inactive.handle.bg.colorTo: #D3D5D7
+window.*.grip.bg: parentrelative
+

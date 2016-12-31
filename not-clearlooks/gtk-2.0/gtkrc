@@ -1,0 +1,200 @@
+
+style "default"
+{
+  GtkScrollbar   ::min_slider_length = 30
+  GtkMenuBar     ::internal-padding  = 0
+  GtkMenu     ::internal-padding  = 0
+  xthickness = 1
+  ythickness = 1
+
+  fg[NORMAL]        = "#444444" 
+  fg[PRELIGHT]      = "#444444" 
+  fg[SELECTED]      = "#ffffff"  
+  fg[ACTIVE]        = "#444444" 
+  fg[INSENSITIVE]   = "#b5b3ac" 
+
+  
+  bg[NORMAL]        = "#efebe5"
+  bg[PRELIGHT]      = "#f9f7f3" 
+  bg[SELECTED]	    = "#5598d7" 
+  bg[INSENSITIVE]   = "#efebe5" 
+  bg[ACTIVE]        = "#dcd4c8" 
+
+  base[NORMAL]      = "#ffffff" 
+  base[PRELIGHT]    = "#5f8ec4" 
+  base[ACTIVE]      = "#a69f91" 
+  base[SELECTED]    = "#5598d7" 
+  base[INSENSITIVE] = "#e8e5de" 
+
+  text[NORMAL]      = "#444444" 
+  text[PRELIGHT]    = "#444444" 
+  text[ACTIVE]      = "#ffffff" 
+  text[SELECTED]    = "#ffffff" 
+  text[INSENSITIVE] = "#b5b3ac" 
+
+}
+
+style "wide" = "default"
+{
+
+  bg[NORMAL]        = "#EEE9E3"
+  bg[INSENSITIVE]   = "#f2efeb"
+  bg[PRELIGHT]      = "#f6f4f1"
+
+  xthickness = 2
+  ythickness = 2
+}
+
+style "wider" = "default"
+{
+  xthickness = 3
+  ythickness = 3
+}
+
+style "button"
+{  
+
+  xthickness = 2
+  ythickness = 2
+   
+  bg[NORMAL]        = "#EEE9E3"
+  bg[INSENSITIVE]   = "#f2efeb"
+  bg[PRELIGHT]      = "#f6f4f1"
+
+    GtkWidget::draw-border = { 5, 5, 5, 5 }
+
+}
+
+style "notebook" = "wide"
+{
+#  bg[NORMAL]        = "#E6E0D7"
+  bg[INSENSITIVE] = "#efebe5"
+  bg[SELECTED]    = "#df8945"
+
+}
+
+style "tasklist" = "default"
+{
+  xthickness = 5
+  ythickness = 3
+}
+
+style "menu" = "default"
+{
+  xthickness = 2
+  ythickness = 2
+  bg[NORMAL] = "#f9f7f3"
+}
+
+style "menubar-item" = "button"
+{
+    fg[PRELIGHT] = "#000000"
+}
+
+style "menu-item" = "default"
+{
+  xthickness = 1
+  ythickness = 3
+  bg[PRELIGHT] = "#5598d7"
+  fg[PRELIGHT] = "#ffffff"
+  text[PRELIGHT] = "#ffffff"
+}
+
+style "tree" = "default"
+{
+  xthickness = 1
+  ythickness = 1
+}
+
+style "frame-title" = "default"
+{
+  fg[NORMAL] = "#404040"
+}
+
+style "tooltips" = "default"
+{
+  xthickness = 4
+  ythickness = 4
+  bg[NORMAL] = { 1.0,1.0,0.75 }
+}
+
+style "progressbar" = "wide"
+{
+  xthickness = 1
+  ythickness = 1
+
+  bg[PRELIGHT]  = "#5598d7"
+  fg[PRELIGHT]  = "#ffffff"
+}
+
+style "combo" = "button"
+{  
+}
+
+style "menubar" = "blackrock-default"
+{
+  bg[NORMAL]   = "#E6E0D7"
+}
+
+
+# widget styles
+class "GtkWidget" style "default"
+class "GtkButton" style "button"
+class "GtkScale"  style "button"
+class "GtkCombo"  style "button"
+class "GtkRange"  style "wide"
+class "GtkFrame"  style "tree"
+class "GtkMenu"   style "menu"
+class "GtkEntry"  style "wide"
+class "GtkMenuItem"    style "menu-item"
+class "GtkNotebook"    style "notebook"
+class "GtkProgressBar" style "progressbar"
+ 
+class "GtkMenuBar" style "menubar"
+
+widget_class "*MenuItem.*" style "menu-item"
+#widget_class "*.GtkMenuBar.*MenuItem.*" style "menubar-item"
+
+# combobox stuff
+widget_class "*.GtkComboBox.GtkButton" style "combo"
+widget_class "*.GtkCombo.GtkButton"    style "combo"
+# tooltips stuff
+widget_class "*.tooltips.*.GtkToggleButton" style "tasklist"
+widget "gtk-tooltips" style "tooltips"
+
+# treeview stuff
+widget_class "*.GtkTreeView.GtkButton" style "tree"
+widget_class "*.GtkCTree.GtkButton" style "tree"
+widget_class "*.GtkList.GtkButton" style "tree"
+widget_class "*.GtkCList.GtkButton" style "tree"
+widget_class "*.GtkFrame.GtkLabel" style "frame-title"
+
+# notebook stuff
+widget_class "*.GtkNotebook.*.GtkEventBox" style "notebook"
+widget_class "*.GtkNotebook.*.GtkViewport" style "notebook"
+
+
+##i think this is bad karma, earl.
+
+style "rox"
+{
+    bg[NORMAL] = "#ffffff"
+}
+class "Collection" style "rox"
+
+# bad foo
+
+style "panel"
+{
+
+  xthickness = 0
+  ythickness = 0
+
+bg[NORMAL]        = "#efebe5"
+}
+
+widget_class "*Panel*GtkButton" style "panel"
+widget_class "*.Panel*Button*GtkLabel" style "panel"
+widget_class "*.Panel*Button*GtkLabel" style "panel"
+widget_class "*.Panel*GtkLabel" style "panel"
+

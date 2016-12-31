@@ -1,0 +1,79 @@
+!! Menu settings
+
+menu.title.bg: flat split gradient
+menu.title.bg.color: #5a9bd9
+menu.title.bg.colorTo: #5a9bd9
+menu.title.text.color: #5a9bd9
+
+menu.items.bg: flat solid
+menu.items.bg.color: #f9f7f3
+menu.items.bg.border.color: #EFEBE7
+menu.border.color: #b8ab8f
+menu.items.text.color: #444444
+menu.items.disabled.text.color: #b5b3ac
+
+menu.items.active.bg: flat vertical gradient border
+menu.items.active.bg.color: #5c9ddb
+menu.items.active.bg.colorTo: #4489c9
+menu.items.active.text.color: #ffffff
+menu.items.active.bg.border.color: #3f77ab
+
+menu.overlap: 1
+
+window.label.text.justify: center
+
+window.active.title.bg: flat gradient vertical bevel1
+window.active.title.bg.color: #87bdf0
+window.active.title.bg.colorTo: #3f84c5
+
+window.*.handle.bg:  raised solid bevel1
+window.*.handle.bg.color: #efebe5
+window.*.handle.bg.colorTo: #d3d7cf
+
+window.*.grip.bg:  parentrelative
+
+window.active.label.bg: parentrelative
+window.active.label.text.color: #ffffff
+
+window.active.button.unpressed.bg: parentrelative
+window.active.button.unpressed.image.color: #f2f2f9
+
+window.active.button.pressed.bg: flat solid
+window.active.button.pressed.bg.color: #87bdf0
+
+window.active.button.hover.bg: flat solid
+window.active.button.hover.bg.color: #a1caf0
+
+
+window.inactive.title.bg: flat gradient vertical bevel1
+window.inactive.title.bg.color: #ffffff
+window.inactive.title.bg.colorTo: #ddd7cb
+
+
+
+window.inactive.label.bg: parentrelative
+window.inactive.label.text.color: #cac7c0
+
+window.inactive.button.unpressed.bg: parentrelative
+window.inactive.button.unpressed.image.color: #cac7c0
+
+
+window.inactive.client.color: #e6e6e6
+window.active.client.color: #e6e6e6
+
+
+window.handle.width: 4
+window.client.padding.width: 0
+border.Width: 1
+padding.width: 3
+menu.overlap: 5
+border.color: #2e2e2e
+window.frameColor: #EFEBE7
+window.*.client.color: #EFEAE5
+*.text.justify: left
+!!Fonts
+
+window.active.label.text.font:Bitstream Vera Sans:pixelsize=12:bold
+window.inactive.label.text.font:Bitstream Vera Sans:pixelsize=12:bold
+menu.items.font: Bitstream Vera Sans:pixelsize=12:shadow=y:shadowoffset=1:shadowtint=0
+menu.title.text.font: Bitstream Vera Sans:pixelsize=0

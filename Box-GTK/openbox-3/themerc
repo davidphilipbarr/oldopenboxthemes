@@ -1,0 +1,40 @@
+*.font:Bitstream Vera Sans:pixelsize=12:bold
+menu*.font:Bitstream Vera Sans:pixelsize=12
+
+window.client.padding.width: 0
+border.Width: 1
+padding.width: 3
+window.handle.width: 4
+menu.overlap: 2
+
+window.*.client.color: GTK_BG_NORMAL
+border.color: GTK_FG_NORMAL
+menu.border.color: GTK_FG_INSENSITIVE
+
+*.title.bg: raised solid
+*.bg.color: GTK_BG_SELECTED
+*.label.bg: parentrelative
+
+window.inactive.title.bg.color: GTK_BG_NORMAL
+*.button.*.bg: parentrelative
+window.*.button.hover.bg: flat solid
+window.active.button.*.image.color: GTK_TEXT_SELECTED
+window.*.button.pressed.bg: flat solid
+window.inactive.button.hover.bg.color: GTK_BG_PRELIGHT
+window.active.button.hover.bg.color: GTK_BASE_PRELIGHT
+window.inactive.button.*.image.color:  GTK_TEXT_INSENSITIVE
+
+*.handle.bg: raised solid
+*.handle.bg.color: GTK_BG_NORMAL
+*.grip.bg: parentrelative
+
+menu.items.bg: flat solid
+menu.items.bg.color: GTK_BG_NORMAL
+menu.items.active.bg: flat solid
+
+menu.items.text.color: GTK_FG_NORMAL
+*.text.justify: left
+*.active.*text.color: GTK_TEXT_SELECTED
+
+*text.color: GTK_TEXT_INSENSITIVE
+*.disabled.*.color: GTK_BASE_INSENSITIVE

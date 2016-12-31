@@ -1,0 +1,98 @@
+!! total rip of novell's industrial theme for metacity, by tigert, i believe.
+
+window.handle.width: 5
+window.client.padding.width: 0
+border.Width: 1
+padding.width: 1
+
+border.color: #000000
+menu.overlap: 2
+window.frameColor: #f6f6f6
+window.*.client.color: #f6f6f6
+*.text.justify: center
+
+!! font me!
+!! Size wise it's probbaly smarter to use 'pixelsize' here 
+!! but it's easier to match gnome with 'size' :)
+
+window.active.label.text.font:Bitstream Vera Sans:size=10:bold:shadow=y:shadowoffset=1:shadowtint=90
+window.inactive.label.text.font:Bitstream Vera Sans:size=10:bold
+menu.items.font: Bitstream Vera Sans:size=9
+menu.title.text.font: Bitstream Vera Sans:size=0
+
+
+!! focus settings
+
+menu.title.bg: flat solid
+menu.title.bg.color: #6B8BAB
+menu.title.bg.colorTo: #506376
+menu.title.text.color: #6B8BAB
+
+menu.items.bg: raised solid bevel1
+menu.items.bg.color: #f6f6f6
+menu.items.text.color: #000000
+menu.items.disabled.text.color: #737573
+
+menu.items.active.bg: flat border solid
+menu.items.active.bg.color: #6484a4
+menu.items.active.text.color: #ffffff
+menu.items.active.bg.border.color: #3d5368
+
+window.active.title.bg: raised gradient vertical bevel1
+window.active.title.bg.color: #7291b1
+window.active.title.bg.colorTo: #526579
+window.active.*.bg.border.color: #a0b3c8
+
+window.active.label.bg: parentrelative
+window.active.label.text.color: #ffffff
+
+window.active.button.*.bg: flat border 
+window.active.button.*.bg.color: #495a6c
+window.active.button.*.image.color: #ffffff
+window.active.button.*.bg.border.color: #8799ab
+
+window.active.button.hover.bg.color: #6e7c8b
+window.active.button.hover.bg.border.color: #90a5ba
+window.active.button.pressed.bg.color: #293036
+window.active.button.pressed.bg.colorTo: #000000
+window.active.button.pressed.image.color: #bcbcbc
+window.active.button.pressed.bg.border.color: #95a5b2
+
+window.active.button.disabled.bg: parentrelative
+window.active.button.disabled.image.color: #ffffff
+
+window.active.handle.bg:  raised gradient vertical
+window.active.handle.bg.color: #FDFDFD
+window.active.handle.bg.colorTo: #E5E5E5
+window.*.grip.bg: parentrelative
+
+
+!! unfocused settings
+
+window.inactive.title.bg: raised solid
+window.inactive.title.bg.color: #f6f6f6
+
+window.inactive.label.bg: parentrelative
+window.inactive.label.text.color: #a8a8a8
+
+window.inactive.button.*.bg: flat border solid
+window.inactive.button.*.bg.color: #f6f6f6
+window.inactive.button.*.image.color:  #bcbcbc
+window.inactive.button.*.bg.border.color: #cfcfcf
+
+window.inactive.button.pressed.bg.color: #4f5051
+window.inactive.button.pressed.bg.border.color: #d7dfe6
+window.inactive.button.pressed.image.color: #bcbcbc
+
+window.inactive.button.hover.bg.color: #b3b4b5
+window.inactive.button.hover.bg.border.color: #d7dfe6
+window.inactive.button.hover.image.color: #ffffff
+
+window.inactive.button.disabled.bg: parentrelative
+window.inactive.button.disabled.image.color: #ffffff
+
+window.inactive.handle.bg: raised solid
+window.inactive.handle.bg.color: #f6f6f6
+window.inactive.grip.bg:  parentrelative
+
+

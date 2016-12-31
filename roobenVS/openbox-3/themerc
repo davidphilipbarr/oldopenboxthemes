@@ -1,0 +1,83 @@
+!!Fonts
+
+!!General
+
+window.handle.width: 3
+window.client.padding.width: 0
+border.Width: 1
+padding.width: 2
+menu.overlap: 2
+border.color: #3A2B14
+window.frameColor: #EFEBE7
+window.*.client.color: #EFEBE7
+*.text.justify: left
+
+!!Menu
+menu.border.color: #dbd8d0
+menu.title.bg: flat border vertical gradient 
+menu.title.bg.color: #5F481E
+menu.title.bg.colorTo: #4D381B
+menu.title.bg.border.color: #6A593D
+menu.title.text.color: #E5DED1
+
+menu.items.bg: flat solid
+menu.items.bg.color: #edeae2
+menu.items.bg.border.color: #EFEBE7
+
+menu.items.text.color: #55401a
+menu.items.disabled.text.color: #babdb6
+
+menu.items.active.bg: flat border solid
+menu.items.active.bg.color: #5b441b
+menu.items.active.bg.colorTo: #543f18
+menu.items.active.text.color: #ece9e1
+menu.items.active.bg.border.color: #3e2d11
+
+!!Active
+
+
+window.*.title.bg: flat border vertical gradient
+window.*.title.bg.color: #5F481E
+window.*.title.bg.colorTo: #4D381B
+window.*.title.bg.border.color: #6A593D
+
+window.active.title.bg.color: #60481f
+window.active.title.bg.colorTo: #4e3a14
+window.active.title.bg.border.color: #6d5634
+
+window.active.label.bg: parentrelative
+window.active.label.text.color: #E5DED1
+
+window.active.button.*.bg: parentrelative
+
+#window.active.button.pressed.bg: flat border vertical gradient
+#window.active.button.pressed.bg.color: #496891
+#window.active.button.pressed.bg.colorTo: #7997c0
+#window.active.button.pressed.bg.border.color: #6c8fbd
+window.active.button.pressed.image.color: #B7A67A
+window.active.button.*.image.color: #DED2BC
+
+window.active.button.hover.image.color: #ffffff
+window.active.button.disabled.image.color: #888888
+
+window.active.handle.bg: raised solid
+window.active.handle.bg.color: #edeae2
+window.active.handle.bg.colorTo: #eeefee
+window.*.grip.bg: parentrelative
+
+
+!!Inactive
+
+
+window.inactive.label.bg: parentrelative
+window.inactive.label.text.color: #CFC1A6
+
+window.inactive.button.*.bg: parentrelative
+window.inactive.button.*.image.color: #CFC1A6
+window.inactive.button.hover.bg.color: #999999
+
+window.inactive.handle.bg: raised solid
+window.inactive.handle.bg.color: #edeae2
+window.*.grip.bg: parentrelative
+
+

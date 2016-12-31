@@ -1,0 +1,112 @@
+!! Menu settings
+
+menu.title.bg: raised gradient crossdiagonal bevel1
+menu.title.bg.color: #6699CC
+menu.title.bg.colorTo: #334866
+menu.title.text.color: grey85
+menu.title.text.justify: left
+
+menu.items.bg: flat gradient horizontal
+menu.items.bg.color: #AAAACC
+menu.items.bg.colorTo: #AAAAD0
+menu.items.bg.border.color: #000000
+menu.items.text.color: #000022
+menu.items.disabled.text.color: #888888
+
+menu.items.active.bg: raised gradient horizontal bevel1
+menu.items.active.bg.color: #555577
+menu.items.active.bg.colorTo: #6699CC
+menu.items.active.text.color: grey85
+
+!! General window settings
+window.label.text.justify: left
+
+!! focused window settings
+window.active.client.color: #00FF00
+
+window.active.title.bg: raised gradient crossdiagonal
+window.active.title.bg.color: #6699CC
+window.active.title.bg.colorTo: #334866
+
+window.active.handle.bg: flat gradient crossdiagonal
+window.active.handle.bg.color: #6699CC
+window.active.handle.bg.colorTo: #334866
+
+window.active.grip.bg: parentrelative
+
+
+window.active.label.bg: parentrelative
+
+window.active.label.text.color: grey85
+
+window.active.button.unpressed.bg: parentrelative
+window.active.button.unpressed.image.color: grey85
+
+window.active.button.pressed.bg: sunken gradient crossdiagonal bevel1
+window.active.button.pressed.bg.color: #6699CC
+window.active.button.pressed.bg.colorTo: #334866
+window.active.button.pressed.image.color: grey85
+
+window.active.button.toggled.bg: parentrelative
+window.active.button.toggled.bg.color: #6699CC
+window.active.button.toggled.bg.colorTo: #334866
+
+window.active.button.toggled.image.color: grey85
+
+window.active.button.disabled.bg: parentrelative
+
+
+window.active.button.hover.bg: parentrelative
+window.active.button.hover.image.color: #ffffff
+0
+
+!! unfocused window settings
+window.inactive.client.color: grey50
+
+window.inactive.title.bg: flat gradient diagonal bevel1
+window.inactive.title.bg.color: #7F7F88
+window.inactive.title.bg.colorTo: #33333B
+
+window.inactive.handle.bg: flat gradient diagonal bevel1
+window.inactive.handle.bg.color: grey50
+window.inactive.handle.bg.colorTo: grey20
+
+window.inactive.grip.bg: parentrelative
+
+
+window.inactive.label.bg: parentrelative
+window.inactive.label.text.color: grey70
+
+window.inactive.button.unpressed.bg: parentrelative
+window.inactive.button.unpressed.image.color: grey60
+
+window.inactive.button.pressed.bg: sunken gradient crossdiagonal bevel1
+window.inactive.button.pressed.bg.color: grey60
+window.inactive.button.pressed.bg.colorTo: grey20
+window.inactive.button.pressed.image.color: grey85
+
+window.inactive.button.disabled.bg: parentrelative
+
+window.inactive.button.toggled.bg: parentrelative
+window.inactive.button.toggled.image.color: grey60
+
+window.inactive.button.hover.bg: parentrelative
+window.inactive.button.hover.image.color: #ffffff
+
+!! Global width settings
+border.width: 1
+padding.width: 2
+window.handle.width: 5
+window.client.padding.width: 0
+focus.inner.color: #A6CAF3
+focus.outer.color: #0000A0
+!menu.overlap: 2
+
+!! Miscellaneous settings
+border.color: #223344
+
+!! Font stuff
+window.active.label.text.font: Bitstream Vera Sans:size=10:bold
+menu.title.text.font: Bitstream Vera Sans:size=9:bold
+menu.items.font: Bitstream Vera Sans:size=9
+

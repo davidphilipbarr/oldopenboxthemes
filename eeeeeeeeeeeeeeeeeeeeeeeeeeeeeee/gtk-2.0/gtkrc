@@ -1,0 +1,232 @@
+#oh joy a gtkrc. 
+gtk_color_scheme = "fg_color:#333\nbg_color:#f2f2f2\nbase_color:#FCFCFB\ntext_color:#333\nselected_bg_color:#444\nselected_fg_color:#fff\ntooltip_bg_color:#F5F5B5\ntooltip_fg_color:#333"
+#f4f4f3
+
+  gtk-button-images = 0
+  gtk-menu-images = 0
+  gtk-cursor-blink = 0
+
+style "default"
+{
+  GtkButton      ::child-displacement-x = 0
+  GtkButton      ::child-displacement-y = 0
+  #GtkButton      ::default-outside-border = {3,3,3,3}
+
+  GtkRange::trough_border = 0
+  GtkRange::slider_width = 15
+  GtkRange::stepper_size = 15
+  GtkRadioButton::indicator_size=12
+  GtkScale       ::trough-side-details  = 0
+
+  GtkCheckButton ::indicator-size       = 14
+
+  GtkScrollbar::min_slider_length = 30
+  GtkMenuBar::internal-padding  = 0
+  GtkStatusbar::shadow_type = none
+  GtkNotebook::tab_vborder = 1
+ GtkNotebook::tab_hborder = 1 
+  GtkWidget::focus-line-width       = 0
+  GtkWidget::focus-padding          = 0
+
+## do we really want ugly lines here?  change menubar padding to 1 if so, cos so fat.
+  GtkMenuBar ::shadow-type = GTK_SHADOW_NONE
+  GtkToolbar ::shadow-type = GTK_SHADOW_NONE
+  GtkMenuItem::selected_shadow_type = none
+  GtkWidget::interior_focus         = 0
+  #GtkArrow::arrow-size = 0.8
+  GtkComboBox::appears-as-list = 0
+  GtkComboBox::focus-on-click = 0
+
+	GtkCheckButton ::indicator_size= 14
+  GtkScrolledWindow::scrollbars-within-bevel = 1
+  xthickness = 3
+  ythickness = 2
+
+	fg[NORMAL]        = @fg_color
+	fg[PRELIGHT]      = @fg_color
+	fg[SELECTED]      = @selected_fg_color
+	fg[ACTIVE]        = @fg_color
+	fg[INSENSITIVE]   = darker (@bg_color)
+
+	bg[NORMAL]        = @bg_color
+        bg[PRELIGHT]	  = shade (1.02, @bg_color)
+	bg[SELECTED]	  = shade (1.1, @selected_bg_color)
+	bg[INSENSITIVE]   = @bg_color
+	bg[ACTIVE]        = shade (.97, @bg_color)
+
+	base[NORMAL]      = @base_color
+	base[PRELIGHT]    = mix (0.1, @selected_bg_color, @bg_color)
+	base[ACTIVE]      = shade (0.9, @selected_bg_color)
+	base[SELECTED]    = mix (0.5, @selected_bg_color, @bg_color)
+	base[INSENSITIVE] = @bg_color
+
+	text[NORMAL]      = @text_color
+	text[PRELIGHT]    = @text_color
+	text[ACTIVE]      = @selected_fg_color
+	text[SELECTED]    = @selected_fg_color
+	text[INSENSITIVE] = darker (@bg_color)
+ 
+engine "mist"
+  {
+
+  }	
+
+}
+
+style "menu" 
+{
+  xthickness = 1
+  ythickness = 2
+
+  bg[NORMAL]     = shade (1.3, @bg_color)
+  bg[PRELIGHT]    = @selected_bg_color
+  bg[SELECTED]    = @selected_bg_color
+  fg[PRELIGHT]      = @selected_fg_color
+  fg[SELECTED]      = @selected_fg_color
+  text[PRELIGHT]      = @selected_fg_color
+  text[SELECTED]      = @selected_fg_color
+}
+
+style "range"
+{ 
+	bg[NORMAL]     = shade (1.01, @bg_color)
+
+	fg[PRELIGHT]    = shade (.50, @selected_fg_color)
+	fg[INSENSITIVE]   = shade (1.3, @fg_color)
+	#bg[PRELIGHT] = mix (0.85, @selected_bg_color, @bg_color)
+	bg[PRELIGHT] = mix (0.11, @selected_bg_color, @bg_color)
+	bg[ACTIVE]        = shade (.93, @bg_color)
+	xthickness = 2
+	ythickness = 2
+}
+
+style "button"
+{
+  xthickness = 3
+  ythickness = 3
+	#bg[NORMAL] = shade (1.01, @bg_color)
+	bg[ACTIVE] = shade (.95, @bg_color)
+	#bg[PRELIGHT] == shade (1.04, @bg_color)
+	bg[PRELIGHT] = mix (0.11, @selected_bg_color, @bg_color)
+}
+
+style "status" {
+	bg[PRELIGHT] = @selected_bg_color
+	bg[SELECTED]  = @selected_bg_color	
+	bg[NORMAL]      = @bg_color
+	base[SELECTED]    = @selected_bg_color	
+	#base[INSENSITIVE] = @base_color
+}
+
+style "check" {
+
+}  
+
+style "note" {
+
+  xthickness = 2
+  ythickness = 2
+  bg[NORMAL]     = shade (1.01, @bg_color)
+}  
+
+
+## k change this if...
+style "menubar" {
+
+  xthickness = 2
+  ythickness = 2
+  bg[NORMAL]     = @bg_color
+
+}  
+
+
+class "GtkWidget" style "default"
+
+class "GtkFrame" style "button"
+class "GtkStatusbar" style "status"
+class "GtkProgressBar" style "status"
+class "GtkRange" style "range"
+class "GtkNotebook" style "note"
+class "GtkMenu" style "menu"
+
+widget_class "*Menu*" style "menu"
+widget_class "*.GtkMenuItem.*" style "menu"
+widget_class "*.GtkAccelMenuItem.*" style "menu"
+widget_class "*.GtkRadioMenuItem.*" style "check"
+widget_class "*.GtkCheckMenuItem.*" style "check"
+widget_class "*.GtkImageMenuItem.*" style "menu"
+
+class "GtkSpinButton"  style "check"
+widget_class "*<GtkMenuBar>*"           style "menubar"
+
+class "GtkButton" style "button"
+
+####
+
+style "scale" {  
+
+  xthickness = 1
+  ythickness = 1
+	bg[NORMAL]        = @selected_bg_color
+	bg[ACTIVE] = @base_color
+	bg[INSENSITIVE] = @base_color
+}
+
+class "GtkScale"       style "scale"
+class "GtkVScale"      style "scale"
+class "GtkHScale"      style "scale"
+#class "GtkScrollbar"   style "scale"
+#class "GtkVScrollbar"  style "scale"
+#class "GtkHScrollbar"  style "scale"
+
+##O.o fixes for shit stole from the mist them in gnome svn ;)
+
+# Work around for http://bugzilla.gnome.org/show_bug.cgi?id=382646
+# Note that the work around assumes that the combobox is _not_ in
+# appears-as-list mode.
+# This style does not affect GtkComboBoxEntry, it does have an effect
+# on comboboxes in appears-as-list mode though.
+style "text-is-fg-color-workaround"
+{
+        text[NORMAL]              = @fg_color
+        text[ACTIVE]              = @fg_color
+        text[INSENSITIVE]         = mix (0.4, @fg_color, shade (0.85, @bg_color)) #shaded to bg[INSENSITIVE]
+        text[PRELIGHT]            = @fg_color
+        text[SELECTED]            = @selected_fg_color
+}
+widget_class "*.<GtkComboBox>.<GtkCellView>"   style "text-is-fg-color-workaround"
+
+style "menuitem-text-is-fg-color-workaround"
+{
+        text[NORMAL]              = @fg_color
+        text[ACTIVE]              = @fg_color
+        text[INSENSITIVE]         = mix (0.4, @fg_color, shade (0.85, @bg_color)) #shaded to bg[INSENSITIVE]
+        text[PRELIGHT]            = @selected_fg_color
+        text[SELECTED]            = @selected_fg_color
+}
+widget "*.gtk-combobox-popup-menu.*"   style "menuitem-text-is-fg-color-workaround"
+
+# Work around the usage of GtkLabel inside GtkListItems to display text.
+# This breaks because the label is shown on a background that is based on the
+# base color set.
+style "fg-is-text-color-workaround"
+{
+        fg[NORMAL]            = @text_color
+        fg[ACTIVE]            = @text_color
+        fg[PRELIGHT]          = @text_color
+        fg[SELECTED]          = @selected_fg_color
+        fg[INSENSITIVE]       = mix (0.5, @text_color, @base_color)
+}
+widget_class "*<GtkListItem>*" style "fg-is-text-color-workaround"
+# The same problem also exists for GtkCList and GtkCTree
+# Only match GtkCList and not the parent widgets, because that would also change the headers.
+widget_class "*<GtkCList>" style "fg-is-text-color-workaround"
+
+###stuff for nautilus??
+
+style "nautilus-location"
+{
+	bg[NORMAL] = mix(0.65, shade (1.02,@bg_color), @selected_bg_color)
+}
+
+widget "*.nautilus-extra-view-widget" style : highest "nautilus-location"

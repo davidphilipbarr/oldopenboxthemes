@@ -1,0 +1,8 @@
+[X-GNOME-Metatheme]
+Name=Ecru
+Type=X-GNOME-Metatheme
+Comment=A minimalistic appearance
+Encoding=UTF-8
+GtkTheme=Ecru
+MetacityTheme=Ecru
+IconTheme=Eggshell

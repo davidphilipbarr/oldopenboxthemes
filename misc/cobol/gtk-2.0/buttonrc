@@ -1,0 +1,60 @@
+# oh no pixmaps!
+
+style "buttons"= "button"
+{
+
+bg[PRELIGHT] = @selected_bg_color
+  bg[SELECTED]  = @selected_bg_color
+bg[NORMAL] = @bg_color
+  xthickness = 3
+  ythickness = 3
+
+  engine "pixmap"
+  {
+    image
+    {
+      function			= BOX
+      detail				= "buttondefault"
+      recolorable		= TRUE
+      file				= "Buttons/button-prelight.png"		
+      border			= { 1, 1, 1, 1 }
+      stretch			= TRUE
+    }
+    image
+    {
+      function			= BOX
+      state				= PRELIGHT
+      recolorable		= TRUE
+      file				= "Buttons/button-prelight.png"
+      border			= { 2, 2, 2, 2 }
+      stretch			= TRUE
+    }
+    image
+    {
+      function			= BOX
+      state				= ACTIVE
+      file				= "Buttons/button-pressed.png"		
+      border			= { 2, 2, 2, 2 }
+      stretch			= TRUE
+    }	
+    image 
+   {
+     function			= BOX
+     state				= INSENSITIVE
+     file					= "Buttons/button-normal.png"
+     border			= { 2, 2, 2, 2 }
+     stretch			= TRUE
+    }
+    image 
+    {
+      recolorable		= TRUE
+      function			= BOX
+      file				= "Buttons/button-normal.png"		
+      border			= { 2, 2, 2, 2 }
+      stretch			= TRUE
+    }	
+  }
+}
+
+
+class "GtkButton" style "buttons"

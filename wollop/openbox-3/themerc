@@ -1,0 +1,127 @@
+!# General
+padding.width: 1
+padding.height: 1
+window.handle.width: 2
+
+border.Width: 1
+window.active.client.color:  #F8F3F1
+window.inactive.client.color:  #F8F3F1
+window.client.padding.width: 0
+window.client.padding.height: 0
+menu.overlap: 2
+window.frameColor: #F8F3F1
+window.*.client.color: #F8F3F1
+*.text.justify: left
+
+!# Fonts
+*.font: shadow=n
+
+window.active.label.text.font:shadow=y:shadowtint=200:shadowoffset=1
+window.inactive.label.text.font:shadow=y:shadowtint=30:shadowoffset=1
+menu.items.font:shadow=y:shadowtint=0:shadowoffset=1
+
+window.active.title.bg.highlight: 90
+window.active.title.bg.shadow:    25
+
+window.inactive.title.bg.highlight: 50
+window.inactive.title.bg.shadow:    10
+
+window.*.grip.bg.highlight: 50
+window.*.grip.bg.shadow:    30
+
+window.*.handle.bg.highlight: 50
+window.*.handle.bg.shadow:    30
+
+!# Menu
+!# this matches the gtk them, that is all.
+menu.border.color: #b69e94
+menu.border.width: 1
+
+!# maybe you don't like that this is not the same as the main active title?? 
+menu.title.bg: flat solid 
+menu.title.bg.color: #eeeeee
+menu.title.text.color: #444
+
+menu.items.bg: flat solid
+menu.items.bg.color: #F8F3F1
+menu.items.text.color: #31353A
+menu.items.disabled.text.color: #c3a599
+ 
+menu.items.active.bg: Flat solid 
+menu.items.active.bg.color: #31353A
+menu.items.active.text.color: #ffffff
+
+menu.separator.width: 1
+menu.separator.padding.width: 4
+menu.separator.padding.height: 1 
+menu.separator.color: #bba298
+
+
+!# Active yo.
+
+window.*.border.color: #2E271F
+window.*.title.separator.color: #444444
+
+window.active.title.bg:  raised vertical gradient
+window.active.title.bg.color: #464744
+window.active.title.bg.colorTo: #555753
+
+window.active.label.bg: parentrelative
+window.active.label.text.color: #ffffff
+
+window.active.button.*.bg: parentrelative
+
+window.active.button.pressed.image.color: #506C7D
+window.active.button.*.image.color: #ffffff
+
+window.active.button.hover.image.color: #fff
+window.active.button.hover.bg: flat solid
+window.active.button.hover.bg.color: #2E271F
+
+window.active.button.disabled.image.color: #DDD
+
+window.active.handle.bg: raised solid
+window.active.handle.bg.color:  #363635
+window.*.grip.bg: parentrelative
+
+
+!# Inactive
+
+!## Hmmm we need an alternative...
+window.inactive.title.bg: raised vertical gradient
+window.inactive.title.bg.color: #555753
+window.inactive.title.bg.colorTo: #696b66
+window.inactive.label.bg: parentrelative
+window.inactive.label.text.color: #777777
+
+window.inactive.button.*.bg: parentrelative
+window.inactive.button.*.image.color: #777777
+window.inactive.button.hover.bg.color: #606060
+
+window.inactive.handle.bg: raised solid
+window.inactive.handle.bg.color: #444444
+window.*.grip.bg: parentrelative
+
+!#osd
+
+osd.border.width: 1
+osd.border.color:  #bba298
+
+osd.bg: flat solid
+osd.bg.color: #F8F3F1
+
+
+osd.label.bg: parentrelative
+osd.label.bg.color: #F8F3F1
+osd.label.bg.border.color: #bba298
+
+osd.label.text.color: #31353A
+!# yeah whatever, this is fine anyhoo?
+osd.hilight.bg: flat vertical gradient 
+osd.hilight.bg.color: #3770A6
+osd.hilight.bg.colorTo: #5D9ADB
+
+osd.unhilight.bg: flat vertical gradient
+osd.unhilight.bg.color: #BABDB6
+osd.unhilight.bg.colorTo: #F8F3F1
+

@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=CrunchBang
+Comment=Default CrunchBang theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=CrunchBang
+IconTheme=Tango
+MetacityTheme=CrunchBang
+CursorTheme=DMZ-White

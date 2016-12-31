@@ -1,0 +1,105 @@
+style "default"
+{
+
+
+	fg[NORMAL]        = "#111111"
+	fg[PRELIGHT]      = "#111111"
+	fg[SELECTED]      = "#111111"
+	fg[ACTIVE]        = "#111111"
+	fg[INSENSITIVE]   = "#777777"
+
+	bg[NORMAL]        = "#e0e0e0"
+        bg[PRELIGHT]	  = "#E9E9E9"
+	bg[SELECTED]	  = "#D1E1E8"
+	bg[INSENSITIVE]   = "#d0d0d0"
+	bg[ACTIVE]        = "#D1D1D1"
+
+	base[NORMAL]      = "#ffffff"
+	base[PRELIGHT]    = "#D1E1E8"
+	base[ACTIVE]      = "#d0d0d0"
+	base[SELECTED]    = "#d0d0d0"
+	base[INSENSITIVE] = "#d0d0d0"
+
+	text[NORMAL]      = "#111111"
+	text[PRELIGHT]    = "#111111"
+	text[ACTIVE]      = "#111111"
+	text[SELECTED]    = "#111111"
+	text[INSENSITIVE] = "#888888"
+
+#engine "mist" {}
+
+}
+
+style "menu" 
+{
+  
+
+    bg[PRELIGHT]	  = "#D1E1E8"
+    bg[SELECTED]	  = "#D1E1E8" 
+    bg[NORMAL]	  	  = "#ececec"
+    fg[PRELIGHT]	  = "#111111"
+    fg[SELECTED]	  = "#111111"
+}
+
+
+style "range"
+{	
+	
+    bg[PRELIGHT]	  = "#D1E1E8"
+    bg[SELECTED]	  = "#D1E1E8"
+    fg[PRELIGHT]	  = "#888888"
+    fg[SELECTED]	  = "#D1E1E8"
+}
+
+
+style "button"
+{
+ 	bg[NORMAL]	  = "#D6D6D6"
+	bg[PRELIGHT]	  = "#dae1e4"
+}
+
+style "check" {
+	base[SELECTED]    = "#D1E1E8"
+}  
+
+style "note" {
+
+	bg[NORMAL] =  "#e9e9e9"
+}  
+
+ 
+
+style "status" {
+ 	bg[PRELIGHT]	  = "#D1E1E8"
+	bg[SELECTED]	  = "#D1E1E8"
+	base[ACTIVE]	  = "#D1E1E8"
+	base[SELECTED]=  "#D1E1E8"
+ 	base[PRELIGHT]	  = "#D1E1E8"
+}
+
+class "GtkWidget" style "default"
+class "GtkFrame" style "button"
+class "GtkStatusbar" style "status"
+class "GtkProgressBar" style "status"
+class "GtkRange" style "range"
+class "GtkNotebook" style "note"
+widget_class "*Menu*" style "menu"
+class "GtkMenu" style "menu"
+widget_class "*.GtkMenuItem.*" style "menu"
+widget_class "*.GtkAccelMenuItem.*" style "menu"
+widget_class "*.GtkRadioMenuItem.*" style "check"
+widget_class "*.GtkCheckMenuItem.*" style "check"
+widget_class "*.GtkImageMenuItem.*" style "menu"
+class "GtkSpinButton"  style "check"
+class "GtkButton" style "button"
+
+
+
+
+
+
+
+
+
+
+

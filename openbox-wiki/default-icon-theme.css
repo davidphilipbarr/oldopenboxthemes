@@ -1,0 +1,17 @@
+table.default-icon-theme td,th {
+	border-bottom: 1px solid #EEE;
+		margin: 0;
+			padding: 4px;
+				font-family: sans-serif;
+					vertical-align: middle;
+						color: #555;
+						}
+
+						table.default-icon-theme td.dit-icon {
+							color: #999;
+								text-align: center;
+								}
+
+								table.default-icon-theme td.dit-description {
+									font-size: x-small;
+									}

@@ -1,0 +1,159 @@
+gtk_color_scheme = "fg_color:#111\nbg_color:#e0e0e1\nbase_color:#fff\ntext_color:#111\nselected_bg_color:#D1E1E8\nselected_fg_color:#111\ntooltip_bg_color:#E6E8D1\ntooltip_fg_color:#111"
+
+gtk-menu-images = 0
+gtk-button-images = 0
+
+style "default"
+{
+xthickness = 2
+	ythickness = 2		
+GtkButton::default_border = { 0, 0, 0, 0 }
+    GtkButton::child-displacement-x = 0
+    GtkButton::child-displacement-y = 1
+	GtkScrollbar::min_slider_length = 50	
+	GtkScrollbar::has-backward-stepper = 0
+	GtkScrollbar::has-secondary-forward-stepper = 0
+	GtkScrollbar::has-secondary-backward-stepper = 1
+	GtkScrolledWindow::                  scrollbar-spacing =0	
+	GtkScrolledWindow::scrollbars-within-bevel = 1 
+	GtkMenuBar::internal-padding  = 0
+	#GtkTreeView::expander_size    = 13
+	#GtkExpander::expander_size    = 13
+	GtkNotebook::tab_vborder = 0
+	GtkNotebook::tab_hborder = 0
+	GtkNotebook::tab-overlap = 1
+	GtkMenuBar     ::internal-padding     = 0	
+	GtkToolbar     ::internal-padding     = 0   	
+	GtkStatusbar::shadow_type = none
+	WnckTasklist::fade-overlay-rect = 0
+    	WnckTasklist::fade-loop-time    = 5.0 # 5 seconds
+    	WnckTasklist::fade-opacity      = 0.5 # final opacity
+	fg[NORMAL]        = @fg_color
+	fg[PRELIGHT]      = @fg_color
+	fg[SELECTED]      = @fg_color
+	fg[ACTIVE]        = @fg_color
+	fg[INSENSITIVE]   = shade (.6, @bg_color)
+
+	bg[NORMAL]        = @bg_color
+	bg[PRELIGHT]	  = shade (1.1, @bg_color)
+	bg[SELECTED]	  = shade (.84,@selected_bg_color)
+	bg[INSENSITIVE]   = shade (.98, @bg_color)
+	bg[ACTIVE]        = shade (.99, @bg_color)
+
+	base[NORMAL]      = @base_color
+	base[PRELIGHT]    = @selected_bg_color
+	base[ACTIVE]      = shade (.75,@bg_color)
+	base[SELECTED]    = shade (.95, @selected_bg_color)
+	base[INSENSITIVE] = shade (1.3, @selected_bg_color)
+
+	text[NORMAL]      = @text_color
+	text[PRELIGHT]    = @text_color
+	text[ACTIVE]      = @selected_fg_color
+	text[SELECTED]    = @selected_fg_color
+	text[INSENSITIVE] = darker (@bg_color)
+
+engine "equinox" {
+
+	curvature           = 2.0
+        menubarstyle        = 2 # 0 = flat, 1 = gradient, 2 = flat without border, 3 = gradient without border
+        toolbarstyle        = 2 # 0 = flat, 1 = gradient, 2 = flat without border, 3 = gradient without border, 4 = flat with bottom border, 5 = gradient with bottom border
+        buttonstyle         = 0 # 0 = normal, 1 = glassy
+        menuitemstyle       = 0 # 0 = normal, 1 = glassy
+        listviewheaderstyle = 0 # 0 = normal, 1 = glassy
+        scrollbarstyle      = 0 # 0 = normal, 1 = glassy, 2 = normal with handles, 3 = glassy with handles
+        scalesliderstyle    = 0 # 0 = normal, 1 = glassy, 2 = normal with bullet
+        checkradiostyle     = 0 # 0 = normal, 1 = glassy
+        progressbarstyle    = 0 # 0 = normal, 1 = glassy
+        separatorstyle    	= 1 # 0 = solid, 1 = gradient
+        animation           = TRUE # FALSE = disabled, TRUE = enabled
+        arrowsize           = 0.2 # controls combo_arrow circle size.  Diameter set by (11 + 2 * arrowsize)
+	}
+
+}
+
+class "GtkWidget" style "default"
+
+style "range"
+{	
+	xthickness = 0
+	ythickness = 0	    
+	bg[NORMAL]	  = @selected_bg_color
+	bg[ACTIVE]	  = @selected_bg_color
+	bg[PRELIGHT]	  = shade (1.1,  @selected_bg_color)
+	bg[SELECTED]	  = @selected_bg_color
+	fg[PRELIGHT]	  = shade (.70,  @selected_bg_color)
+	fg[SELECTED]	  = @selected_bg_color
+	text[NORMAL]      = mix (0.25, @base_color, @selected_fg_color)
+	base[NORMAL] = shade (2.0,  @base_color)
+
+engine "equinox" {
+
+	curvature           = 6.0
+}
+}
+
+class "GtkRange" style "range"
+
+style "thunar-pathbar" 
+{  
+   ThunarLocationButtons::spacing = 0
+
+}
+
+class "*ThunarLocationButtons*" style "thunar-pathbar"
+
+style "thunar-icon-view-reduced-style"
+{
+  ThunarIconView::column-spacing = 0
+  ThunarIconView::row-spacing = 0
+}
+
+class "ThunarIconView" style "thunar-icon-view-reduced-style"
+
+style "menuitem"
+{
+	ythickness = 2
+	xthickness = 2
+
+	bg[PRELIGHT]          = @selected_bg_color
+	bg[SELECTED]          = @selected_bg_color
+	fg[PRELIGHT]          = @selected_fg_color
+}
+
+style "menu" 
+{
+	  xthickness = 1
+  ythickness = 3
+
+    bg[PRELIGHT]	  = @selected_bg_color
+    bg[SELECTED]	  = @selected_bg_color
+    bg[NORMAL]	      = shade (1.05, @bg_color)
+    fg[PRELIGHT]	  = @selected_fg_color
+    fg[SELECTED]	  = @selected_fg_color
+} 
+class "GtkMenu" style "menu"
+
+widget_class "*<GtkMenuItem>*" style "menuitem"
+
+
+style "note" {
+
+  xthickness = 2
+  ythickness = 2
+  bg[NORMAL]     = shade (1.05, @bg_color)
+}  
+
+class "GtkNotebook*" style "note"
+
+style "button"
+{
+	GtkButton::inner-border = { 0, 1, 0, 0 }
+  xthickness = 3
+  ythickness = 3
+   bg[NORMAL]     = shade (.94, @bg_color)
+
+    bg[PRELIGHT]        = mix (0.55, @bg_color, @selected_bg_color)
+    bg[SELECTED]	  = @selected_bg_color
+}
+
+class "GtkButton" style "button"

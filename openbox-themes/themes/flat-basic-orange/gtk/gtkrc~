@@ -1,0 +1,87 @@
+style "default"
+{
+
+
+   fg[NORMAL]        = "#000000"
+  # fg[ACTIVE]        = "#00306b"
+  # fg[INSENSITIVE]   = "#acacac"
+  fg[PRELIGHT]      = "#000000"
+   fg[SELECTED]      = "#ffffff"
+ 
+  bg[NORMAL]       = "#d5d5d5"
+  bg[ACTIVE]       = "#bbbbbb"
+# bg[PRELIGHT]     = "#e6e2e6" 
+  bg[SELECTED]     = "#d1940c"
+  bg[INSENSITIVE]  = "#dddddd"
+
+ 
+  base[ACTIVE]  = "#807d74"
+  base[SELECTED]  = "#d1940c"
+#  base[INSENSITIVE]  = "#888888"
+  text[SELECTED]  = "#ffffff"
+  text[ACTIVE]    = { 1.0, 1.0, 1.0 }
+  
+  text[INSENSITIVE]= "#d5d5d5"
+  text[ACTIVE]     = "#ffffff"
+
+engine "mist" {}
+
+}
+
+style "menu" 
+{
+ 
+  bg[NORMAL]     = "#dddddd"
+  bg[PRELIGHT]    = "#d1940c"
+  bg[SELECTED]    = "#d1940c"
+  bg[ACTIVE]    = "#d1940c"
+  
+fg[PRELIGHT]  = "#ffffff"
+  fg[SELECTED]  = "#ffffff"
+}
+
+style "menui" 
+{
+  
+  #bg[NORMAL]     = "#ededed"
+  bg[PRELIGHT]    = "#d1940c"
+  bg[SELECTED]    = "#d1940c"
+  bg[ACTIVE]    = "#d1940c"
+  
+fg[PRELIGHT]  = "#ffffff"
+  fg[SELECTED]  = "#ffffff"
+}
+
+style "range"
+{
+bg[NORMAL]     = "#dddddd"
+bg[PRELIGHT]     = "#e6e6e6"
+fg[PRELIGHT]     = "#000000"
+bg[ACTIVE]       = "#cccccc"
+}
+
+
+style "button"
+{
+bg[NORMAL]     = "#dddddd"
+bg[PRELIGHT]     = "#e6e6e6"
+bg[ACTIVE]       = "#cccccc"
+fg[PRELIGHT]     = "#000000"
+
+
+
+}
+
+class "GtkWidget" style "default"
+class "GtkButton" style "button"
+class "GtkFrame" style "button"
+#class "GtkStatusbar" style "button"
+class "GtkRange" style "range"
+class "GtkNotebook" style "button"
+widget_class "*Menu*" style "menui"
+class "GtkMenu" style "menu"
+widget_class "*.GtkMenuItem.*" style "menu"
+widget_class "*.GtkAccelMenuItem.*" style "menu"
+widget_class "*.GtkRadioMenuItem.*" style "menu"
+widget_class "*.GtkCheckMenuItem.*" style "menu"
+widget_class "*.GtkImageMenuItem.*" style "menu"

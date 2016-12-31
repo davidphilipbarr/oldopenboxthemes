@@ -1,0 +1,38 @@
+logo:			png
+author:			me!
+
+typebuffer_factory:	default
+scrollbar_factory:	edb
+icon_factory:	alignbelow
+background_factory:	tile
+tooltip_factory:	 diagram
+rubberband_factory:	 nautilus
+
+open_folder_animation:	growfade
+open_app_animation:	grey
+
+shelf:			winter
+icon_view:		winter
+
+typebuffer_font:		vera
+typebuffer_fontsize:	 12
+icon_font:		    	vera
+icon_fontsize:			12
+icon_dropshadow: 0  
+icon_selection-colour: #c7c7c7 	
+icon_shadow-x-offset: 0 
+icon_shadow-y-offset: 0
+icon_view-spatial: 1
+ 
+tooltip_font:			vera
+tooltip_fontsize:		12
+textpath_font:          vera
+textpath_fontsize:     12
+textpath_dropshadow:    	0
+
+
+icon_set:		blue-milk
+icon_mode:		{w,h}/h
+icon_text_colour:	#000000
+icon_text_alpha:	179
+

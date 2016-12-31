@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Sonar
+Comment=openSUSE 11.2 default theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Sonar
+MetacityTheme=Sonar
+IconTheme=Gilouche
+CursorTheme=DMZ

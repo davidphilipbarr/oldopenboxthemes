@@ -1,0 +1,105 @@
+!! based on merry2 which i did anyway, good news! so i don't get in a 
+!! strop with myself about something. It is based off (i.e. port of)
+!! the old gnome simple theme, that was the default before clearlooks.
+
+#change me? what the hell?!
+#BG= #e7e7e7
+#ACCENT=#7590ae
+
+menu.border.color: #9c9e9c
+menu.title.bg: flat vertical gradient
+menu.title.bg.color: #6392c6
+menu.title.bg.colorTo: #84aade
+menu.title.text.color: #ffffff
+
+menu.items.bg: flat solid
+menu.items.bg.color: #f6f6f6
+menu.items.text.color: #333333
+
+menu.items.disabled.text.color: #cccccc
+
+menu.items.active.bg: flat vertical gradient
+menu.items.active.bg.color: #5a96d6
+menu.items.active.bg.colorTo: #4282bd
+menu.items.active.bg.border.color: #395573
+menu.items.active.text.color: #f6f8fb
+
+!! focused window settings
+window.active.client.color: #e7e7e7
+window.*.title.separator.color: #efefef
+window.active.title.bg: flat solid
+window.active.title.bg.color: #efefef
+window.active.title.bg.colorTo: #f6f6f6
+window.active.title.bg.border.color: #6b798c
+
+window.active.handle.bg: flat solid
+window.active.handle.bg.color: #e7e7e7
+window.active.handle.bg.colorTo: #dedede
+
+window.active.grip.bg: parentrelative
+
+#green
+window.active.label.bg: flat vertical gradient border
+window.active.label.bg.color: #6392c6
+window.active.label.bg.colorTo: #84aade
+window.active.label.bg.interlace.color: #6b798c
+window.active.label.bg.border.color: #6b798c
+window.active.label.text.color: #ffffff
+
+window.active.button.*.bg: parentrelative
+window.active.button.unpressed.image.color: #2f2f2f
+
+window.active.button.pressed.bg: sunken solid bevel1
+window.active.button.pressed.bg.color: #e7e7e7
+window.active.button.pressed.bg.colorTo: #000000
+window.active.button.pressed.bg.border.color: #000000
+
+!! unfocused window settings
+window.inactive.client.color: #e7e7e7
+window.inactive.border.color: #8C8A8C
+window.inactive.title.bg: flat solid 
+window.inactive.title.bg.color: #e7e7e7
+
+window.inactive.handle.bg: flat solid 
+window.inactive.handle.bg.color: #e7e7e7
+window.inactive.grip.bg: parentrelative
+
+window.inactive.label.bg: flat border
+window.inactive.label.bg.color: #d6d7d6
+window.inactive.label.bg.border.color: #9c9e9c
+window.inactive.label.text.color: #777777
+
+window.inactive.button.*.bg: parentrelative
+window.inactive.button.*.image.color: #4d4d4d
+
+window.inactive.button.pressed.bg: sunken solid bevel1
+window.inactive.button.pressed.bg.color: #e6e2de
+
+!#oh
+window.active.button.disabled.bg: parentrelative
+window.active.button.*.image.color: #7c7c7c
+
+
+osd.label.bg: parentrelative
+osd.label.bg.color: #efefef
+osd.label.bg.border.color: #9c9e9c
+osd.label.text.color: #333
+
+osd.hilight.bg: flat vertical gradient 
+osd.hilight.bg.color: #5a96d6
+osd.hilight.bg.colorTo: #4282bd
+osd.unhilight.bg: flat solid
+osd.unhilight.bg.color: #efefef
+osd.unhilight.bg.colorTo: #efefef
+
+
+border.Width: 1
+padding.width: 1
+window.handle.width: 0
+window.client.padding.width: 0
+menu.overlap: 2
+border.color: #333333
+window.*.client.color:	#e7e7e7
+*justify: center
+
+

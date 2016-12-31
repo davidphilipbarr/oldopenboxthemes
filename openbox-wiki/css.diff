@@ -1,0 +1,45 @@
+--- old/main.css	Wed Apr  6 17:20:10 2005
++++ main.css	Thu Apr  7 15:45:14 2005
+@@ -6,6 +6,7 @@
+ */
+ 
+ #globalWrapper {
++	background: transparent url("tango-steps-dark.gif") no-repeat 100% 42px;
+ 	padding: 0;
+ }
+ #column-content {
+@@ -37,8 +38,8 @@
+ */
+ 
+ body {
+-	background: transparent url("tango-steps-dark.gif") no-repeat 100% 42px;
+-	background-color: #333;
++	background: transparent url("bg.gif") repeat-x top;
++	background-color: #33436a;
+ 	color: #eee;
+ 	font-size: 92%;
+ 	line-height: 1.4em;
+@@ -86,12 +87,14 @@
+ }
+ 
+ dd img {
+-	border: 5px solid #ccc;
++	border: 5px solid #ede38e;
+ 	-moz-border-radius: 3px;
+ 	float: left;
+ 	margin-right: 12px;
+ 	margin-bottom: 6px;
+ 	margin-top: 6px; 
++	padding: 1px;
++	background-color: #96842e;
+ }
+ 
+ dt, dd { clear: both; }
+@@ -119,6 +122,7 @@
+ 	margin: 0;
+ }
+ h2 {
++	color: #8fb171;
+ 	padding-left: 43px;
+ 	background: transparent url(tango-steps-heading.gif) no-repeat left bottom;
+ }

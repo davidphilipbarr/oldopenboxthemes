@@ -1,0 +1,36 @@
+*border.Width: 2
+padding.height: 2
+window.handle.width: 0
+*.padding.width: 0
+padding.width: 3
+menu.overlap: 2
+*.bg.highlight: 50
+*.bg.shadow:    0
+*.justify: left
+*.bg: flat solid
+*.text.color: #fff
+*.*.color:#22aa99
+*.border.color:  #708090
+*.inactive.border.color:  #aaaaaa
+*.grip.bg: parentrelative
+*.title.bg: flat solid
+*.title.bg.color: #22aa99
+*.label.bg: parentrelative
+
+window.*.title.separator.color: #708090
+window.inactive.title.separator.color: #aaaaaa
+window.*.button.*.bg: parentrelative
+
+menu.border.color: #aaa
+menu.items.text.color: #d9d9d9
+menu.items.disabled.text.color: #737573
+menu.items.active.bg.color: #d9d9d9
+menu.items.active.text.color: #22aa99
+
+window.inactive.title.bg: flat solid
+window.inactive.title.bg.color: #22aa99
+window.inactive.label.text.color: #d9d9d9
+window.inactive.button.*.image.color: #d9d9d9
+osd.label.text.color: #d9d9d9
+window.active.button.*.image.color: #d9d9d9
+

@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openbox_menu>
+	<menu id="games-menu" label="Games">
+		<item label="Crack-Attack">
+			<action name="execute">
+				<execute>
+					crack-attack --name david --solo
+				</execute>
+			</action>
+		</item>
+		<item label="Spectrum">
+			<action name="execute">
+				<execute>
+					fuse
+				</execute>
+			</action>
+		</item>
+	<item label="Quake3">
+			<action name="execute">
+				<execute>
+				/usr/local/games/ioquake3/ioquake3
+				</execute>
+			</action>
+		</item>
+<item label="Quake">
+			<action name="execute">
+				<execute>
+				/usr/local/games/quake1/ezquake-gl.glx
+				</execute>
+			</action>
+		</item>
+		<item label="NES">
+			<action name="execute">
+				<execute>
+					gfceu
+				</execute>
+			</action>
+		</item>
+		<item label="Megadrive">
+			<action name="execute">
+				<execute>
+					gens
+				</execute>
+			</action>
+		</item>
+		<item label="sNES">
+			<action name="execute">
+				<execute>
+					zsnes
+				</execute>
+			</action>
+		</item>
+		<item label="xjump">
+			<action name="execute">
+				<execute>
+					xjump
+				</execute>
+			</action>
+		</item>
+		<item label="Xmame">
+			<action name="execute">
+				<execute>
+					gxmame
+				</execute>
+			</action>
+		</item>
+
+		<item label="Ultimate Doom">
+			<action name="execute">
+				<execute>
+			doomsday -game jdoom -iwad ~/Documents/wads/doomu.wad
+				</execute>
+			</action>
+		</item>
+<item label="Doom2">
+			<action name="execute">
+				<execute>
+			doomsday -game jdoom -iwad ~/Documents/wads/doom2.wad
+				</execute>
+			</action>
+		</item>
+		
+	</menu>
+	<menu id="config-menu" label="System Tools">
+		<item label="Synaptic Package Manager">
+			<action name="execute">
+				<execute>
+					sudo synaptic
+				</execute>
+			</action>
+		</item>
+		<item label="Gnome-system-monitor">
+			<action name="execute">
+				<execute>
+					gnome-system-monitor
+				</execute>
+			</action>
+		</item>
+		<item label="Gnome Appearance">
+			<action name="execute">
+				<execute>
+					gnome-appearance-properties
+				</execute>
+			</action>
+		</item>
+	<item label="Gnome Control Center">
+			<action name="execute">
+				<execute>
+					gnome-control-center
+				</execute>
+			</action>
+		</item>
+		<item label="Gconf-editor">
+			<action name="execute">
+				<execute>
+					gconf-editor
+				</execute>
+			</action>
+		</item>
+	
+		<item label="Networking">
+			<action name="Execute">
+				<execute>
+					sudo network-admin
+				</execute>
+			</action>
+		</item>
+		<item label="nitrogen">
+			<action name="Execute">
+				<execute>
+					nitrogen ~/Documents/backgrounds
+				</execute>
+			</action>
+		</item>
+		<item label="Obmenu">
+			<action name="Execute">
+				<execute>
+					obmenu
+				</execute>
+			</action>
+		</item>
+		<item label="OBConf">
+			<action name="execute">
+				<execute>
+					obconf
+				</execute>
+			</action>
+		</item>
+	<item label="GTK-ChTheme">
+			<action name="execute">
+				<execute>
+					gtk-chtheme
+				</execute>
+			</action>
+		</item>
+		<item label="Restart">
+			<action name="restart"/>
+		</item>
+
+		<item label="Reconfigure">
+			<action name="reconfigure"/>
+		</item>
+
+	
+	</menu>
+	<menu id="office-menu" label="Office">
+		<item label="Abiword">
+			<action name="execute">
+				<execute>
+					abiword
+				</execute>
+			</action>
+		</item>
+		<item label="Writer">
+			<action name="execute">
+				<execute>
+oowriter
+				</execute>
+			</action>
+		</item>
+<item label="Calc">
+			<action name="execute">
+				<execute>
+oocalc
+				</execute>
+			</action>
+		</item>
+
+<item label="Impress">
+			<action name="execute">
+				<execute>
+ooimpress
+				</execute>
+			</action>
+		</item>
+
+		
+	</menu>
+	<menu id="media-menu" label="Sound &amp; Video">
+		<item label="Gnome-volume-control">
+			<action name="execute">
+				<execute>
+					gnome-volume-control
+				</execute>
+			</action>
+		</item>
+		<item label="Totem">
+			<action name="execute">
+				<execute>
+					totem
+				</execute>
+			</action>
+		</item>
+		<item label="Sound-Juicer">
+			<action name="execute">
+				<execute>
+					sound-juicer
+				</execute>
+			</action>
+		</item>
+		<item label="Muine">
+			<action name="execute">
+				<execute>
+					muine
+				</execute>
+			</action>
+		</item>
+<item label="Banshee">
+			<action name="execute">
+				<execute>
+					banshee
+				</execute>
+			</action>
+		</item>
+		<item label="Realplayer">
+			<action name="execute">
+				<execute>
+					realplay
+				</execute>
+			</action>
+		</item>
+		<item label="Rhythmbox">
+			<action name="execute">
+				<execute>
+					rhythmbox
+				</execute>
+			</action>
+		</item>
+
+<item label="Serpentine">
+			<action name="Execute">
+				<execute>
+					serpentine
+				</execute>
+			</action>
+		</item>
+<item label="Brasero">
+			<action name="Execute">
+				<execute>
+					brasero
+				</execute>
+			</action>
+		</item>
+	</menu>
+	<menu id="gra-menu" label="Graphics">
+		<item label="Inkscape">
+			<action name="execute">
+				<execute>
+					inkscape
+				</execute>
+			</action>
+		</item>
+		<item label="The GIMP">
+			<action name="execute">
+				<execute>
+					gimp
+				</execute>
+			</action>
+		</item>
+		<item label="gcolor2">
+			<action name="execute">
+				<execute>
+					gcolor2
+				</execute>
+			</action>
+		</item>
+		<item label="Xmag">
+			<action name="execute">
+				<execute>
+					xmag
+				</execute>
+			</action>
+		</item>
+	<item label="Agave">
+			<action name="execute">
+				<execute>
+					agave
+				</execute>
+			</action>
+		</item>
+		<!--	
+	<item label="F-Spot">
+			<action name="execute">
+				<execute>
+					f-spot
+				</execute>
+			</action>
+		</item>
+-->
+	</menu>
+	<menu id="net-menu" label="Internet">
+		<item label="IRSSI">
+			<action name="execute">
+				<execute>
+				urxvt -T IRSSI -e irssi
+				</execute>
+			</action>
+		</item>
+		<item label="Pidgin">
+			<action name="execute">
+				<execute>
+					pidgin
+				</execute>
+			</action>
+		</item>
+		<item label="Firefox">
+			<action name="Execute">
+				<execute>
+					firefox
+				</execute>
+			</action>
+		</item>
+		<item label="Epiphany">
+			<action name="Execute">
+				<execute>
+epiphany
+				</execute>
+			</action>
+		</item>
+		<item label="Midori">
+			<action name="Execute">
+				<execute>
+midori
+				</execute>
+			</action>
+		</item>
+
+<item label="Thunderbird">
+			<action name="Execute">
+				<execute>
+		thunderbird
+				</execute>
+			</action>
+		</item>
+		<item label="gftp">
+			<action name="Execute">
+				<execute>
+					gftp
+				</execute>
+			</action>
+		</item>
+
+	<item label="Flickr Upload">
+			<action name="execute">
+				<execute>
+					postr
+				</execute>
+			</action>
+		</item>
+	</menu>
+	<menu id="tools" label="Accessories">
+		<item label="Gedit">
+			<action name="execute">
+				<execute>
+					gedit
+				</execute>
+			</action>
+		</item>
+		<item label="Calculator">
+			<action name="Execute">
+				<execute>
+					gcalctool
+				</execute>
+			</action>
+		</item>
+		<item label="Savesession">
+			<action name="execute">
+				<execute>
+					gnome-session-save
+				</execute>
+			</action>
+		</item>
+  <item label="Exit">
+    <action name="Exit" />
+  </item>
+		<item label="Xterm">
+			<action name="execute">
+				<execute>
+					xterm
+				</execute>
+			</action>
+		</item>
+	</menu>
+	<menu id="places" label="Places">
+
+
+		<item label="My Home">
+			<action name="Execute">
+				<execute>
+					thunar
+				</execute>
+			</action>
+		</item>
+<item label="Root">
+			<action name="Execute">
+				<execute>
+		sudo thunar
+				</execute>
+			</action>
+		</item>
+		<item label="Documents">
+			<action name="Execute">
+				<execute>
+					thunar ~/Documents
+				</execute>
+			</action>
+		</item>
+		<item label="Desktop">
+			<action name="Execute">
+				<execute>
+					thunar ~/Desktop
+				</execute>
+			</action>
+		</item>
+		<menu execute="/home/david/.config/openbox/scripts/battery.sh" id="pipe-3639ddd62" label="Battery"/>
+		<menu execute="/home/david/.config/openbox/scripts/volume.sh" id="pipe-3639dddsssssss" label="Volume"/>
+	<menu execute="/home/david/.config/openbox/scripts/system.sh" id="pipe-363962" label="System Information"/>
+
+		<menu execute="/home/david/.config/openbox/scripts/bookmarks.sh" id="pipe-363959" label="Bookmarks"/>
+		<menu execute="/home/david/.config/openbox/scripts/connected_servers.sh" id="pipe-363960" label="Servers"/>
+<!--
+		<menu execute="/home/david/.config/openbox/scripts/obrecent.sh" id="pipe-363961" label="Recent Documents"/>
+-->	
+<separator/>
+
+		<item label="Trash">
+			<action name="Execute">
+				<execute>
+					thunar ~/.Trash
+				</execute>
+			</action>
+		</item>
+
+		<item label="CD/DVD Creator">
+			<action name="Execute">
+				<execute>
+					nautilus burn:///
+				</execute>
+			</action>
+		</item>
+		<!--		<separator/>
+<item label="Network">
+			<action name="Execute">
+				<execute>
+					nautilus network:///
+				</execute>
+			</action>
+		</item>
+		<menu execute="/home/david/.config/openbox/scripts/connected_servers.sh" id="pipe-42442" label="Connected Servers"/>
+		<separator/>
+-->
+		<item label="Search for files...">
+			<action name="Execute">
+				<execute>
+tracker-search-tool
+				</execute>
+			</action>
+		</item>
+	</menu>
+	<menu id="root-menu" label="">
+		<!-- <separator /> -->
+		<menu id="tools"/>
+		<menu id="office-menu"/>
+		<menu id="net-menu"/>
+		<menu id="media-menu"/>
+		<menu id="gra-menu"/>
+		<menu id="games-menu"/>
+		<menu id="config-menu"/>
+		<menu id="places"/>
+
+<menu id="client-list-combined-menu" plugin="client-list-combined-menu"/>
+
+		<item label="Urxvt">
+			<action name="Execute">
+				<execute>
+					rxvt
+				</execute>
+			</action>
+		</item>
+
+	</menu>
+	<menu id="right-menu" label="">
+
+<item label="Urxvt">
+	<action name="execute">
+				<execute>
+					rxvt
+				</execute>
+			</action>
+		</item>
+<item label="Home">
+			<action name="Execute">
+				<execute>
+					thunar /home/david
+				</execute>
+			</action>
+		</item>
+<item label="Show Desktop">
+	<action name="execute">
+				<execute>
+					thunar /home/david/Desktop
+				</execute>
+			</action>
+		</item>
+
+<separator/>
+	<menu execute="/home/david/.config/openbox/scripts/templates.sh" id="pipe-3667853961" label="Create Document"/>
+<separator />
+<item label="Change Background">
+	<action name="execute">
+				<execute>
+					nitrogen ~/Documents/backgrounds
+</execute>
+			</action>
+		</item> 
+		<item label="Search for files...">
+<action name="execute">
+				<execute>
+					tracker-search-tool
+				</execute>
+			</action>
+		</item>
+	</menu>
+
+
+</openbox_menu>

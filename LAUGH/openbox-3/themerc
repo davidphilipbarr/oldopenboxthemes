@@ -1,0 +1,73 @@
+!!General
+
+window.handle.width: 2
+window.client.padding.width: 0
+border.Width: 1
+padding.width: 3
+menu.overlap: 2
+border.color: #272727
+window.frameColor: #fbf8f1
+window.*.client.color: #fbf8f1
+*.text.justify: center
+
+!!Fonts
+
+window.active.label.text.font:sans:pixelsize=11:shadow=y:shadowoffset=1:shadowtint=40:bold
+window.inactive.label.text.font:sans:pixelsize=11:shadow=y:shadowoffset=1:shadowtint=0:bold
+menu.items.font: sans:pixelsize=11
+menu.title.text.font:sans:pixelsize=11:shadow=y:shadowoffset=1:shadowtint=30:bold
+
+!!Menu
+menu.border.color: #9d9d9d
+menu.title.bg: flat border solid
+menu.title.bg.color: #313233
+menu.title.bg.border.color: #5c5c5e
+menu.title.text.color: #ffffff
+
+menu.items.bg: flat solid
+menu.items.bg.color: #fbf8f1
+menu.items.bg.border.color: #EFEBE7
+
+menu.items.text.color: #505050
+menu.items.disabled.text.color: #babdb6
+
+menu.items.active.bg: flat solid
+menu.items.active.bg.color: #a3b8cc
+menu.items.active.text.color: #222222
+menu.items.active.bg.border.color: #416c98
+
+!!Active
+
+window.active.title.bg: flat border solid
+window.active.title.bg.color: #313233
+window.active.title.bg.colorTo: #407CCA
+window.active.title.bg.border.color: #5c5c5e
+
+window.active.label.bg: parentrelative
+window.active.label.text.color: #ffffff
+
+window.active.button.*.bg: parentrelative
+window.active.button.*.image.color: #efefef
+window.active.button.hover.image.color: #F1B66F
+window.active.button.disabled.image.color: #dddddd
+
+window.active.handle.bg: raised solid
+window.active.handle.bg.color: #313233
+window.active.handle.bg.border.color: #4f5051
+window.*.grip.bg: parentrelative
+
+!!Inactive
+
+window.inactive.title.bg: flat solid
+window.inactive.title.bg.color: #45505b
+window.inactive.title.bg.colorTo: #fbf8f1
+window.inactive.title.bg.border.color: #efefef
+window.inactive.label.bg: parentrelative
+window.inactive.label.text.color: #7f8791
+
+window.inactive.button.*.bg: parentrelative
+window.inactive.button.*.image.color:  #7f8791
+window.inactive.button.disabled.image.color: #ffffff
+
+window.inactive.handle.bg: raised solid
+window.inactive.handle.bg.color: #45505b

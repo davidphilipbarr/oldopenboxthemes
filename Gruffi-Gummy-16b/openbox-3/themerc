@@ -1,0 +1,128 @@
+!# Mister theme for openbox 3.4 but for 16bit colour...
+
+!!General
+padding.width: 3
+padding.height: 3
+window.handle.width: 3
+window.client.padding.width: 0
+border.Width: 1
+window.active.client.color:  #efefef
+window.inactive.client.color:  #EFEFEF
+window.client.padding.width: 0
+window.client.padding.height: 0
+menu.overlap: 2
+window.frameColor: #EFEFEF
+window.*.client.color: #EFEFEF
+*.text.justify: left
+
+!# Fonts
+#window.active.label.text.font:shadow=y:shadowtint=20:shadowoffset=0
+#window.inactive.label.text.font:shadow=n
+menu.items.font:shadow=y:shadowtint=0:shadowoffset=2
+#menu.title.text.font:shadow=n
+#osd.*.font: shadow=n:shadow=y:shadowtint=0:shadowoffset=0
+
+!# Menu
+!# this matches the gtk them, that is all.
+menu.border.color: #9c9e9c
+menu.border.width: 1
+
+!# maybe you don't like that this is not the same as the main active title?? 
+menu.title.bg: flat solid 
+menu.title.bg.color: #DFE5E8
+menu.title.text.color: #444
+
+menu.items.bg: flat solid
+menu.items.bg.color: #efebef
+menu.items.bg.border.color: #efebef
+menu.items.text.color: #444
+menu.items.disabled.text.color: #babdb6
+
+menu.items.active.bg: Flat Gradient splitvertical border
+
+menu.items.active.bg.color: #528ece
+menu.items.active.bg.color.splitTo: #5a96d6
+menu.items.active.bg.colorTo: #4a8ac6
+menu.items.active.bg.colorTo.splitTo: #4282bd
+menu.items.active.bg.border.color: #3a5672
+menu.items.active.text.color: #ffffff
+
+!# Active yo.
+
+window.active.title.bg.highlight: 75
+window.active.title.bg.shadow:    00
+
+#window.active.border.color: #393B39
+window.active.border.color: #111111
+window.active.title.separator.color: #465F6E
+
+window.active.title.bg:  raised vertical gradient
+window.active.title.bg.color: #3770A6
+window.active.title.bg.colorTo: #5D9ADB
+window.active.title.bg.border.color: #5D9ADB
+
+window.active.label.bg: parentrelative
+window.active.label.text.color: #ffffff
+
+window.active.button.*.bg: parentrelative
+
+window.active.button.pressed.image.color: #506C7D
+window.active.button.*.image.color: #ffffff
+
+window.active.button.hover.image.color: #fff
+window.active.button.hover.bg: flat solid
+window.active.button.hover.bg.color: #5989C7
+
+window.active.button.disabled.image.color: #DDD
+
+window.active.handle.bg: raised solid
+window.active.handle.bg.color: #dedede
+window.*.grip.bg: parentrelative
+
+
+!# Inactive
+window.inactive.border.color: #595B59
+!# oh which one?!
+!# light 
+!!window.inactive.title.separator.color: #babdb6
+!# invisible!!
+window.inactive.title.separator.color: #efefef
+
+window.inactive.title.bg: flat border solid
+window.inactive.title.bg.color: #efefef
+window.inactive.title.bg.colorTo: #efefef
+window.inactive.title.bg.border.color: #efefef
+window.inactive.label.bg: parentrelative
+window.inactive.label.text.color: #333333
+
+window.inactive.button.*.bg: parentrelative
+window.inactive.button.*.image.color: #8C8A8C
+window.inactive.button.hover.bg.color: #999
+
+window.inactive.handle.bg: raised solid
+window.inactive.handle.bg.color: #dedede
+window.*.grip.bg: parentrelative
+
+!#osd
+
+osd.border.width: 1
+osd.border.color:  #9c9e9c
+
+osd.bg: flat border vertical gradient
+osd.bg.color: #E6E7E6
+osd.bg.colorTo: #efefef
+osd.bg.border.color: #efefef
+
+osd.label.bg: parentrelative
+osd.label.bg.color: #efefef
+osd.label.bg.border.color: #9c9e9c
+
+osd.label.text.color: #444
+!# yeah whatever, this is fine anyhoo?
+osd.hilight.bg: flat vertical gradient 
+osd.hilight.bg.color: #3770A6
+osd.hilight.bg.colorTo: #5D9ADB
+osd.unhilight.bg: flat vertical gradient
+osd.unhilight.bg.color: #BABDB6
+osd.unhilight.bg.colorTo: #efefef
+

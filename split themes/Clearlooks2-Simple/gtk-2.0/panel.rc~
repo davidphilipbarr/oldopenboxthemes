@@ -1,0 +1,53 @@
+##################### PANEL BACKGROUND ###############################
+
+
+
+style "panelbg"
+{
+	
+
+  xthickness            			= 2
+  ythickness            			= 2
+ #    engine "caligula" 
+#{
+
+#	window-top-color = "#EFEBE5"
+#	window-bottom-color = "#EFEBE5"
+ #   }
+}
+class "*Panel*" style "panelbg"
+
+
+
+##################### PANEL BUTTONS ###############################
+
+style "panelbuttons" = "default"
+{
+	fg[NORMAL] 			= "#444444"
+	fg[PRELIGHT] 			= "#444444"
+	fg[ACTIVE] 			= "#444444"
+	fg[SELECTED] 			= "#ffffff"
+
+    xthickness            			= 1
+    ythickness            			= 1
+
+	GtkWidget::focus_padding = 1
+#engine "caligula" {}
+	engine "pixmap" {}
+
+}
+widget_class "*Panel*GtkToggleButton" style "panelbuttons"
+widget_class "*Panel*GtkButton" style "panelbuttons"
+
+style "panel_button_label"
+{
+fg[NORMAL] 			= "#444444"
+	fg[PRELIGHT] 			= "#444444"
+	fg[ACTIVE] 			= "#444444"
+	fg[SELECTED] 			= "#ffffff"
+}
+#widget_class "*.GtkToolbar*GtkLabel" style "panel_button_label"
+#widget_class "*.GtkToggleButton*GtkLabel" style "panel_button_label"
+widget_class "*.Panel*Button*GtkLabel" style "panel_button_label"
+widget_class "*.Panel*GtkLabel" style "panel_button_label"
+

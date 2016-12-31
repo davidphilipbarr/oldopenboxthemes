@@ -1,0 +1,188 @@
+
+
+style "default"
+{
+  GtkButton      ::default_border    = { 0, 0, 0, 0 }
+  GtkRange       ::trough_border     = 0
+  GtkPaned       ::handle_size       = 6
+  GtkRange       ::slider_width      = 15
+  GtkRange       ::stepper_size      = 15
+  GtkScrollbar   ::min_slider_length = 30
+  GtkCheckButton ::indicator_size    = 12
+  GtkMenuBar     ::internal-padding  = 0
+  GtkTreeView    ::expander_size     = 14
+  GtkExpander    ::expander_size     = 16
+
+  xthickness = 1
+  ythickness = 1
+
+  fg[NORMAL]        = "#444444" 
+  fg[PRELIGHT]      = "#444444" 
+  fg[ACTIVE]        = "#444444" 
+  fg[SELECTED]      = "#ffffff" 
+  fg[INSENSITIVE]   = "#b5b3ac" 
+
+  bg[NORMAL]        = "#eeeeec" 
+  bg[PRELIGHT]      = "#f7f7f5" 
+  bg[ACTIVE]        = "#e0e0df" 
+  bg[SELECTED]      = "#3c74bd" 
+  bg[INSENSITIVE]   = "#eeeeec" 
+	
+  base[NORMAL]      = "#ffffff" # white
+  base[PRELIGHT]    = "#729fcf" # blueish
+  base[ACTIVE]      = "#a29e8e" # dark beige / grey
+  base[SELECTED]    = "#3c74bd" # blueish
+  base[INSENSITIVE] = "#eeeeec" #light beige / grey
+	
+  text[NORMAL]      = "#444444" # black
+  text[PRELIGHT]    = "#444444" # black
+  text[ACTIVE]      = "#ffffff" # white
+  text[SELECTED]    = "#ffffff" # white
+  text[INSENSITIVE] = "#b5b3ac" # dark beige / grey
+
+  engine "rezlooks"  {
+    menubarstyle      = 2       # 0 = flat, 1 = sunken, 2 = flat gradient
+  scrollbar_color   = "#729fcf"
+  }
+}
+
+style "wide" = "default"
+{
+  xthickness = 2
+  ythickness = 2
+}
+
+style "button" = "default"
+{ 
+ # bg[NORMAL]        = "#D7D7D3"
+  bg[NORMAL]        = "#e0e0df"
+xthickness = 3
+  ythickness = 3
+}
+
+style "check" = "button"
+{
+  text[NORMAL] = "#2f3941" # blueish
+  text[PRELIGHT] = "#3c4a53" # blueish
+}
+
+style "notebook" = "wide"
+{
+  #bg[NORMAL] = "#f2f2f0"
+  #bg[INSENSITIVE] = "#f2f2f0"
+  bg[SELECTED]    = "#fcaf3e"
+}
+
+style "tasklist" = "default"
+{
+  xthickness = 5
+  ythickness = 3
+}
+
+style "menu" = "default"
+{
+  xthickness = 2
+  ythickness = 1
+  #bg[NORMAL] = "#ffffff"
+}
+
+style "menu-item" = "default"
+{
+  xthickness = 2
+  ythickness = 3
+  fg[PRELIGHT] = "#ffffff"
+  text[PRELIGHT] = "#ffffff"
+}
+
+style "menu-itembar" = "default"
+{
+  xthickness = 3
+  ythickness = 3
+}
+
+style "tree" = "default"
+{
+  xthickness = 2
+  ythickness = 2
+}
+
+style "frame-title" = "default"
+{
+  fg[NORMAL] = "#2a2a2a"
+}
+
+style "tooltips" = "default"
+{
+  xthickness = 4
+  ythickness = 4
+  bg[NORMAL] = { 1.0,1.0,0.75 }
+}
+
+style "progressbar" = "default"
+{
+  xthickness = 1
+  ythickness = 1
+
+  fg[PRELIGHT]  = "#ffffff"
+}
+
+style "combo" = "default"
+{
+  xthickness = 2
+  ythickness = 3
+}
+
+# widget styles
+class "GtkWidget" style "default"
+class "GtkButton" style "button"
+class "GtkCombo"  style "button"
+class "GtkRange"  style "wide"
+class "GtkFrame"  style "wide"
+class "GtkMenu"   style "menu"
+class "GtkEntry"  style "button"
+class "GtkMenuItem"    style "menu-item"
+class "GtkStatusbar"   style "wide"
+class "GtkNotebook"    style "notebook"
+class "GtkProgressBar" style "progressbar"
+class "GtkCheckButton" style "check"
+class "GtkRadioButton" style "check"
+
+widget_class "*MenuItem.*" style "menu-item"
+
+# combobox stuff
+widget_class "*.GtkComboBox.GtkButton" style "combo"
+widget_class "*.GtkCombo.GtkButton"    style "combo"
+
+# tooltips stuff
+widget_class "*.tooltips.*.GtkToggleButton" style "tasklist"
+widget "gtk-tooltips" style "tooltips"
+
+# treeview stuff
+widget_class "*.GtkTreeView.GtkButton" style "tree"
+widget_class "*.GtkCTree.GtkButton" style "tree"
+widget_class "*.GtkList.GtkButton" style "tree"
+widget_class "*.GtkCList.GtkButton" style "tree"
+widget_class "*.GtkFrame.GtkLabel" style "frame-title"
+
+# notebook stuff
+widget_class "*.GtkNotebook.*.GtkEventBox" style "notebook"
+widget_class "*.GtkNotebook.*.GtkViewport" style "notebook"
+
+
+##HACK!!!!
+
+#style "panel"
+#{#
+#
+#  xthickness = 0
+#  ythickness = 0#
+#
+#bg[NORMAL] = "#eeeeec"
+#engine "pixmap" {}
+#}
+
+#widget_class "*Panel*GtkButton" style "panel"
+#widget_class "*.Panel*Button*GtkLabel" style "panel"
+#widget_class "*.Panel*GtkLabel" style "panel"
+
+

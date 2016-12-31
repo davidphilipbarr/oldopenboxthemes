@@ -1,0 +1,8 @@
+lux is an odd theme, it depends on the font being 10 in size or 12 pixelsize. 
+
+The buttons need to be only 1 pixel shorter than the button border. The left and right of the button image edges overlaps the button border, giving it an oblong effect, if you change the font size, you'll have to make new pixmaps that fit it :) 
+
+the buttons are 16 pixels sqaure, they are 16 pixels wide but ony 14 in height, leaving a 1 pixel gap top and bottom, see in teh images dir for what it is supposed to look like.
+
+
+lux2 has none of this button crap

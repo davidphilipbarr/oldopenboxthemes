@@ -1,0 +1,103 @@
+!! it might be nice to have those waves things in teh title bar but it just 
+!! ain't possible, vertical gradienat scream class sanyway. as far as i can 
+!! figure out this is about as close as possible to match or *compliment* 
+!! the clearlooks gtk theme?
+
+
+!!General
+
+window.handle.width: 0
+window.client.padding.width: 0
+border.Width: 1
+padding.width: 3
+menu.overlap: 2
+#border.color: #333333
+border.color: #5e5e5e
+window.frameColor: #EFEBE7
+window.*.client.color: #EFEBE7
+*.text.justify: center
+
+!!Fonts
+
+window.active.label.text.font:Bitstream Vera Sans:pixelsize=12:shadow=y:shadowoffset=1:shadowtint=0:bold
+window.inactive.label.text.font:Bitstream Vera Sans:pixelsize=12:shadow=y:shadowoffset=1:shadowtint=1:bold
+menu.items.font: Bitstream Vera Sans:pixelsize=12:shadow=y:shadowoffset=2:shadowtint=0
+menu.title.text.font: Bitstream Vera Sans:size=0
+
+!!Menu
+menu.border.color: #a6a6a6
+menu.title.bg: flat gradient split
+menu.title.bg.color: #2182f5
+menu.title.bg.colorTo: #2182f5
+menu.title.text.color: #2182f5
+
+menu.items.bg: flat solid
+menu.items.bg.color: #f9f9f9
+menu.items.bg.border.color: #EFEBE7
+
+menu.items.text.color: #424242
+menu.items.disabled.text.color: #d4cfca
+
+menu.items.active.bg: flat gradient vertical border
+menu.items.active.bg.color: #3688f3
+menu.items.active.bg.colorTo: #2175e2
+menu.items.active.text.color: #ffffff
+menu.items.active.bg.border.color: #306ebf
+
+!!Active
+
+
+window.active.title.bg: raised gradient split 
+window.active.title.bg.color: #3c94fe
+window.active.title.bg.colorTo: #2182f5
+
+window.active.label.bg: parentrelative
+window.active.label.text.color: #ffffff
+
+window.active.button.*.bg: parentrelative
+window.active.button.*.image.color: #ffffff
+window.active.button.*.bg.color: #69a0e4
+window.active.button.*.bg.colorTo: #5a94dc
+window.active.button.*.bg.border.color: #7c7c7c
+
+window.active.button.hover.bg: flat solid
+window.active.button.hover.bg.color: #3994fd
+window.active.button.hover.bg.colorTo: #4c91d1
+window.active.button.hover.image.color: #ffffff
+window.active.button.pressed.bg: flat solid 
+window.active.button.pressed.bg.color: #537797
+window.active.button.pressed.bg.colorTo: #50708d
+window.active.button.disabled.image.color: #888888
+
+window.active.handle.bg: raised gradient vertical
+window.active.handle.bg.color: #f1f1f1
+window.active.handle.bg.colorTo: #d9d9d9
+window.*.grip.bg: parentrelative
+
+
+!!Inactive
+
+window.inactive.title.bg: flat gradient split 
+window.inactive.title.bg.color: #efefef
+window.inactive.title.bg.colorTo: #e8e8e8
+
+window.inactive.label.bg: parentrelative
+window.inactive.label.text.color: #666564
+
+window.inactive.button.*.bg: parentrelative
+window.inactive.button.*.bg.color: #f1f1f1
+window.inactive.button.*.bg.colorTo: #d8d8d8
+window.inactive.button.*.image.color:  #cccccc
+window.inactive.button.*.bg.border.color: #bbbbbb
+#window.inactive.button.disabled.bg: parentrelative
+
+window.inactive.button.pressed.bg.color: #4f5051
+window.inactive.button.hover.bg: flat solid  
+window.inactive.button.hover.bg.color: #ffffff
+window.inactive.button.disabled.image.color: #ffffff
+
+window.inactive.handle.bg: raised gradient vertical
+window.inactive.handle.bg.color: #f1f1f1
+window.inactive.handle.bg.colorTo: #d9d9d9
+window.*.grip.bg: parentrelative
+

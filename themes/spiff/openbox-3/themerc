@@ -1,0 +1,136 @@
+!!---------------------------------------------------------------------------
+!! abs bb spiff by cerement -- [absinthe182.com]
+!!---------------------------------------------------------------------------
+!! recreation of the Spiff blackbox theme
+!! abs blackbox revivals -- number 12 of in a series of 14
+!!---------------------------------------------------------------------------
+!! Creative Commons GNU GPL-2
+!!    [creativecommons.org/licenses/GPL/2.0]
+!!---------------------------------------------------------------------------
+
+!!---------------------------------------------------------------------------
+!! Dimensions
+
+border.width:				1
+border.color:				#000000
+
+padding.width:				1
+window.handle.width:			3
+window.client.padding.width:		0
+
+menu.overlap:				2
+
+!!---------------------------------------------------------------------------
+!! Fonts
+
+window.active.label.text.font:		Bitstream Vera Sans:pixelsize=10
+window.label.text.justify:		left
+
+menu.title.text.font:			Bitstream Vera Sans:pixelsize=10
+menu.title.text.justify:		left
+
+menu.items.font:			Bitstream Vera Sans:pixelsize=10
+
+!!---------------------------------------------------------------------------
+!! Menu Settings
+
+menu.title.bg:				flat gradient horizontal interlaced
+menu.title.bg.color:			#000000
+menu.title.bg.colorTo:			#789094
+menu.title.bg.interlace.color:		#000000
+menu.title.text.color:			#ffffff
+
+menu.items.bg:				flat gradient diagonal
+menu.items.bg.color:			#c0c4c8
+menu.items.bg.colorTo:			#707478
+menu.items.text.color:			#404448
+
+menu.items.active.bg:			flat gradient horizontal interlaced
+menu.items.active.bg.color:		#000000
+menu.items.active.bg.colorTo:		#707088
+menu.items.active.bg.interlace.color:	#000000
+menu.items.active.text.color:		#ffffff
+
+menu.items.disabled.text.color:		#a0a4a8
+
+!!---------------------------------------------------------------------------
+!! Window Settings
+
+window.active.title.bg:				flat gradient vertical
+window.active.title.bg.color:			#c0c4c8
+window.active.title.bg.colorTo:			#a0a4a8
+
+window.active.label.bg:				flat gradient horizontal interlaced
+window.active.label.bg.color:			#000000
+window.active.label.bg.colorTo:			#789094
+window.active.label.bg.interlace.color:		#000000
+window.active.label.text.color:			#ffffff
+
+window.active.handle.bg:			flat gradient diagonal
+window.active.handle.bg.color:			#c0c4c8
+window.active.handle.bg.colorTo:		#a0a4a8
+
+window.active.grip.bg:				flat gradient diagonal
+window.active.grip.bg.color:			#000000
+window.active.grip.bg.colorTo:			#789094
+
+window.inactive.title.bg:			flat gradient vertical
+window.inactive.title.bg.color:			#a0a4a8
+window.inactive.title.bg.colorTo:		#808488
+
+window.inactive.label.bg:			flat gradient horizontal interlaced
+window.inactive.label.bg.color:			#000000
+window.inactive.label.bg.colorTo:		#606078
+window.inactive.label.bg.interlace.color:	#000000
+window.inactive.label.text.color:		#a0a4a8
+
+window.inactive.handle.bg:			flat gradient diagonal
+window.inactive.handle.bg.color:		#a0a4a8
+window.inactive.handle.bg.colorTo:		#808488
+
+window.inactive.grip.bg:			flat gradient diagonal
+window.inactive.grip.bg.color:			#000000
+window.inactive.grip.bg.colorTo:		#606078
+
+!!---------------------------------------------------------------------------
+!! Button Settings
+
+window.active.button.unpressed.bg:			flat gradient vertical
+window.active.button.unpressed.bg.color:		#bcc0c4
+window.active.button.unpressed.bg.colorTo:		#a4a8ac
+window.active.button.unpressed.image.color:		#000000
+
+window.active.button.hover.bg:				flat gradient vertical
+window.active.button.hover.bg.color:			#c0c4c8
+window.active.button.hover.bg.colorTo:			#b0b4b8
+
+window.active.button.pressed.bg:			flat gradient diagonal
+window.active.button.pressed.bg.color:			#606468
+window.active.button.pressed.bg.colorTo:		#808488
+
+window.active.button.disabled.bg:			parentrelative
+window.active.button.disabled.image.color:		#a0a4a8
+
+window.active.button.toggled.bg:			flat gradient vertical
+window.active.button.toggled.bg.color:			#bcc0c4
+window.active.button.toggled.bg.colorTo:		#a4a8ac
+
+window.inactive.button.unpressed.bg:			flat gradient vertical
+window.inactive.button.unpressed.bg.color:		#9ca0a4
+window.inactive.button.unpressed.bg.colorTo:		#84888c
+window.inactive.button.unpressed.image.color:		#404448
+
+window.inactive.button.hover.bg:			flat gradient vertical
+window.inactive.button.hover.bg.color:			#a0a4a8
+window.inactive.button.hover.bg.colorTo:		#909498
+
+window.inactive.button.pressed.bg:			flat gradient diagonal
+window.inactive.button.pressed.bg.color:		#606468
+window.inactive.button.pressed.bg.colorTo:		#808488
+
+window.inactive.button.disabled.bg:			parentrelative
+window.inactive.button.disabled.image.color:		#a0a4a8
+
+window.inactive.button.toggled.bg:			flat gradient vertical
+window.inactive.button.toggled.bg.color:		#9ca0a4
+window.inactive.button.toggled.bg.colorTo:		#84888c

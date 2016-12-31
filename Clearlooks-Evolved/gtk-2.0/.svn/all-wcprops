@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/gtk-engines/!svn/ver/801/trunk/themes/Clearlooks/gtk-2.0
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/gtk-engines/!svn/ver/232/trunk/themes/Clearlooks/gtk-2.0/Makefile.am
+END
+gtkrc
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/gtk-engines/!svn/ver/801/trunk/themes/Clearlooks/gtk-2.0/gtkrc
+END

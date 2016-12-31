@@ -1,0 +1,157 @@
+!# Clearlooks-Evolving
+!# Clearlooks as it evolves in gnome-svn...
+!# Last updated 19/01/08
+
+# Fonts
+# these are really halos, but who cares?
+
+*.font: shadow=n
+window.active.label.text.font:shadow=y:shadowtint=0:shadowoffset=1
+#window.inactive.label.text.font:shadow=y:shadowtint=00:shadowoffset=0
+menu.items.font:shadow=y:shadowtint=0:shadowoffset=1
+
+!# general stuff
+
+border.width: 1
+padding.width: 2
+padding.height: 2
+window.handle.width: 3
+window.client.padding.width: 0
+menu.overlap: 2
+*.justify: center
+
+!# lets set our damn shadows here, eh?
+
+*.bg.highlight: 10
+*.bg.shadow:    05
+
+window.active.title.bg.highlight: 10
+window.active.title.bg.shadow:    00
+
+window.inactive.title.bg.highlight: 10
+window.inactive.title.bg.shadow:    00
+
+window.*.grip.bg.highlight: 50
+window.*.grip.bg.shadow:    30
+
+window.*.handle.bg.highlight: 50
+window.*.handle.bg.shadow:    30
+
+!# Menu settings
+
+menu.border.color: #aaaaaa
+menu.border.width: 1
+
+menu.title.bg: solid flat
+menu.title.bg.color: #E6E7E6
+menu.title.text.color: #111111
+
+menu.items.bg: Flat Solid
+menu.items.bg.color: #ebeae8
+menu.items.text.color: #111111
+menu.items.disabled.text.color: #aaaaaa
+
+menu.items.active.bg: Flat Gradient splitvertical border
+
+menu.items.active.bg.color: #108DCF
+menu.items.active.bg.color.splitTo: #1DADF7
+
+menu.items.active.bg.colorTo: #0E89C9
+menu.items.active.bg.colorTo.splitTo: #0E89C9
+menu.items.active.bg.border.color: #1A5E82
+menu.items.active.text.color: #ffffff
+
+!# set handles here and only the once?
+
+window.*.handle.bg: Raised solid
+window.*.handle.bg.color: #ECE9E9
+window.*.grip.bg: Raised solid
+window.*.grip.bg.color: #ECE9E9
+
+!# Active
+
+!# no handles - kind of closer to the clearlooks border, maybe?
+!#window.active.border.color: #455d7c
+
+window.*.border.color: #444444
+
+window.active.title.separator.color: #14628a
+
+*.title.bg: Raised Gradient vertical
+*.title.bg.color: #0198e8
+
+*.title.bg.colorTo: #126896
+
+window.active.label.bg: Parentrelative
+window.active.label.text.color: #ffffff
+
+window.active.button.*.bg: Flat Gradient vertical 
+
+window.active.button.*.bg.color: #2eb7ff
+window.active.button.*.bg.color.splitTo: #B0CAEB
+window.active.button.*.bg.colorTo: #0a79b3
+window.active.button.*.bg.colorTo.splitTo: #769FD0
+
+window.active.button.*.bg.border.color: #49678B
+window.active.button.*.image.color: #dbf1fe
+
+window.active.button.hover.bg.color: #b5d3ef
+window.active.button.hover.bg.color.splitTo: #b5d3ef
+window.active.button.hover.bg.colorTo: #9cbae7
+window.active.button.hover.bg.colorTo.splitTo: #8caede
+window.active.button.hover.bg.border.color: #4A658C
+window.active.button.hover.image.color: #ffffff
+
+window.active.button.pressed.bg: Flat solid Border
+window.active.button.pressed.bg.color: #7aa1d2
+
+window.active.button.hover.bg.border.color: #4A658C
+
+!# inactive
+
+!#window.inactive.border.color: #7e8285
+window.inactive.title.separator.color: #BEB6B6
+
+window.inactive.title.bg: Raised Gradient vertical
+window.inactive.title.bg.color: #DCD7D7
+
+window.inactive.title.bg.colorTo: #BEB6B6
+
+
+window.inactive.label.bg: Parentrelative
+window.inactive.label.text.color: #8F8F8F
+
+window.inactive.button.*.bg: flat vertical gradient
+window.inactive.button.*.bg.color: #DCD7D7
+
+window.inactive.button.*.bg.colorTo: #BEB6B6
+
+window.inactive.button.*.bg.border.color: #928F8B
+window.inactive.button.*.image.color: #eee
+
+
+!# osd (pop ups and what not, dock?)
+
+osd.border.width: 1
+osd.border.color:  #999
+
+osd.bg: flat border gradient splitvertical
+osd.bg.color: #F0EFEE
+osd.bg.color.splitto: #f5f5f4
+osd.bg.colorTo: #EAEBEC
+osd.bg.colorTo.splitto: #E7E5E4
+
+osd.bg.border.color: #ffffff
+
+osd.label.bg: parentrelative
+osd.label.bg.color: #efefef
+osd.label.bg.border.color: #9c9e9c
+
+osd.label.text.color: #444
+!# yeah whatever, this is fine anyhoo?
+osd.hilight.bg: flat vertical gradient 
+osd.hilight.bg.color: #9ebde5
+osd.hilight.bg.colorTo: #749dcf
+osd.unhilight.bg: flat vertical gradient
+osd.unhilight.bg.color: #BABDB6
+osd.unhilight.bg.colorTo: #efefef

@@ -1,0 +1,217 @@
+#oh joy a gtkrc. 
+gtk_color_scheme = "fg_color:#333\nbg_color:#e7e7e7\nbase_color:#fff\ntext_color:#444\nselected_bg_color:#c9ddec\nselected_fg_color:#444\ntooltip_bg_color:#F5F5B5\ntooltip_fg_color:#444"
+#96B7E1
+#caddec
+style "default"
+{
+
+	########
+	# Style Properties
+	########
+	GtkButton      ::child-displacement-x = 1
+	GtkButton      ::child-displacement-y = 1
+	GtkButton      ::default-border       = { 0, 0, 0, 0 }
+	GtkCheckButton ::indicator-size       = 14
+
+	GtkPaned       ::handle-size          = 6
+
+	GtkRange       ::trough-border        = 0
+	GtkRange       ::slider-width         = 15
+	GtkRange       ::stepper-size         = 15
+
+	GtkScale       ::slider-length        = 23
+	GtkScale       ::trough-side-details  = 1
+	GtkScrollbar   ::min-slider-length    = 30
+
+	GtkMenuBar     ::internal-padding     = 0
+	GtkExpander    ::expander-size        = 16
+	GtkToolbar     ::internal-padding     = 1
+	GtkTreeView    ::expander-size        = 14
+	GtkTreeView    ::vertical-separator   = 0
+
+	GtkMenu        ::horizontal-padding   = 0
+	GtkMenu        ::vertical-padding     = 0
+
+	# Glow the tasklist by changing the color, instead of overlaying it with a rectangle
+	WnckTasklist   ::fade-overlay-rect    = 0
+
+
+  GtkMenuBar ::shadow-type = GTK_SHADOW_NONE
+  GtkToolbar ::shadow-type = GTK_SHADOW_NONE
+
+
+  xthickness = 2
+  ythickness = 2
+
+	fg[NORMAL]        = @fg_color
+	fg[PRELIGHT]      = @fg_color
+	fg[SELECTED]      = @fg_color
+	fg[ACTIVE]        = @fg_color
+	#fg[INSENSITIVE]   = shade (1.3, @fg_color)	
+	fg[INSENSITIVE]   = shade (.6, @bg_color)
+
+	bg[NORMAL]        = @bg_color
+    bg[PRELIGHT]	  = shade (1.025, @bg_color)
+	bg[SELECTED]	  = @selected_bg_color
+	bg[INSENSITIVE]   = shade (.98, @bg_color)
+	bg[ACTIVE]        = shade (.97, @bg_color)
+
+	base[NORMAL]      = @base_color
+	base[PRELIGHT]    = shade (0.85, @selected_bg_color)
+	base[ACTIVE]      = shade (1.02, @selected_bg_color)
+	base[SELECTED]    = shade (1.02, @selected_bg_color)
+	base[INSENSITIVE] = shade (1.02, @selected_bg_color)
+
+	text[NORMAL]      = @text_color
+	text[PRELIGHT]    = @text_color
+	text[ACTIVE]      = @text_color
+	text[SELECTED]    = @selected_fg_color
+	text[INSENSITIVE] = darker (@bg_color)
+ 
+engine "clearlooks"
+  {
+radius = 1.0
+  }	
+
+
+
+}
+
+style "menu" 
+{
+  xthickness = 1
+  ythickness = 3
+
+  bg[NORMAL]     = shade (1.351, @bg_color)
+  bg[PRELIGHT]    = "#ebd2ac"
+  bg[SELECTED]    = "#ebd2ac"
+engine "clearlooks"
+  {
+radius = 0.0
+  }	
+
+}
+
+
+style "range"
+{	bg[NORMAL] =  shade (1.01, @bg_color)
+	bg[PRELIGHT] = @selected_bg_color
+	fg[PRELIGHT]    = shade (.50, @selected_bg_color)
+	fg[INSENSITIVE]   = shade (1.3, @fg_color)	
+	bg[ACTIVE]        = shade (.91, @bg_color)
+	xthickness = 2
+	ythickness = 2
+}
+
+
+style "button"
+{
+
+  xthickness = 2
+  ythickness = 3
+
+  	bg[NORMAL]     = shade (1.004, @bg_color)
+	bg[PRELIGHT] = @selected_bg_color
+	#bg[NORMAL] = @bg_color
+	bg[ACTIVE] = shade (.97, @bg_color)
+}
+
+style "status" {
+	bg[PRELIGHT] = @selected_bg_color
+ 	bg[SELECTED]  = @selected_bg_color
+}
+
+style "check" {
+
+}  
+
+style "note" {
+
+  xthickness = 2
+  ythickness = 3
+  bg[NORMAL]     = shade (1.07, @bg_color)
+}  
+
+style "menubar" {
+
+   xthickness = 2
+  ythickness = 2
+ bg[NORMAL]     = @bg_color
+
+ # bg[NORMAL]     = "#E9B96E"
+}  
+
+style "combo" {
+
+#bg[NORMAL]     = shade (1.05, @bg_color)
+
+}  
+
+class "GtkWidget" style "default"
+class "GtkFrame" style "button"
+class "GtkStatusbar" style "status"
+class "GtkProgressBar" style "status"
+class "GtkRange" style "range"
+
+class "GtkNotebook" style "note"
+
+widget_class "*Menu*" style "menu"
+class "GtkMenu" style "menu"
+widget_class "*.GtkMenuItem.*" style "menu"
+widget_class "*.GtkAccelMenuItem.*" style "menu"
+widget_class "*.GtkRadioMenuItem.*" style "check"
+widget_class "*.GtkCheckMenuItem.*" style "check"
+widget_class "*.GtkImageMenuItem.*" style "menu"
+class "GtkSpinButton"  style "check"
+widget_class "*<GtkMenuBar>*"           style "menubar"
+
+class "GtkButton" style "button"
+
+
+style "scale" {
+	bg[NORMAL]        = @bg_color
+	bg[ACTIVE] = @base_color
+	#  xthickness = 0
+  #ythickness = 0
+
+  #GtkRange::slider_width = 10
+  #GtkRange::stepper_size = 10
+  
+}
+
+class "GtkScale"       style "scale"
+class "GtkVScale"      style "scale"
+class "GtkHScale"      style "scale"
+
+
+style "metacity-frame"
+{
+
+	# Normal base color
+ 	bg[NORMAL]      = @bg_color
+
+	# Unfocused title background color
+	bg[INSENSITIVE]	= "#61635F"
+
+	# Unfocused title text color
+	fg[INSENSITIVE]	= "#808080"
+
+	# Focused icon color
+	fg[NORMAL]	= mix (0.8, @fg_color, @bg_color) # same as scrollbar arrow color
+
+	# Focused title background color
+	bg[SELECTED]	= "#4C4D4A"
+	
+	# Focused title text color
+	fg[SELECTED]	= "#ffffff"
+}
+
+class "MetaFrames" style "metacity-frame"
+
+
+#pixmaps, oh no!
+#include "buttonrc"
+
+#include "notebookrc"
+#include "comborc"
+#include "entryrc"

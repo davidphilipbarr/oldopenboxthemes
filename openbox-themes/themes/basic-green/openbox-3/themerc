@@ -1,0 +1,96 @@
+!! Menu settings
+!! #4a5e7d = accent colour, change to whatever if you like
+!! i be a mess
+!! bg #eaeaea
+
+menu.title.bg:  flat solid bevel1
+menu.title.bg.color: #4a5e7d
+menu.title.text.color: #4a5e7d
+
+menu.items.bg: raised solid bevel1
+menu.items.bg.color: #eaeaea
+menu.items.text.color: #000000
+menu.items.disabled.text.color: #737573
+
+menu.items.active.bg: flat solid
+#menu.items.active.bg.color: #888888
+menu.items.active.bg.color: #4a5e7d
+menu.items.active.text.color: #ffffff
+
+!! General window settings
+*.justify: left
+
+!! focused window settings
+window.active.client.color: #eaeaea
+
+window.active.title.bg: flat solid bevel1
+window.active.title.bg.color: #4a5e7d
+window.active.title.bg.border.color: #4a6984
+
+window.active.handle.bg: flat solid
+window.active.handle.bg.color: #eaeaea
+
+window.active.grip.bg: parentrelative
+
+window.active.label.bg: parentrelative
+window.active.label.text.color: #ffffff
+
+window.active.button.*.bg: parentrelative
+window.active.button.*.image.color: #ffffff
+
+window.active.button.pressed.bg: flat solid bevel1
+window.active.button.pressed.bg.color: #999999
+window.active.button.pressed.image.color: #dddddd
+
+!#hover?
+window.active.button.hover.bg: flat solid
+!#window.active.button.hover.image.color: #ffffff
+window.active.button.hover.bg.color: #6f8dbb
+
+window.active.button.disabled.image.color: #4a5e7d
+
+!! unfocused window settings
+window.inactive.client.color: #eaeaea
+
+window.inactive.title.bg: flat solid
+window.inactive.title.bg.color: #eaeaea
+window.inactive.title.bg.border.color: #b5b2b5
+
+window.inactive.handle.bg: flat solid
+window.inactive.handle.bg.color: #eaeaea
+window.inactive.grip.bg: parentrelative
+
+window.inactive.label.bg: parentrelative
+window.inactive.label.text.color: #000000
+
+window.inactive.button.*.bg: parentrelative
+window.inactive.button.*.image.color: #7b7d7b
+
+window.inactive.button.pressed.bg: flat border solid bevel1
+window.inactive.button.pressed.bg.color: #c8c8c8
+window.inactive.button.pressed.bg.border.color: #e5e5e5
+
+window.inactive.button.disabled.image.color:  #eaeaea
+
+!#hover?
+window.inactive.button.hover.bg: flat solid
+!#window.active.button.hover.image.color: #ffffff
+window.inactive.button.hover.bg.color: #f6f6f6
+
+!! Global width settings
+border.Width: 1
+padding.width: 0
+window.handle.width: 5
+window.client.padding.width: 0
+menu.overlap: 2
+
+!! Miscellaneous settings
+border.color: #111111
+
+!! font me!
+window.active.label.text.font: Bitstream Vera Sans:pixelsize=13:bold
+window.inactive.label.text.font: Bitstream Vera Sans:pixelsize=13:bold
+
+menu.title.text.font: Bitstream Vera Sans:pixelsize=4:bold
+menu.items.font: Bitstream Vera Sans:pixelsize=12
+

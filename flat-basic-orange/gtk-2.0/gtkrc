@@ -1,0 +1,132 @@
+#oh joy a gtkrc. 
+
+style "default"
+{
+   #GtkScrollbar::has_backward_stepper = 0
+   GtkScrollbar::has_secondary_backward_stepper = 1
+   GtkRange::slider_width = 14
+   GtkRange::stepper_size = 14 
+
+########## 
+  GtkScrollbar::min_slider_length = 30
+  GtkMenuBar::internal-padding  = 0
+  GtkStatusbar::shadow_type = none
+  GtkNotebook::tab_vborder = 1
+  GtkNotebook::tab_hborder = 1 
+  GtkWidget::focus-line-width       = 0
+  GtkWidget::focus-padding          = 0
+  GtkWidget::interior_focus         = 0
+  #GtkMenuBar::shadow_type           = none
+  GtkMenuItem::selected_shadow_type = none
+  GtkWidget::interior_focus         = 0
+
+  xthickness = 2
+  ythickness = 2
+
+   fg[NORMAL]        = "#111111"
+  # fg[ACTIVE]        = "#00306b"
+   fg[INSENSITIVE]   = "#111111"
+  fg[PRELIGHT]      = "#111111"
+   fg[SELECTED]      = "#ffffff"
+ 
+  bg[NORMAL]       = "#d8d4d4"
+  bg[ACTIVE]       = "#bbbbbb"
+  bg[PRELIGHT]     = "#E0DCDC"
+  bg[SELECTED]     = "#d1940c"
+  bg[INSENSITIVE]  = "#d8d4d4"
+
+ 
+  base[ACTIVE]  = "#807d74"
+  base[SELECTED]  = "#d1940c"
+#  base[INSENSITIVE]  = "#888888"
+  text[SELECTED]  = "#ffffff"
+  text[ACTIVE]    = "#111111"
+  text[INSENSITIVE]= "#d5d5d5"
+  text[ACTIVE]     = "#ffffff"
+ 
+engine "thinice"
+  {
+    rect_scrollbar = TRUE
+    mark_type1 = DOT
+    mark_type2 = ARROW
+    paned_dots = NONE
+  }	
+
+
+
+}
+
+style "menu" 
+{
+  xthickness = 2
+  ythickness = 2
+
+ # bg[NORMAL]     = "#ffffff"
+  bg[PRELIGHT]    = "#d1940c"
+  bg[SELECTED]    = "#d1940c"
+#  bg[ACTIVE]    = "#d1940c"
+  
+fg[PRELIGHT]  = "#ffffff"
+  fg[SELECTED]  = "#ffffff"
+
+}
+
+
+style "range"
+{
+fg[PRELIGHT]     = "#333333"
+bg[ACTIVE]       = "#bbbbbb"
+}
+
+
+style "button"
+{
+
+  xthickness = 2
+  ythickness = 2
+
+#bg[NORMAL]     = "#d8d4d4"
+#bg[PRELIGHT]     = "#e6e6e6"
+bg[ACTIVE]       = "#bbbbbb"
+fg[PRELIGHT]     = "#333333"
+#  bg[ACTIVE]    = "#d1940c"
+
+
+}
+
+style "status" {
+  bg[PRELIGHT]    = "#d1940c"
+  #bg[SELECTED]    = "#d1940c"
+  #bg[ACTIVE]    = "#d1940c"
+}
+
+style "check" {
+  bg[ACTIVE]    = "#d1940c"
+  bg[SELECTED]    = "#d1940c"
+}  
+
+class "GtkWidget" style "default"
+class "GtkButton" style "button"
+class "GtkFrame" style "button"
+class "GtkStatusbar" style "status"
+class "GtkProgressBar" style "status"
+class "GtkRange" style "range"
+#class "GtkNotebook" style "button"
+
+widget_class "*Menu*" style "menu"
+class "GtkMenu" style "menu"
+widget_class "*.GtkMenuItem.*" style "menu"
+widget_class "*.GtkAccelMenuItem.*" style "menu"
+widget_class "*.GtkRadioMenuItem.*" style "check"
+widget_class "*.GtkCheckMenuItem.*" style "check"
+widget_class "*.GtkImageMenuItem.*" style "menu"
+class "GtkSpinButton"  style "check"
+
+style "rox"
+{
+    bg[NORMAL] = "#ffffff"
+bg[ACTIVE]       = "#d5d5d5"
+
+}
+class "Collection" style "rox"
+
